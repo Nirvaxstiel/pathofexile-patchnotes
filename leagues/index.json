@@ -3,5 +3,10 @@
     "version": "3.29.0",
     "league": "Curse of the Allflame",
     "json": "leagues/3.29/3.29.json"
+  },
+  {
+    "version": "3.28.0",
+    "league": "Mirage",
+    "json": "leagues/3.28/3.28.json"
   }
 ]
