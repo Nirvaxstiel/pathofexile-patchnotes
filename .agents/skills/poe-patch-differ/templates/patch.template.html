@@ -174,30 +174,47 @@
 </div>
 
 <script>
-/* ---- pure render: data -> DOM. State = selected league's data. ---- */
 const MANIFEST = __MANIFEST__;
 const BADGE = {buff:"BUFF", nerf:"NERF", chg:"CHG", new:"NEW"};
 const CLSP  = {buff:"nb", nerf:"nr", chg:"nc", new:"nn"};
-
-function esc(s){return (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
-
-/* Classification hierarchy: mixed-signal rows declare pos:[...]/neg:[...] category
-   tags. Players weight impacts by priority:
-     loot (3)  — quantity/rarity/currency/drops
-     combat(2) — damage/life/defense/cost/cooldown/utility
-     other (1) — AI/UI/QoL/monster behaviour
-   Badge resolves to the higher-priority side; equal priority → CHG.
-   When no tags are present, the manual `t` field is used. */
 const CAT_PRIORITY = {loot:3, combat:2, other:1};
 
+const escapeHtml = s => (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const $ = id => document.getElementById(id);
+
+const Chain = {
+  ok(v){ return step(async () => ({ok:true, v})); },
+};
+function step(run){
+  const api = {
+    run,
+    then(next){
+      return step(async () => {
+        const r = await run();
+        if(!r.ok) return r;
+        try{
+          const out = await next(r.v);
+          return (out && typeof out === "object" && "ok" in out) ? out : {ok:true, v:out};
+        }catch(e){ return {ok:false, err:e}; }
+      });
+    },
+    catch(onErr){
+      return step(async () => {
+        const r = await run();
+        if(r.ok) return r;
+        const out = await onErr(r.err);
+        return (out && typeof out === "object" && "ok" in out) ? out : {ok:true, v:out};
+      });
+    },
+  };
+  return api;
+}
+
+// --- render primitives (pure: data -> html string) ---
 function resolveClass(pos, neg){
-  const p = Math.max(0, ...(pos||[]).map(c=>CAT_PRIORITY[c]||0));
-  const n = Math.max(0, ...(neg||[]).map(c=>CAT_PRIORITY[c]||0));
-  if(p && n){
-    if(p > n) return "buff";
-    if(n > p) return "nerf";
-    return "chg";            // equal priority → ambiguous, mark change
-  }
+  const p = Math.max(0, ...(pos||[]).map(c => CAT_PRIORITY[c]||0));
+  const n = Math.max(0, ...(neg||[]).map(c => CAT_PRIORITY[c]||0));
+  if(p && n) return p > n ? "buff" : n > p ? "nerf" : "chg";
   if(n) return "nerf";
   if(p) return "buff";
   return null;
@@ -205,199 +222,205 @@ function resolveClass(pos, neg){
 
 function rowHtml(r){
   const manual = r.t || "chg";
-  // new content always stays NEW; otherwise pos/neg tags resolve the badge,
-  // falling back to the manual t when no tags are present.
   const t = manual === "new" ? "new" : (resolveClass(r.pos, r.neg) || manual);
-  let val;
-  if(t === "new" || r.old == null || r.old === ""){
-    val = `<span class="new ${CLSP[t]}">${esc(r.neu)}</span>`;
-  } else {
-    val = `<span class="old">${esc(r.old)}</span><span class="new ${CLSP[t]}">${esc(r.neu)}</span>`;
-  }
-  const img = r.img ? `<button class="imgbtn" data-img="${esc(r.img)}" title="View image">IMG</button>` : "";
-  return `<div class="row" data-t="${t}"><div class="k">${esc(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
+  const val = (t === "new" || r.old == null || r.old === "")
+    ? `<span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`
+    : `<span class="old">${escapeHtml(r.old)}</span><span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`;
+  const img = r.img ? `<button class="imgbtn" data-img="${escapeHtml(r.img)}" title="View image">IMG</button>` : "";
+  return `<div class="row" data-t="${t}"><div class="k">${escapeHtml(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
 }
 
 function metaHtml(m){
   if(!m) return "";
   const order = [["version","a"],["league","c"],["launch","a"],["posted","c"],["author",null],["source","a"]];
-  return order.filter(([k])=>m[k]).map(([k,cls])=>{
-    const txt = k==="source" ? `<a class="${cls||''}" href="${esc(m[k])}" style="color:var(--cyan);border-bottom:1px dashed var(--cyan);text-decoration:none">${esc(m[k])}</a>` : esc(m[k]);
-    return `<span class="tag ${cls||''}">${esc(k)}: ${txt}</span>`;
+  return order.filter(([k]) => m[k]).map(([k,cls]) => {
+    const txt = k === "source"
+      ? `<a class="${cls||''}" href="${escapeHtml(m[k])}" style="color:var(--cyan);border-bottom:1px dashed var(--cyan);text-decoration:none">${escapeHtml(m[k])}</a>`
+      : escapeHtml(m[k]);
+    return `<span class="tag ${cls||''}">${escapeHtml(k)}: ${txt}</span>`;
   }).join(" ");
 }
 
+function countRows(s){
+  return (s.rows||[]).length + (s.sections||[]).reduce((a,c) => a + countRows(c), 0);
+}
+
 function sectionHtml(s){
-  const num = s.n ? `<span class="n">${esc(s.n)}</span>` : "";
-  const sub = s.sub ? `<small>${esc(s.sub)}</small>` : "";
-  const inner = (s.rows||[]).map(rowHtml).join("") +
-        (s.sections||[]).map(sectionHtml).join("");
-  return `<section id="${esc(s.id)}"><h2 class="sec">${num}${esc(s.title)}${sub}</h2><div class="card"><div class="diff">${inner}</div></div></section>`;
+  const num = s.n ? `<span class="n">${escapeHtml(s.n)}</span>` : "";
+  const sub = s.sub ? `<small>${escapeHtml(s.sub)}</small>` : "";
+  const inner = (s.rows||[]).map(rowHtml).join("") + (s.sections||[]).map(sectionHtml).join("");
+  return `<section id="${escapeHtml(s.id)}"><h2 class="sec">${num}${escapeHtml(s.title)}${sub}</h2><div class="card"><div class="diff">${inner}</div></div></section>`;
 }
 
 function tocHtml(sections, depth){
   depth = depth || 0;
   const cls = depth === 0 ? "root-sum" : "";
-  return sections.map(s=>{
-    const rows = (s.rows||[]).map(r=>`<a href="#${esc(s.id)}" data-row="${esc((r.k||'').toLowerCase())}">${esc(r.k)}</a>`).join("");
+  return sections.map(s => {
+    const rows = (s.rows||[]).map(r => `<a href="#${escapeHtml(s.id)}" data-row="${escapeHtml((r.k||'').toLowerCase())}">${escapeHtml(r.k)}</a>`).join("");
     const kids = (s.sections||[]).length ? tocHtml(s.sections, depth+1) : "";
-    const count = (s.rows||[]).length + (s.sections||[]).reduce((a,c)=>a+countRows(c),0);
-    return `<details open><summary class="${cls}">${esc(s.title)} <span class="ct">${count}</span></summary>${rows}${kids}</details>`;
+    const count = (s.rows||[]).length + (s.sections||[]).reduce((a,c) => a + countRows(c), 0);
+    return `<details open><summary class="${cls}">${escapeHtml(s.title)} <span class="ct">${count}</span></summary>${rows}${kids}</details>`;
   }).join("");
 }
 
-function countRows(s){
-  return (s.rows||[]).length + (s.sections||[]).reduce((a,c)=>a+countRows(c),0);
-}
-
-const $ = id => document.getElementById(id);
-
 function renderLeague(data){
   const m = data.meta || {};
-  const ttl = `Patch Differ — ${m.version||""} ${m.league||""}`.trim();
-  document.title = ttl;
-  document.querySelector("h1").textContent = ttl;
+  const title = `Patch Differ — ${m.version||""} ${m.league||""}`.trim();
+  document.title = title;
+  document.querySelector("h1").textContent = title;
   $("meta").innerHTML = metaHtml(m);
   $("app").innerHTML = data.sections.map(sectionHtml).join("");
   $("toc").innerHTML = tocHtml(data.sections, 0);
-  $("mnav").innerHTML = data.sections.map(s=>`<a href="#${esc(s.id)}">${esc(s.title.split(' ').slice(0,2).join(' '))}</a>`).join("");
+  $("mnav").innerHTML = data.sections.map(s => `<a href="#${escapeHtml(s.id)}">${escapeHtml(s.title.split(' ').slice(0,2).join(' '))}</a>`).join("");
   $("tocSearch").value = "";
   $("leagueIn").value = `${m.version||""} · ${m.league||""}`.trim();
 }
 
+// --- state + helpers used by the boot stages ---
 let LEAGUES = [];
+const legendState = {buff:true, nerf:true, chg:true, new:true};
 
-async function loadLeague(path){
-  $("app").innerHTML = `<div class="loading">Loading ${esc(path)}…</div>`;
+async function fetchAndRender(path){
+  $("app").innerHTML = `<div class="loading">Loading ${escapeHtml(path)}…</div>`;
   try{
     const res = await fetch(path, {cache:"no-store"});
     if(!res.ok) throw new Error(res.status);
-    const data = await res.json();
-    renderLeague(data);
+    renderLeague(await res.json());
   }catch(e){
-    $("app").innerHTML = `<div class="loading">Could not load ${esc(path)} (${esc(e.message)}). Served over http(s) or file:// with fetch enabled.</div>`;
+    $("app").innerHTML = `<div class="loading">Could not load ${escapeHtml(path)} (${escapeHtml(e.message)}). Served over http(s) or file:// with fetch enabled.</div>`;
   }
 }
 
-function buildLeagueList(filter){
+function buildLeagueOptions(filter){
   const q = (filter||"").trim().toLowerCase();
   const list = $("leagueList");
   const opts = LEAGUES
     .filter(l => !q || `${l.version} ${l.league}`.toLowerCase().includes(q))
-    .sort((a,b)=>(b.version||"").localeCompare(a.version||""));
-  list.innerHTML = opts.map(l=>`<div class="opt" data-json="${esc(l.json)}"><span>${esc(l.version)} · ${esc(l.league)}</span><span class="lg">${esc(l.version)}</span></div>`).join("");
-  list.querySelectorAll(".opt").forEach(o=>{
-    o.addEventListener("click", ()=>{
-      $("leagueIn").value = o.querySelector("span").textContent;
-      list.classList.remove("open");
-      loadLeague(o.dataset.json);
-    });
-  });
+    .sort((a,b) => (b.version||"").localeCompare(a.version||""));
+  list.innerHTML = opts.map(l => `<div class="opt" data-json="${escapeHtml(l.json)}"><span>${escapeHtml(l.version)} · ${escapeHtml(l.league)}</span><span class="lg">${escapeHtml(l.version)}</span></div>`).join("");
+  list.querySelectorAll(".opt").forEach(o => o.addEventListener("click", () => {
+    $("leagueIn").value = o.querySelector("span").textContent;
+    list.classList.remove("open");
+    fetchAndRender(o.dataset.json);
+  }));
   return opts.length;
 }
 
-function init(){
-  LEAGUES = [...MANIFEST].sort((a,b)=>(b.version||"").localeCompare(a.version||""));
-  const dd = $("leagueDD"), inp = $("leagueIn"), list = $("leagueList");
-  buildLeagueList("");
-  if(LEAGUES.length) loadLeague(LEAGUES[0].json);
+function onSectionQuery(e){
+  const q = e.target.value.trim().toLowerCase();
+  document.querySelectorAll("#toc > details").forEach(root => {
+    const descendants = root.querySelectorAll("a");
+    let any = false;
+    descendants.forEach(a => {
+      const summary = a.closest("details").querySelector("summary").textContent.toLowerCase();
+      const hit = !q || a.dataset.row.includes(q) || summary.includes(q);
+      a.classList.toggle("hidden", !hit);
+      if(hit) any = true;
+    });
+    root.classList.toggle("hidden", !any && q!=="");
+    if(q && any) root.open = true;
+    if(q){
+      root.querySelectorAll(":scope details").forEach(branch => { branch.open = [...branch.querySelectorAll("a")].some(a => !a.classList.contains("hidden")); });
+    } else {
+      root.querySelectorAll(":scope details").forEach(branch => branch.open = true);
+    }
+  });
+}
 
-  inp.addEventListener("focus", ()=>{ inp.removeAttribute("readonly"); buildLeagueList(""); list.classList.add("open"); });
-  inp.addEventListener("input", ()=>{ buildLeagueList(inp.value); list.classList.add("open"); });
-  inp.addEventListener("keydown", e=>{
+function applyLegendFilter(){
+  const legendActive = !Object.values(legendState).every(v => v);
+  document.querySelectorAll("#app .row").forEach(row => {
+    const t = row.getAttribute("data-t");
+    row.style.display = (!legendActive || legendState[t]) ? "" : "none";
+  });
+  document.querySelectorAll("#app section").forEach(sec => {
+    const hasVisible = [...sec.querySelectorAll(":scope .row")].some(r => r.style.display !== "none");
+    sec.style.display = (legendActive && !hasVisible) ? "none" : "";
+  });
+  $("legend").querySelectorAll(".lg[data-filter]").forEach(s => s.classList.toggle("off", legendActive && !legendState[s.dataset.filter]));
+}
+
+// --- boot stages: each threads `leagues`, no comments needed (names document intent) ---
+function sortLeagues(manifest){
+  return [...manifest].sort((a,b) => (b.version||"").localeCompare(a.version||""));
+}
+function seedLeagueSelector(leagues){
+  LEAGUES = leagues;
+  buildLeagueOptions("");
+  return leagues;
+}
+async function openLatestLeague(leagues){
+  if(leagues.length) await fetchAndRender(leagues[0].json);
+  return leagues;
+}
+function wireLeaguePicker(leagues){
+  const dd = $("leagueDD"), inp = $("leagueIn"), list = $("leagueList");
+  inp.addEventListener("focus", () => { inp.removeAttribute("readonly"); buildLeagueOptions(""); list.classList.add("open"); });
+  inp.addEventListener("input", () => { buildLeagueOptions(inp.value); list.classList.add("open"); });
+  inp.addEventListener("keydown", e => {
     if(e.key === "Enter"){
       const first = list.querySelector(".opt");
-      if(first){ $("leagueIn").value = first.querySelector("span").textContent; list.classList.remove("open"); loadLeague(first.dataset.json); }
+      if(first){ $("leagueIn").value = first.querySelector("span").textContent; list.classList.remove("open"); fetchAndRender(first.dataset.json); }
     } else if(e.key === "Escape"){ list.classList.remove("open"); }
   });
-  document.addEventListener("click", e=>{ if(!dd.contains(e.target)) list.classList.remove("open"); });
-
-  $("tocSearch").addEventListener("input", function(e){
-    const q = e.target.value.trim().toLowerCase();
-    document.querySelectorAll("#toc > details").forEach(root=>{
-      const descendants = root.querySelectorAll("a");
-      let any = false;
-      descendants.forEach(a=>{
-        const sum = a.closest("details").querySelector("summary").textContent.toLowerCase();
-        const hit = !q || a.dataset.row.includes(q) || sum.includes(q);
-        a.classList.toggle("hidden", !hit);
-        if(hit) any = true;
-      });
-      root.classList.toggle("hidden", !any && q!=="");
-      if(q && any) root.open = true;
-      if(q){
-        root.querySelectorAll(":scope details").forEach(branch=>{
-          const bh = [...branch.querySelectorAll("a")].some(a=>!a.classList.contains("hidden"));
-          branch.open = bh;
-        });
-      } else {
-        root.querySelectorAll(":scope details").forEach(branch=>branch.open = true);
-      }
-    });
-  });
-
-  // --- legend filter: click BUFF/NERF/CHANGE/NEW to show only that type ---
-  const legendEl = $("legend");
-  const legendState = {buff:true, nerf:true, chg:true, new:true}; // all on = show all
-  let legendActive = false; // false => no filter, show everything
-  function applyLegend(){
-    legendActive = !Object.values(legendState).every(v=>v);
-    document.querySelectorAll("#app .row").forEach(row=>{
-      const t = row.getAttribute("data-t");
-      row.style.display = (!legendActive || legendState[t]) ? "" : "none";
-    });
-    // hide sections (and nested) that have no visible rows when filtering
-    document.querySelectorAll("#app section").forEach(sec=>{
-      const hasVisible = [...sec.querySelectorAll(":scope .row")].some(r=>r.style.display !== "none");
-      sec.style.display = (legendActive && !hasVisible) ? "none" : "";
-    });
-    legendEl.querySelectorAll(".lg[data-filter]").forEach(s=>{
-      s.classList.toggle("off", legendActive && !legendState[s.dataset.filter]);
-    });
-  }
-  legendEl.querySelectorAll(".lg[data-filter]").forEach(s=>{
-    s.addEventListener("click", ()=>{
-      const f = s.dataset.filter;
-      legendState[f] = !legendState[f];
-      applyLegend();
-    });
-  });
-  legendEl.querySelector(".lg.clr").addEventListener("click", ()=>{
-    Object.keys(legendState).forEach(k=>legendState[k]=true);
-    applyLegend();
-  });
-
-  // --- image lightbox: zoom / pan / flip / rotate ---
-  const lb = $("lightbox"), lbImg = $("lbImg"), lbStage = $("lbStage");
-  let tf = {s:1, x:0, y:0, fh:1, fv:1, r:0};
-  function applyTf(){ lbImg.style.transform = `translate(${tf.x}px,${tf.y}px) rotate(${tf.r}deg) scale(${tf.s*tf.fh},${tf.s*tf.fv})`; }
-  function openLb(src){ lbImg.src = src; tf = {s:1,x:0,y:0,fh:1,fv:1,r:0}; applyTf(); lb.classList.add("open"); }
-  function closeLb(){ lb.classList.remove("open"); lbImg.src=""; }
-  document.addEventListener("click", e=>{
-    const btn = e.target.closest(".imgbtn");
-    if(btn){ openLb(btn.dataset.img); return; }
-    if(e.target === lb || e.target.closest('[data-act="close"]')){ closeLb(); }
-  });
-  lb.querySelectorAll("[data-act]").forEach(b=>{
-    b.addEventListener("click", ()=>{
-      const a = b.dataset.act;
-      if(a==="in") tf.s = Math.min(6, tf.s*1.2);
-      else if(a==="out") tf.s = Math.max(0.3, tf.s/1.2);
-      else if(a==="flipH") tf.fh *= -1;
-      else if(a==="flipV") tf.fv *= -1;
-      else if(a==="rotL") tf.r -= 90;
-      else if(a==="rotR") tf.r += 90;
-      else if(a==="reset"){ tf={s:1,x:0,y:0,fh:1,fv:1,r:0}; }
-      applyTf();
-    });
-  });
-  lb.addEventListener("wheel", e=>{ e.preventDefault(); tf.s = Math.max(0.3, Math.min(6, tf.s * (e.deltaY<0?1.12:0.89))); applyTf(); }, {passive:false});
-  let drag=null;
-  lbStage.addEventListener("pointerdown", e=>{ drag={px:e.clientX,py:e.clientY,ox:tf.x,oy:tf.y}; lbStage.classList.add("grab"); lbStage.setPointerCapture(e.pointerId); });
-  lbStage.addEventListener("pointermove", e=>{ if(!drag) return; tf.x = drag.ox + (e.clientX-drag.px); tf.y = drag.oy + (e.clientY-drag.py); applyTf(); });
-  lbStage.addEventListener("pointerup", ()=>{ drag=null; lbStage.classList.remove("grab"); });
+  document.addEventListener("click", e => { if(!dd.contains(e.target)) list.classList.remove("open"); });
+  return leagues;
 }
-init();
+function wireSectionSearch(leagues){
+  $("tocSearch").addEventListener("input", onSectionQuery);
+  return leagues;
+}
+function wireLegendFilter(leagues){
+  const el = $("legend");
+  el.querySelectorAll(".lg[data-filter]").forEach(s => s.addEventListener("click", () => { legendState[s.dataset.filter] = !legendState[s.dataset.filter]; applyLegendFilter(); }));
+  el.querySelector(".lg.clr").addEventListener("click", () => { Object.keys(legendState).forEach(k => legendState[k] = true); applyLegendFilter(); });
+  return leagues;
+}
+function wireImageLightbox(leagues){
+  const lb = $("lightbox"), img = $("lbImg"), stage = $("lbStage");
+  let tf = {s:1, x:0, y:0, fh:1, fv:1, r:0};
+  const applyTransform = () => { img.style.transform = `translate(${tf.x}px,${tf.y}px) rotate(${tf.r}deg) scale(${tf.s*tf.fh},${tf.s*tf.fv})`; };
+  const open = src => { img.src = src; tf = {s:1,x:0,y:0,fh:1,fv:1,r:0}; applyTransform(); lb.classList.add("open"); };
+  const close = () => { lb.classList.remove("open"); img.src = ""; };
+  document.addEventListener("click", e => {
+    const btn = e.target.closest(".imgbtn");
+    if(btn){ open(btn.dataset.img); return; }
+    if(e.target === lb || e.target.closest('[data-act="close"]')) close();
+  });
+  lb.querySelectorAll("[data-act]").forEach(b => b.addEventListener("click", () => {
+    const a = b.dataset.act;
+    if(a==="in") tf.s = Math.min(6, tf.s*1.2);
+    else if(a==="out") tf.s = Math.max(0.3, tf.s/1.2);
+    else if(a==="flipH") tf.fh *= -1;
+    else if(a==="flipV") tf.fv *= -1;
+    else if(a==="rotL") tf.r -= 90;
+    else if(a==="rotR") tf.r += 90;
+    else if(a==="reset") tf = {s:1,x:0,y:0,fh:1,fv:1,r:0};
+    applyTransform();
+  }));
+  lb.addEventListener("wheel", e => { e.preventDefault(); tf.s = Math.max(0.3, Math.min(6, tf.s * (e.deltaY<0?1.12:0.89))); applyTransform(); }, {passive:false});
+  let drag = null;
+  stage.addEventListener("pointerdown", e => { drag = {px:e.clientX, py:e.clientY, ox:tf.x, oy:tf.y}; stage.classList.add("grab"); stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener("pointermove", e => { if(!drag) return; tf.x = drag.ox + (e.clientX-drag.px); tf.y = drag.oy + (e.clientY-drag.py); applyTransform(); });
+  stage.addEventListener("pointerup", () => { drag = null; stage.classList.remove("grab"); });
+  return leagues;
+}
+function reportFatal(err){
+  console.error("Patch Differ failed to start:", err);
+  return [];
+}
+
+// --- orchestrator: the whole boot is one readable chain ---
+Chain.ok(MANIFEST)
+  .then(sortLeagues)
+  .then(seedLeagueSelector)
+  .then(openLatestLeague)
+  .then(wireLeaguePicker)
+  .then(wireSectionSearch)
+  .then(wireLegendFilter)
+  .then(wireImageLightbox)
+  .catch(reportFatal)
+  .run();
 </script>
 </body>
 </html>

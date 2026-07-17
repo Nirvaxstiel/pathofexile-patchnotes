@@ -61,6 +61,13 @@ def render(template_path, manifest, title):
         tpl = f.read()
     tpl = tpl.replace("__TITLE__", title)
     tpl = tpl.replace("__MANIFEST__", json.dumps(manifest, ensure_ascii=False))
+    # guards: a broken shell is worse than a failed build
+    if "__TITLE__" in tpl or "__MANIFEST__" in tpl:
+        die("template still contains an unsubstituted placeholder (__TITLE__/__MANIFEST__)")
+    if tpl.count("<script>") != tpl.count("</script>"):
+        die("template has unbalanced <script>/</script> tags — shell would not boot")
+    if "Chain.ok(MANIFEST)" in tpl and ".run();" not in tpl:
+        die("orchestrator chain built but never executed (.run() missing) — app would not boot")
     return tpl
 
 
