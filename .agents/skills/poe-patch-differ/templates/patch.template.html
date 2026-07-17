@@ -346,6 +346,11 @@ function init(){
       const t = row.getAttribute("data-t");
       row.style.display = (!legendActive || legendState[t]) ? "" : "none";
     });
+    // hide sections (and nested) that have no visible rows when filtering
+    document.querySelectorAll("#app section").forEach(sec=>{
+      const hasVisible = [...sec.querySelectorAll(":scope .row")].some(r=>r.style.display !== "none");
+      sec.style.display = (legendActive && !hasVisible) ? "none" : "";
+    });
     legendEl.querySelectorAll(".lg[data-filter]").forEach(s=>{
       s.classList.toggle("off", legendActive && !legendState[s.dataset.filter]);
     });
