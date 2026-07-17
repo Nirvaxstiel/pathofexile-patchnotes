@@ -67,7 +67,13 @@
   .b-chg{color:var(--cyan);border-color:rgba(95,208,224,.5);background:rgba(95,208,224,.07)}
   .b-new{color:var(--amber);border-color:rgba(232,161,58,.5);background:rgba(232,161,58,.07)}
   .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11px;color:var(--dim)}
-  .legend span{border:1px solid var(--line);padding:2px 8px}
+  .legend .lg, .legend span{border:1px solid var(--line);padding:2px 8px}
+  /* legend filter: clickable, toggles row visibility */
+  .legend .lg{cursor:pointer;user-select:none;transition:opacity .12s,box-shadow .12s}
+  .legend .lg:hover{box-shadow:0 0 0 1px var(--cyan)}
+  .legend .lg.off{opacity:.32;filter:grayscale(.6)}
+  .legend .lg.clr{color:var(--dim);border-style:dashed}
+  .legend .lg.clr:hover{color:var(--ink);box-shadow:0 0 0 1px var(--amber)}
   /* image button + lightbox */
   .imgbtn{background:var(--bg);color:var(--cyan);border:1px solid var(--cyan);font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 6px;cursor:pointer;align-self:center}
   .imgbtn:hover{background:rgba(95,208,224,.12)}
@@ -115,11 +121,12 @@
     <h1>__TITLE__</h1>
     <div class="sub">Patch Differ — before → after</div>
     <div class="meta" id="meta"></div>
-    <div class="legend">
-      <span class="b-buff" style="border:1px solid rgba(127,185,138,.5)">BUFF · green</span>
-      <span class="b-nerf" style="border:1px solid rgba(217,138,154,.5)">NERF · red</span>
-      <span class="b-chg" style="border:1px solid rgba(95,208,224,.5)">CHANGE · cyan</span>
-      <span class="b-new" style="border:1px solid rgba(232,161,58,.5)">NEW · amber</span>
+    <div class="legend" id="legend">
+      <span class="lg b-buff" data-filter="buff" title="Click to filter by Buff">BUFF · green</span>
+      <span class="lg b-nerf" data-filter="nerf" title="Click to filter by Nerf">NERF · red</span>
+      <span class="lg b-chg" data-filter="chg" title="Click to filter by Change">CHANGE · cyan</span>
+      <span class="lg b-new" data-filter="new" title="Click to filter by New">NEW · amber</span>
+      <span class="lg clr" data-clear="1" title="Show all">ALL</span>
     </div>
   </header>
 
@@ -208,7 +215,7 @@ function rowHtml(r){
     val = `<span class="old">${esc(r.old)}</span><span class="new ${CLSP[t]}">${esc(r.neu)}</span>`;
   }
   const img = r.img ? `<button class="imgbtn" data-img="${esc(r.img)}" title="View image">IMG</button>` : "";
-  return `<div class="row"><div class="k">${esc(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
+  return `<div class="row" data-t="${t}"><div class="k">${esc(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
 }
 
 function metaHtml(m){
@@ -327,6 +334,32 @@ function init(){
         root.querySelectorAll(":scope details").forEach(branch=>branch.open = true);
       }
     });
+  });
+
+  // --- legend filter: click BUFF/NERF/CHANGE/NEW to show only that type ---
+  const legendEl = $("legend");
+  const legendState = {buff:true, nerf:true, chg:true, new:true}; // all on = show all
+  let legendActive = false; // false => no filter, show everything
+  function applyLegend(){
+    legendActive = !Object.values(legendState).every(v=>v);
+    document.querySelectorAll("#app .row").forEach(row=>{
+      const t = row.getAttribute("data-t");
+      row.style.display = (!legendActive || legendState[t]) ? "" : "none";
+    });
+    legendEl.querySelectorAll(".lg[data-filter]").forEach(s=>{
+      s.classList.toggle("off", legendActive && !legendState[s.dataset.filter]);
+    });
+  }
+  legendEl.querySelectorAll(".lg[data-filter]").forEach(s=>{
+    s.addEventListener("click", ()=>{
+      const f = s.dataset.filter;
+      legendState[f] = !legendState[f];
+      applyLegend();
+    });
+  });
+  legendEl.querySelector(".lg.clr").addEventListener("click", ()=>{
+    Object.keys(legendState).forEach(k=>legendState[k]=true);
+    applyLegend();
   });
 
   // --- image lightbox: zoom / pan / flip / rotate ---
