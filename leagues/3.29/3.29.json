@@ -2733,5 +2733,14 @@
         }
       ]
     }
-  ]
+  ],
+  "meta": {
+    "version": "3.29.0",
+    "league": "Curse of the Allflame",
+    "title": "Path of Exile 3.29 — Curse of the Allflame",
+    "author": "Stacey_GGG",
+    "posted": "2026-07-16",
+    "source": "https://www.pathofexile.com/forum/view-thread/3985332",
+    "launch": "2026-07-24"
+  }
 }

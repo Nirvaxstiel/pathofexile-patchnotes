@@ -174,11 +174,13 @@ const CLSP  = {buff:"nb", nerf:"nr", chg:"nc", new:"nn"};
 
 function esc(s){return (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
-/* Classification hierarchy: when a change has mixed signals, players weight them by
-   impact. Priority (high→low): loot (quantity/rarity/currency/drops) > combat
-   (damage/life/defense/cost/cooldown) > other (AI/UI/QoL/monster behaviour).
-   A row may declare pos:[...] / neg:[...] category tags; the badge resolves to the
-   higher-priority side (tie → CHG). If absent, the manual `t` field is used. */
+/* Classification hierarchy: mixed-signal rows declare pos:[...]/neg:[...] category
+   tags. Players weight impacts by priority:
+     loot (3)  — quantity/rarity/currency/drops
+     combat(2) — damage/life/defense/cost/cooldown/utility
+     other (1) — AI/UI/QoL/monster behaviour
+   Badge resolves to the higher-priority side; equal priority → CHG.
+   When no tags are present, the manual `t` field is used. */
 const CAT_PRIORITY = {loot:3, combat:2, other:1};
 
 function resolveClass(pos, neg){
@@ -196,7 +198,9 @@ function resolveClass(pos, neg){
 
 function rowHtml(r){
   const manual = r.t || "chg";
-  const t = resolveClass(r.pos, r.neg) || manual;
+  // new content always stays NEW; otherwise pos/neg tags resolve the badge,
+  // falling back to the manual t when no tags are present.
+  const t = manual === "new" ? "new" : (resolveClass(r.pos, r.neg) || manual);
   let val;
   if(t === "new" || r.old == null || r.old === ""){
     val = `<span class="new ${CLSP[t]}">${esc(r.neu)}</span>`;
@@ -222,14 +226,6 @@ function sectionHtml(s){
   const inner = (s.rows||[]).map(rowHtml).join("") +
         (s.sections||[]).map(sectionHtml).join("");
   return `<section id="${esc(s.id)}"><h2 class="sec">${num}${esc(s.title)}${sub}</h2><div class="card"><div class="diff">${inner}</div></div></section>`;
-}
-
-function leagueLabel(m){
-  if(!m) return "";
-  let s = "";
-  if(m.league) s += `<b>${esc(m.league)}</b>`;
-  if(m.version) s += `<br>${esc(m.version)}`;
-  return s;
 }
 
 function tocHtml(sections, depth){
