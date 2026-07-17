@@ -15,11 +15,31 @@
       "title": "The Mirage Challenge League",
       "sub": "Core league loop",
       "rows": [
-        {"k":"Varashta / The Astral Realm","neu":"Enter a Mirage (imperfect copy of the world); shatter the tether holding the Djinn","t":"new"},
-        {"k":"Wishes","neu":"Choose 1 of 3 Wishes before entering, modifying the Mirage (loot, currency, caches, coins)","t":"new"},
-        {"k":"League variants","neu":"Standard / Hardcore / SSF; HC parented to Standard","t":"new"},
-        {"k":"Challenges","neu":"40 new (+8 Ruthless); Totem Pole from challenge 19+","t":"new"},
-        {"k":"Reliquarian Ascendancy","neu":"New Scion Ascendancy (borrows powers of Unique items, changes per league)","t":"new"}
+        {
+          "k": "Varashta / The Astral Realm",
+          "neu": "Enter a Mirage (imperfect copy of the world); shatter the tether holding the Djinn",
+          "t": "new"
+        },
+        {
+          "k": "Wishes",
+          "neu": "Choose 1 of 3 Wishes before entering, modifying the Mirage (loot, currency, caches, coins)",
+          "t": "new"
+        },
+        {
+          "k": "League variants",
+          "neu": "Standard / Hardcore / SSF; HC parented to Standard",
+          "t": "new"
+        },
+        {
+          "k": "Challenges",
+          "neu": "40 new (+8 Ruthless); Totem Pole from challenge 19+",
+          "t": "new"
+        },
+        {
+          "k": "Reliquarian Ascendancy",
+          "neu": "New Scion Ascendancy (borrows powers of Unique items, changes per league)",
+          "t": "new"
+        }
       ]
     },
     {
@@ -28,32 +48,136 @@
       "title": "New Content and Features",
       "sub": "System-wide + new skills",
       "rows": [
-        {"k":"Exceptional Support Gems","neu":"New/improved Awakened Supports, phased out (40+ in Endgame)","t":"new"},
-        {"k":"Coin of Knowledge","neu":"Corrupts L20 gem → random valid INT Support","t":"new"},
-        {"k":"Coin of Power","neu":"Corrupts L20 gem → random valid STR Support","t":"new"},
-        {"k":"Coin of Skill","neu":"Corrupts L20 gem → random valid DEX Support","t":"new"},
-        {"k":"Divine Blast","neu":"New STR/INT gem: holy light beam → implosion → larger explosion","t":"new"},
-        {"k":"Holy Hammers","neu":"New STR/INT gem: slam, cascading Holy Hammers (Mace/Staff)","t":"new"},
-        {"k":"Holy Strike","neu":"New STR/INT gem: holy armaments (undamageable minions); Templar starter","t":"new"},
-        {"k":"Shield of Light","neu":"New STR/INT gem: retaliate on block with light cone","t":"new"},
-        {"k":"Shockwave Totem of Authority","neu":"New STR Transfigured","t":"new"},
-        {"k":"Static Strike of Gathering Lightning","neu":"New STR/INT Transfigured","t":"new"},
-        {"k":"Searing Bond of Detonation","neu":"New STR/INT Transfigured","t":"new"},
-        {"k":"Charged Dash of Projection","neu":"New DEX Transfigured","t":"new"},
-        {"k":"Flamethrower Trap of Stability","neu":"New DEX/INT Transfigured","t":"new"},
-        {"k":"Kinetic Fusillade of Detonation","neu":"New INT Transfigured","t":"new"},
-        {"k":"Orb of Storms of Squalls","neu":"New INT Transfigured","t":"new"},
-        {"k":"Shock Nova of Procession","neu":"New INT Transfigured","t":"new"},
-        {"k":"Storm Burst of Repulsion","neu":"New INT/STR Transfigured","t":"new"},
-        {"k":"Siphoning Trap of Pain","neu":"New INT/DEX Transfigured","t":"new"},
-        {"k":"Blessed Call Support","neu":"New STR/INT: Warcries create Consecrated Ground","t":"new"},
-        {"k":"Excommunicate Support","neu":"New STR/INT: melee gains phys as extra fire/lightning, excommunicate on hit","t":"new"},
-        {"k":"Exemplar Support","neu":"New INT: minions gain crit chance/multiplier per your recent crits","t":"new"},
-        {"k":"Hallow Support","neu":"New STR/INT: melee inflicts Hallowing Flame; Templar starter","t":"new"},
-        {"k":"Runegrafts","neu":"10 new (Kingsmarch shipping): Agile, Connection, Consecration, Fury, Imbued, Rallying, Resurgence, Rotblood, Spellbound, Suffering","t":"new"},
-        {"k":"New Uniques","neu":"13 new Unique Items","t":"new"},
-        {"k":"New Divination Cards","neu":"8 new Divination Cards","t":"new"},
-        {"k":"Currency Stash 'Exotic' sub-stash","neu":"Split into 'Atlas' and 'League' sub-stashes","t":"chg"}
+        {
+          "k": "Exceptional Support Gems",
+          "neu": "New/improved Awakened Supports, phased out (40+ in Endgame)",
+          "t": "new"
+        },
+        {
+          "k": "Coin of Knowledge",
+          "neu": "Corrupts L20 gem → random valid INT Support",
+          "t": "new"
+        },
+        {
+          "k": "Coin of Power",
+          "neu": "Corrupts L20 gem → random valid STR Support",
+          "t": "new"
+        },
+        {
+          "k": "Coin of Skill",
+          "neu": "Corrupts L20 gem → random valid DEX Support",
+          "t": "new"
+        },
+        {
+          "k": "Divine Blast",
+          "neu": "New STR/INT gem: holy light beam → implosion → larger explosion",
+          "t": "new"
+        },
+        {
+          "k": "Holy Hammers",
+          "neu": "New STR/INT gem: slam, cascading Holy Hammers (Mace/Staff)",
+          "t": "new"
+        },
+        {
+          "k": "Holy Strike",
+          "neu": "New STR/INT gem: holy armaments (undamageable minions); Templar starter",
+          "t": "new"
+        },
+        {
+          "k": "Shield of Light",
+          "neu": "New STR/INT gem: retaliate on block with light cone",
+          "t": "new"
+        },
+        {
+          "k": "Shockwave Totem of Authority",
+          "neu": "New STR Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Static Strike of Gathering Lightning",
+          "neu": "New STR/INT Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Searing Bond of Detonation",
+          "neu": "New STR/INT Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Charged Dash of Projection",
+          "neu": "New DEX Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Flamethrower Trap of Stability",
+          "neu": "New DEX/INT Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Kinetic Fusillade of Detonation",
+          "neu": "New INT Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Orb of Storms of Squalls",
+          "neu": "New INT Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Shock Nova of Procession",
+          "neu": "New INT Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Storm Burst of Repulsion",
+          "neu": "New INT/STR Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Siphoning Trap of Pain",
+          "neu": "New INT/DEX Transfigured",
+          "t": "new"
+        },
+        {
+          "k": "Blessed Call Support",
+          "neu": "New STR/INT: Warcries create Consecrated Ground",
+          "t": "new"
+        },
+        {
+          "k": "Excommunicate Support",
+          "neu": "New STR/INT: melee gains phys as extra fire/lightning, excommunicate on hit",
+          "t": "new"
+        },
+        {
+          "k": "Exemplar Support",
+          "neu": "New INT: minions gain crit chance/multiplier per your recent crits",
+          "t": "new"
+        },
+        {
+          "k": "Hallow Support",
+          "neu": "New STR/INT: melee inflicts Hallowing Flame; Templar starter",
+          "t": "new"
+        },
+        {
+          "k": "Runegrafts",
+          "neu": "10 new (Kingsmarch shipping): Agile, Connection, Consecration, Fury, Imbued, Rallying, Resurgence, Rotblood, Spellbound, Suffering",
+          "t": "new"
+        },
+        {
+          "k": "New Uniques",
+          "neu": "13 new Unique Items",
+          "t": "new"
+        },
+        {
+          "k": "New Divination Cards",
+          "neu": "8 new Divination Cards",
+          "t": "new"
+        },
+        {
+          "k": "Currency Stash 'Exotic' sub-stash",
+          "neu": "Split into 'Atlas' and 'League' sub-stashes",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -62,65 +186,327 @@
       "title": "Endgame Changes",
       "sub": "Atlas rework",
       "rows": [
-        {"k":"Map items","old":"Tied to specific Map Area (e.g. T10 Mesa Map)","neu":"Generic Tier, select area on Atlas + Map Device","t":"chg"},
-        {"k":"Atlas structure","neu":"Start at centre; 4 Voidstone slots at corners; all content on Atlas","t":"chg"},
-        {"k":"Unique Maps on Atlas","neu":"All present, including old favourites returning","t":"new"},
-        {"k":"Atlas Skill Points from Unique Maps","neu":"1 per Unique Map completed, up to 10 (max total raised)","t":"new"},
-        {"k":"Arcane Astrolabes","neu":"Eagon uses them → Shaped Regions + Memory Vaults (4 quadrants)","t":"new"},
-        {"k":"Favoured Map system","neu":"Removed","t":"nerf"},
-        {"k":"Memory Skills (Originator areas)","neu":"Removed; effects moved to Altar bonus modifiers","t":"nerf"},
-        {"k":"Decayed Voidstone","old":"From Uber Elder","neu":"From killing both Shaper and Elder (or Uber Elder)","t":"chg"},
-        {"k":"Voidstone from Searing Exarch/Eater","old":"One each","neu":"One combined (extra from Incarnation of Dread)","t":"chg"},
-        {"k":"Voidstones","neu":"Min Map Tier→16 in quadrant, drop +1 Tier, T15- convert to Gold, enable Nightmare Maps","t":"chg"},
-        {"k":"Standard Atlas catch-up","neu":"If account has Voidstones, completing a node completes all same-tier-and-lower","t":"new"},
-        {"k":"Memory of Loneliness/Trauma/Reverence","neu":"New Memory Threads → Incarnations of Neglect/Fear/Dread","t":"new"},
-        {"k":"Originator quest skill book","neu":"2 Atlas Passive + 2 Respec points per Incarnation boss","t":"new"},
-        {"k":"Tier 17 Maps","neu":"Now Nightmare Maps; 1 Atlas Skill Point each (5 total)","t":"chg"},
-        {"k":"Atlas Bonus Objectives","neu":"+1% Map Item Quantity per 4 Bonus Objectives","t":"new"},
-        {"k":"Uber Boss Fragments","old":"5","neu":"4","t":"buff"},
-        {"k":"Maven Invitations","old":"Some quest-item placed in Map Device","neu":"All via Kirac","t":"chg"},
-        {"k":"Sacrifice/Mortal Fragments","old":"Open random Vaal Side Area directly","neu":"Added alongside Maps (still apply Qty bonus)","t":"chg"},
-        {"k":"Kirac Atlas Missions","neu":"Removed; related Atlas Passives removed (Planar Tactician, etc.)","t":"nerf"},
-        {"k":"Scouting Reports","neu":"Removed","t":"nerf"},
-        {"k":"Cartographer's Chisels","neu":"No longer obtainable; Map Device crafting options removed","t":"nerf"},
-        {"k":"Cartographer's Chisel (Standard) Qty","old":"+20% Item Quantity at 20% Q","neu":"+10%","t":"nerf"},
-        {"k":"Maven's Chisel of Procurement","old":"+60% Item Rarity","neu":"+40%","t":"nerf"},
-        {"k":"Maven's Chisel of Proliferation","old":"+20% Pack Size","neu":"+10%","t":"nerf"},
-        {"k":"Maven's Chisel of Divination","old":"+100% Div Cards","neu":"+50%","t":"nerf"},
-        {"k":"Maven's Chisel of Scarabs","old":"+100% Scarabs","neu":"+50%","t":"nerf"},
-        {"k":"Maven's Chisel of Avarice","old":"+100% Currency","neu":"+50%","t":"nerf"},
-        {"k":"Chisels","old":"Variable quality","neu":"Always +20% Quality to Maps","t":"chg"},
-        {"k":"Resonating Shrine","old":"Bonus per charge","neu":"+1 max Power/Frenzy/Endurance charge","t":"chg"},
-        {"k":"Replenishing Shrine Buff","old":"Regen 10% Mana/s","neu":"200% increased Mana Regen Rate","t":"buff"},
-        {"k":"Lesser Replenishing Shrine Buff","old":"Regen 3.33% Mana/s","neu":"100% increased Mana Regen Rate","t":"buff"},
-        {"k":"Ambush Scarab of Discernment","neu":"Efficacy reduced","t":"nerf"},
-        {"k":"Blight Scarab of Invigoration","neu":"Bonus Reward lowered 20%","t":"nerf"},
-        {"k":"Blight Scarab of Blooming","neu":"No longer adds non-Boss waves","t":"nerf"},
-        {"k":"Blight Scarab of the Blightheart","old":"Doubles waves","neu":"Guarantees +2 waves (chance 3rd/4th)","t":"nerf"},
-        {"k":"Horned Scarab of Awakening","neu":"T16+ areas contain a random Maven Invitation boss","t":"new"},
-        {"k":"Abyss Scarab of Descending","neu":"Guarantees an Abyssal Depths","t":"new"},
-        {"k":"Anarchy Scarab of the Exceptional","neu":"+1 Exceptional Rogue Exile","t":"new"},
-        {"k":"Betrayal Scarab of Unbreaking","neu":"Chance Syndicate don't lose Ranks when Interrogated","t":"new"},
-        {"k":"Expedition Scarab of Infusion","neu":"Logbooks always 4 implicits; reward scales per Remnant","t":"new"},
-        {"k":"Kalguuran Scarab of Enriching","neu":"More Ore; reward scales per Ore Deposit","t":"new"},
-        {"k":"Ritual Scarab of Corpses","neu":"+1 Rare Itemised Corpse in Ritual","t":"new"},
-        {"k":"Beyond Scarab of Resurgence","old":"Enrages on Low Life","neu":"Summons other-faction Beyond Bosses","t":"chg"},
-        {"k":"Delirium Scarab of Neuroses","neu":"+1 Delirium Reward count on Unique Delirium Bosses","t":"new"},
-        {"k":"Domination Scarab of Apparitions","neu":"Also spawns Pantheon Shrines","t":"new"},
-        {"k":"Influencing Scarab of Conversion → Interference","old":"Chance maps drop as Guardian/Synth","neu":"Spawns a Guardian/Synthesis boss (guaranteed map drop)","t":"chg"},
-        {"k":"Legion Scarab of Command → Treasures","neu":"Chest rewards applied to broken-out monsters","t":"chg"},
-        {"k":"Ritual Scarab of Selectiveness","old":"1 extra reroll","neu":"2 extra rerolls","t":"buff"},
-        {"k":"Scarab of Bisection","neu":"Split into Sinistral (prefix) + Dextral (suffix)","t":"chg"},
-        {"k":"Kalguuran Scarab","old":"1 Ore Deposit","neu":"2 Ore Deposits","t":"buff"},
-        {"k":"Torment Scarab","old":"3 Tormented Spirits","neu":"4","t":"buff"},
-        {"k":"Essence Scarab","old":"2 Imprisoned","neu":"3","t":"buff"},
-        {"k":"Domination Scarab","old":"2 Shrines","neu":"3","t":"buff"},
-        {"k":"Anarchy Scarab","old":"4 Rogue Exiles","neu":"5","t":"buff"},
-        {"k":"Ambush Scarab","old":"3 Strongboxes","neu":"4","t":"buff"},
-        {"k":"Maps added back to Atlas","neu":"Shrine, Fungal Hollow, Pen, Carcass, Lair, Bog, Terrace, Siege, Dungeon, Relic Chambers, Cold River, Coral Ruins, Wharf, Fields, Plaza, Cage, Spider Lair, Courthouse, Graveyard, Gardens, Haunted Mansion, Reef, Dry Sea, Foundry, Dig","t":"new"},
-        {"k":"Maps removed from Atlas","neu":"Arachnid Nest, Colosseum, Waste Pool, Thicket, Academy, Infested Valley, Cells, Desert, Bone Crypt, Toxic Sewer, Precinct, Shore, Spider Forest, Estuary, Channel, Bazaar, Glacier, Villa, Ramparts, Museum, Desert Spring, Temple, Underground River, Plateau, Phantasmagoria","t":"nerf"},
-        {"k":"Drowning Orbs","neu":"No longer move to player if no other enemies in range","t":"chg"},
-        {"k":"Removed Map Modifiers","neu":"No-Damage 3/10s, Petrification Statues, Marked for Death, Impale reflect, Awakeners' Desolation, fewer Traps/Minion speed, Totem damage to Summoner","t":"nerf"}
+        {
+          "k": "Map items",
+          "old": "Tied to specific Map Area (e.g. T10 Mesa Map)",
+          "neu": "Generic Tier, select area on Atlas + Map Device",
+          "t": "chg"
+        },
+        {
+          "k": "Atlas structure",
+          "neu": "Start at centre; 4 Voidstone slots at corners; all content on Atlas",
+          "t": "chg"
+        },
+        {
+          "k": "Unique Maps on Atlas",
+          "neu": "All present, including old favourites returning",
+          "t": "new"
+        },
+        {
+          "k": "Atlas Skill Points from Unique Maps",
+          "neu": "1 per Unique Map completed, up to 10 (max total raised)",
+          "t": "new"
+        },
+        {
+          "k": "Arcane Astrolabes",
+          "neu": "Eagon uses them → Shaped Regions + Memory Vaults (4 quadrants)",
+          "t": "new"
+        },
+        {
+          "k": "Favoured Map system",
+          "neu": "Removed",
+          "t": "nerf"
+        },
+        {
+          "k": "Memory Skills (Originator areas)",
+          "neu": "Removed; effects moved to Altar bonus modifiers",
+          "t": "nerf"
+        },
+        {
+          "k": "Decayed Voidstone",
+          "old": "From Uber Elder",
+          "neu": "From killing both Shaper and Elder (or Uber Elder)",
+          "t": "chg"
+        },
+        {
+          "k": "Voidstone from Searing Exarch/Eater",
+          "old": "One each",
+          "neu": "One combined (extra from Incarnation of Dread)",
+          "t": "chg"
+        },
+        {
+          "k": "Voidstones",
+          "neu": "Min Map Tier→16 in quadrant, drop +1 Tier, T15- convert to Gold, enable Nightmare Maps",
+          "t": "chg"
+        },
+        {
+          "k": "Standard Atlas catch-up",
+          "neu": "If account has Voidstones, completing a node completes all same-tier-and-lower",
+          "t": "new"
+        },
+        {
+          "k": "Memory of Loneliness/Trauma/Reverence",
+          "neu": "New Memory Threads → Incarnations of Neglect/Fear/Dread",
+          "t": "new"
+        },
+        {
+          "k": "Originator quest skill book",
+          "neu": "2 Atlas Passive + 2 Respec points per Incarnation boss",
+          "t": "new"
+        },
+        {
+          "k": "Tier 17 Maps",
+          "neu": "Now Nightmare Maps; 1 Atlas Skill Point each (5 total)",
+          "t": "chg"
+        },
+        {
+          "k": "Atlas Bonus Objectives",
+          "neu": "+1% Map Item Quantity per 4 Bonus Objectives",
+          "t": "new"
+        },
+        {
+          "k": "Uber Boss Fragments",
+          "old": "5",
+          "neu": "4",
+          "t": "buff"
+        },
+        {
+          "k": "Maven Invitations",
+          "old": "Some quest-item placed in Map Device",
+          "neu": "All via Kirac",
+          "t": "chg"
+        },
+        {
+          "k": "Sacrifice/Mortal Fragments",
+          "old": "Open random Vaal Side Area directly",
+          "neu": "Added alongside Maps (still apply Qty bonus)",
+          "t": "chg"
+        },
+        {
+          "k": "Kirac Atlas Missions",
+          "neu": "Removed; related Atlas Passives removed (Planar Tactician, etc.)",
+          "t": "nerf"
+        },
+        {
+          "k": "Scouting Reports",
+          "neu": "Removed",
+          "t": "nerf"
+        },
+        {
+          "k": "Cartographer's Chisels",
+          "neu": "No longer obtainable; Map Device crafting options removed",
+          "t": "nerf"
+        },
+        {
+          "k": "Cartographer's Chisel (Standard) Qty",
+          "old": "+20% Item Quantity at 20% Q",
+          "neu": "+10%",
+          "t": "nerf"
+        },
+        {
+          "k": "Maven's Chisel of Procurement",
+          "old": "+60% Item Rarity",
+          "neu": "+40%",
+          "t": "nerf"
+        },
+        {
+          "k": "Maven's Chisel of Proliferation",
+          "old": "+20% Pack Size",
+          "neu": "+10%",
+          "t": "nerf"
+        },
+        {
+          "k": "Maven's Chisel of Divination",
+          "old": "+100% Div Cards",
+          "neu": "+50%",
+          "t": "nerf"
+        },
+        {
+          "k": "Maven's Chisel of Scarabs",
+          "old": "+100% Scarabs",
+          "neu": "+50%",
+          "t": "nerf"
+        },
+        {
+          "k": "Maven's Chisel of Avarice",
+          "old": "+100% Currency",
+          "neu": "+50%",
+          "t": "nerf"
+        },
+        {
+          "k": "Chisels",
+          "old": "Variable quality",
+          "neu": "Always +20% Quality to Maps",
+          "t": "chg"
+        },
+        {
+          "k": "Resonating Shrine",
+          "old": "Bonus per charge",
+          "neu": "+1 max Power/Frenzy/Endurance charge",
+          "t": "chg"
+        },
+        {
+          "k": "Replenishing Shrine Buff",
+          "old": "Regen 10% Mana/s",
+          "neu": "200% increased Mana Regen Rate",
+          "t": "buff"
+        },
+        {
+          "k": "Lesser Replenishing Shrine Buff",
+          "old": "Regen 3.33% Mana/s",
+          "neu": "100% increased Mana Regen Rate",
+          "t": "buff"
+        },
+        {
+          "k": "Ambush Scarab of Discernment",
+          "neu": "Efficacy reduced",
+          "t": "nerf"
+        },
+        {
+          "k": "Blight Scarab of Invigoration",
+          "neu": "Bonus Reward lowered 20%",
+          "t": "nerf"
+        },
+        {
+          "k": "Blight Scarab of Blooming",
+          "neu": "No longer adds non-Boss waves",
+          "t": "nerf"
+        },
+        {
+          "k": "Blight Scarab of the Blightheart",
+          "old": "Doubles waves",
+          "neu": "Guarantees +2 waves (chance 3rd/4th)",
+          "t": "nerf"
+        },
+        {
+          "k": "Horned Scarab of Awakening",
+          "neu": "T16+ areas contain a random Maven Invitation boss",
+          "t": "new"
+        },
+        {
+          "k": "Abyss Scarab of Descending",
+          "neu": "Guarantees an Abyssal Depths",
+          "t": "new"
+        },
+        {
+          "k": "Anarchy Scarab of the Exceptional",
+          "neu": "+1 Exceptional Rogue Exile",
+          "t": "new"
+        },
+        {
+          "k": "Betrayal Scarab of Unbreaking",
+          "neu": "Chance Syndicate don't lose Ranks when Interrogated",
+          "t": "new"
+        },
+        {
+          "k": "Expedition Scarab of Infusion",
+          "neu": "Logbooks always 4 implicits; reward scales per Remnant",
+          "t": "new"
+        },
+        {
+          "k": "Kalguuran Scarab of Enriching",
+          "neu": "More Ore; reward scales per Ore Deposit",
+          "t": "new"
+        },
+        {
+          "k": "Ritual Scarab of Corpses",
+          "neu": "+1 Rare Itemised Corpse in Ritual",
+          "t": "new"
+        },
+        {
+          "k": "Beyond Scarab of Resurgence",
+          "old": "Enrages on Low Life",
+          "neu": "Summons other-faction Beyond Bosses",
+          "t": "chg"
+        },
+        {
+          "k": "Delirium Scarab of Neuroses",
+          "neu": "+1 Delirium Reward count on Unique Delirium Bosses",
+          "t": "new"
+        },
+        {
+          "k": "Domination Scarab of Apparitions",
+          "neu": "Also spawns Pantheon Shrines",
+          "t": "new"
+        },
+        {
+          "k": "Influencing Scarab of Conversion → Interference",
+          "old": "Chance maps drop as Guardian/Synth",
+          "neu": "Spawns a Guardian/Synthesis boss (guaranteed map drop)",
+          "t": "chg"
+        },
+        {
+          "k": "Legion Scarab of Command → Treasures",
+          "neu": "Chest rewards applied to broken-out monsters",
+          "t": "chg"
+        },
+        {
+          "k": "Ritual Scarab of Selectiveness",
+          "old": "1 extra reroll",
+          "neu": "2 extra rerolls",
+          "t": "buff"
+        },
+        {
+          "k": "Scarab of Bisection",
+          "neu": "Split into Sinistral (prefix) + Dextral (suffix)",
+          "t": "chg"
+        },
+        {
+          "k": "Kalguuran Scarab",
+          "old": "1 Ore Deposit",
+          "neu": "2 Ore Deposits",
+          "t": "buff"
+        },
+        {
+          "k": "Torment Scarab",
+          "old": "3 Tormented Spirits",
+          "neu": "4",
+          "t": "buff"
+        },
+        {
+          "k": "Essence Scarab",
+          "old": "2 Imprisoned",
+          "neu": "3",
+          "t": "buff"
+        },
+        {
+          "k": "Domination Scarab",
+          "old": "2 Shrines",
+          "neu": "3",
+          "t": "buff"
+        },
+        {
+          "k": "Anarchy Scarab",
+          "old": "4 Rogue Exiles",
+          "neu": "5",
+          "t": "buff"
+        },
+        {
+          "k": "Ambush Scarab",
+          "old": "3 Strongboxes",
+          "neu": "4",
+          "t": "buff"
+        },
+        {
+          "k": "Maps added back to Atlas",
+          "neu": "Shrine, Fungal Hollow, Pen, Carcass, Lair, Bog, Terrace, Siege, Dungeon, Relic Chambers, Cold River, Coral Ruins, Wharf, Fields, Plaza, Cage, Spider Lair, Courthouse, Graveyard, Gardens, Haunted Mansion, Reef, Dry Sea, Foundry, Dig",
+          "t": "new"
+        },
+        {
+          "k": "Maps removed from Atlas",
+          "neu": "Arachnid Nest, Colosseum, Waste Pool, Thicket, Academy, Infested Valley, Cells, Desert, Bone Crypt, Toxic Sewer, Precinct, Shore, Spider Forest, Estuary, Channel, Bazaar, Glacier, Villa, Ramparts, Museum, Desert Spring, Temple, Underground River, Plateau, Phantasmagoria",
+          "t": "nerf"
+        },
+        {
+          "k": "Drowning Orbs",
+          "neu": "No longer move to player if no other enemies in range",
+          "t": "chg"
+        },
+        {
+          "k": "Removed Map Modifiers",
+          "neu": "No-Damage 3/10s, Petrification Statues, Marked for Death, Impale reflect, Awakeners' Desolation, fewer Traps/Minion speed, Totem damage to Summoner",
+          "t": "nerf"
+        }
       ]
     },
     {
@@ -128,31 +514,147 @@
       "n": "04",
       "title": "Atlas Passive Tree Changes",
       "rows": [
-        {"k":"Shadow Shaping / Bold Undertakings / Singular Focus","neu":"Removed","t":"nerf"},
-        {"k":"The Paths Not Taken (new Keystone)","neu":"Divination Cards from 2 random other Maps","t":"new"},
-        {"k":"Synthesised Stability (new Keystone)","neu":"Completing objective in Shaped Region collapses a different Map","t":"new"},
-        {"k":"Overloaded Circuits","old":"?","neu":"Maps open with 5 random unallocated Notable Passives","t":"chg"},
-        {"k":"Refiner's Bargain","old":"Lifeforce 150% as Crop, Sulphite 15% as Ore","neu":"250% Crop, 10% Ore","t":"chg"},
-        {"k":"Ancient Conflict","old":"3% Abyss Scarab from Troves/Spires","neu":"10%","t":"buff"},
-        {"k":"Ancient Decay","neu":"1 less small node to notable; small nodes 25% slower detonation (was 5%)","t":"nerf"},
-        {"k":"Chiselled Perfection → Multiplying Modifiers","neu":"3% inc effect of Explicit Mods per Fragment used","t":"chg"},
-        {"k":"Deadly Prey","neu":"Beasts have Bestial Rage; kill grants Hunter's Cunning stack","t":"chg"},
-        {"k":"For Love of the Queen","old":"20% Alluring, +4% Vaal Side Area","neu":"25%, +6%","t":"buff"},
-        {"k":"Immune Response","old":"100% faster Blight spawn + 50% more non-Unique","neu":"150% faster, no extra non-Unique","t":"chg"},
-        {"k":"Pillage and Plunder","old":"25% inc Rarity from Syndicate","neu":"5% chance Fractured Veiled Modifier","t":"chg"},
-        {"k":"Sulphite Infusion","old":"200/350/500 Sulphite (W/Y/R)","neu":"400/700/1000","t":"buff"},
-        {"k":"Sulphite gain small nodes","old":"3%","neu":"6%","t":"buff"},
-        {"k":"Secret Stash","old":"+12% Smuggler's Cache","neu":"+30%","t":"buff"},
-        {"k":"Shaping the Mountains","old":"10% chance free Map craft","neu":"+10% Rare Monsters","t":"chg"},
-        {"k":"Shaping the Skies","old":"3% chance free special craft","neu":"+10% Magic Monsters","t":"chg"},
-        {"k":"Straight and Narrow","neu":"Reinstated (Standard)","t":"new"},
-        {"k":"Trial of Glory","old":"20% Improved Offering, +4% Trial","neu":"25%, +6%","t":"buff"},
-        {"k":"Two-Hearted Hunt","old":"50% not consumed at Blood Altar (up to 40%)","neu":"100% (up to 20%)","t":"chg"},
-        {"k":"Unimaginable Horrors","old":"20% Vaal Vessel rewards duplicated","neu":"25%","t":"buff"},
-        {"k":"Friends in High Places small nodes","neu":"Now grant Heist contract-type biases","t":"chg"},
-        {"k":"No Honour Among Thieves","old":"10%/5% extra Smuggler's Caches","neu":"20%/15%","t":"buff"},
-        {"k":"Backup Cache small nodes","neu":"+30% Artisan's Strongbox chance","t":"new"},
-        {"k":"Maps-found small nodes","old":"2% chance connected Map drop","neu":"2% increased Maps found","t":"chg"}
+        {
+          "k": "Shadow Shaping / Bold Undertakings / Singular Focus",
+          "neu": "Removed",
+          "t": "nerf"
+        },
+        {
+          "k": "The Paths Not Taken (new Keystone)",
+          "neu": "Divination Cards from 2 random other Maps",
+          "t": "new"
+        },
+        {
+          "k": "Synthesised Stability (new Keystone)",
+          "neu": "Completing objective in Shaped Region collapses a different Map",
+          "t": "new"
+        },
+        {
+          "k": "Overloaded Circuits",
+          "old": "?",
+          "neu": "Maps open with 5 random unallocated Notable Passives",
+          "t": "chg"
+        },
+        {
+          "k": "Refiner's Bargain",
+          "old": "Lifeforce 150% as Crop, Sulphite 15% as Ore",
+          "neu": "250% Crop, 10% Ore",
+          "t": "chg"
+        },
+        {
+          "k": "Ancient Conflict",
+          "old": "3% Abyss Scarab from Troves/Spires",
+          "neu": "10%",
+          "t": "buff"
+        },
+        {
+          "k": "Ancient Decay",
+          "neu": "1 less small node to notable; small nodes 25% slower detonation (was 5%)",
+          "t": "nerf"
+        },
+        {
+          "k": "Chiselled Perfection → Multiplying Modifiers",
+          "neu": "3% inc effect of Explicit Mods per Fragment used",
+          "t": "chg"
+        },
+        {
+          "k": "Deadly Prey",
+          "neu": "Beasts have Bestial Rage; kill grants Hunter's Cunning stack",
+          "t": "chg"
+        },
+        {
+          "k": "For Love of the Queen",
+          "old": "20% Alluring, +4% Vaal Side Area",
+          "neu": "25%, +6%",
+          "t": "buff"
+        },
+        {
+          "k": "Immune Response",
+          "old": "100% faster Blight spawn + 50% more non-Unique",
+          "neu": "150% faster, no extra non-Unique",
+          "t": "chg"
+        },
+        {
+          "k": "Pillage and Plunder",
+          "old": "25% inc Rarity from Syndicate",
+          "neu": "5% chance Fractured Veiled Modifier",
+          "t": "chg"
+        },
+        {
+          "k": "Sulphite Infusion",
+          "old": "200/350/500 Sulphite (W/Y/R)",
+          "neu": "400/700/1000",
+          "t": "buff"
+        },
+        {
+          "k": "Sulphite gain small nodes",
+          "old": "3%",
+          "neu": "6%",
+          "t": "buff"
+        },
+        {
+          "k": "Secret Stash",
+          "old": "+12% Smuggler's Cache",
+          "neu": "+30%",
+          "t": "buff"
+        },
+        {
+          "k": "Shaping the Mountains",
+          "old": "10% chance free Map craft",
+          "neu": "+10% Rare Monsters",
+          "t": "chg"
+        },
+        {
+          "k": "Shaping the Skies",
+          "old": "3% chance free special craft",
+          "neu": "+10% Magic Monsters",
+          "t": "chg"
+        },
+        {
+          "k": "Straight and Narrow",
+          "neu": "Reinstated (Standard)",
+          "t": "new"
+        },
+        {
+          "k": "Trial of Glory",
+          "old": "20% Improved Offering, +4% Trial",
+          "neu": "25%, +6%",
+          "t": "buff"
+        },
+        {
+          "k": "Two-Hearted Hunt",
+          "old": "50% not consumed at Blood Altar (up to 40%)",
+          "neu": "100% (up to 20%)",
+          "t": "chg"
+        },
+        {
+          "k": "Unimaginable Horrors",
+          "old": "20% Vaal Vessel rewards duplicated",
+          "neu": "25%",
+          "t": "buff"
+        },
+        {
+          "k": "Friends in High Places small nodes",
+          "neu": "Now grant Heist contract-type biases",
+          "t": "chg"
+        },
+        {
+          "k": "No Honour Among Thieves",
+          "old": "10%/5% extra Smuggler's Caches",
+          "neu": "20%/15%",
+          "t": "buff"
+        },
+        {
+          "k": "Backup Cache small nodes",
+          "neu": "+30% Artisan's Strongbox chance",
+          "t": "new"
+        },
+        {
+          "k": "Maps-found small nodes",
+          "old": "2% chance connected Map drop",
+          "neu": "2% increased Maps found",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -161,43 +663,202 @@
       "title": "Keepers of the Flame as a Core League",
       "sub": "Breach reworked into core",
       "rows": [
-        {"k":"Ailith encounter","neu":"Act 6 Mud Flats; Breach Hives + Unstable Breaches from Act 6 on","t":"new"},
-        {"k":"Breach Hives radius","neu":"~30% less","t":"nerf"},
-        {"k":"Breach Hive walls","neu":"Instantly destroyed by damage when encounter not in progress","t":"chg"},
-        {"k":"Breach Rooms (Incursion/Delve)","neu":"Re-enabled, contain Unstable Breaches","t":"new"},
-        {"k":"Flesh of Xesht","neu":"New currency: transforms Breach Unique to alt version","t":"new"},
-        {"k":"Breachstones","neu":"Non-functional; vendor for Hivebrain Gland","t":"nerf"},
-        {"k":"Removed Graft items","neu":"Fleshgraft, Wombgifts, Implants, *grafts (deleted on login)","t":"nerf"},
-        {"k":"Hivebrain Glands","old":"With Map to add Hive Colony","neu":"Directly open Hive Colony portals","t":"buff"},
-        {"k":"Genesis Tree","neu":"Fully grown by default; Grafts no longer growable","t":"chg"},
-        {"k":"Graftblood → Hiveblood","neu":"Renamed; max 100,000; shared across league","t":"chg"},
-        {"k":"Genesis Tree points","neu":"Generally reduced per subtree","t":"nerf"},
-        {"k":"Equipment Womb IL variance","neu":"More endgame variance; removed most guaranteed +IL","t":"chg"},
-        {"k":"Breachlord Achievement","neu":"Kill It That Was Tul + It That Was Esh","t":"chg"},
-        {"k":"Breach Atlas clusters","neu":"Added; Keystones Dimensional Foothold (always Hives) + Enemy at the Gates (always Unstable)","t":"new"},
-        {"k":"Valdo 'the Hidden'","neu":"→ 'the Remembered'","t":"chg"},
-        {"k":"Valdo Breachlord maps","neu":"→ additional Unstable Breaches","t":"chg"},
-        {"k":"Breach Scarab → of the Hive","neu":"Area contains a Breach Hive","t":"chg"},
-        {"k":"Breach Scarab of Snares → of Instability","neu":"+2 Unstable Breaches (limit 2)","t":"chg"},
-        {"k":"Breach Scarab of Lordship → of the Marshal","neu":"Unstable have Boss; Hives → Hive Fortress","t":"chg"},
-        {"k":"Breach Scarab of Splintering → of the Incensed Swarm","neu":"Ailith's skills enrage the Hive","t":"chg"},
-        {"k":"Breach Scarab of Resonant Cascade","neu":"Unstable 10% faster per already-opened","t":"chg"},
-        {"k":"Breach sub-stash","neu":"Remove-Only","t":"chg"},
-        {"k":"Disabled Divination Cards","neu":"The Bargain, The Obscured, The Puzzle","t":"nerf"},
-        {"k":"Eye of Terror","neu":"Now rewards Foulborn Mageblood","t":"chg"},
-        {"k":"Home / Gemcutter's Mercy","neu":"State Empower/Enhance/Enlighten (not Exceptional Gem)","t":"chg"},
-        {"k":"Foulborn Berek's Respite","neu":"No longer rolls Ignited Enemies Explode","t":"nerf"},
-        {"k":"Foulborn The Embalmer","neu":"No longer rolls Poison-on-kill aura","t":"nerf"},
-        {"k":"Foulborn Reverberation Rod","old":"L1 Awakened Spell Cascade","neu":"L1 Greater Spell Cascade","t":"chg"},
-        {"k":"Foulborn Tulborn","old":"+2-4 Cold Spell gem levels","neu":"+2-3","t":"nerf"},
-        {"k":"Foulborn The Red Dream","old":"75% Life from Fire/El res","neu":"50%","t":"nerf"},
-        {"k":"Foulborn The Green Dream","old":"100% Mana from Cold/El res","neu":"75%","t":"nerf"},
-        {"k":"Foulborn The Blue Dream","old":"100% ES from Light/El res","neu":"75%","t":"nerf"},
-        {"k":"Foulborn Hand of Thought and Motion","old":"5% Acc per Int","neu":"3% per 25 Int","t":"nerf"},
-        {"k":"Foulborn Choir of the Storm","old":"1% Mana per 2% Overcap Light res","neu":"1% per 4%","t":"nerf"},
-        {"k":"Foulborn Deidbell","old":"25-50% Warcry Buff","neu":"20-35%","t":"nerf"},
-        {"k":"Foulborn Ghostwrithe","old":"ES = 50% Life","neu":"40% Life","t":"nerf"},
-        {"k":"Foulborn Doon Cuebiyari","old":"1% ES per 16 Str (off), 1% Mana per 12 Str (main)","neu":"1% ES per 25 Str, 1% Mana per 18 Str","t":"nerf"}
+        {
+          "k": "Ailith encounter",
+          "neu": "Act 6 Mud Flats; Breach Hives + Unstable Breaches from Act 6 on",
+          "t": "new"
+        },
+        {
+          "k": "Breach Hives radius",
+          "neu": "~30% less",
+          "t": "nerf"
+        },
+        {
+          "k": "Breach Hive walls",
+          "neu": "Instantly destroyed by damage when encounter not in progress",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Rooms (Incursion/Delve)",
+          "neu": "Re-enabled, contain Unstable Breaches",
+          "t": "new"
+        },
+        {
+          "k": "Flesh of Xesht",
+          "neu": "New currency: transforms Breach Unique to alt version",
+          "t": "new"
+        },
+        {
+          "k": "Breachstones",
+          "neu": "Non-functional; vendor for Hivebrain Gland",
+          "t": "nerf"
+        },
+        {
+          "k": "Removed Graft items",
+          "neu": "Fleshgraft, Wombgifts, Implants, *grafts (deleted on login)",
+          "t": "nerf"
+        },
+        {
+          "k": "Hivebrain Glands",
+          "old": "With Map to add Hive Colony",
+          "neu": "Directly open Hive Colony portals",
+          "t": "buff"
+        },
+        {
+          "k": "Genesis Tree",
+          "neu": "Fully grown by default; Grafts no longer growable",
+          "t": "chg"
+        },
+        {
+          "k": "Graftblood → Hiveblood",
+          "neu": "Renamed; max 100,000; shared across league",
+          "t": "chg"
+        },
+        {
+          "k": "Genesis Tree points",
+          "neu": "Generally reduced per subtree",
+          "t": "nerf"
+        },
+        {
+          "k": "Equipment Womb IL variance",
+          "neu": "More endgame variance; removed most guaranteed +IL",
+          "t": "chg"
+        },
+        {
+          "k": "Breachlord Achievement",
+          "neu": "Kill It That Was Tul + It That Was Esh",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Atlas clusters",
+          "neu": "Added; Keystones Dimensional Foothold (always Hives) + Enemy at the Gates (always Unstable)",
+          "t": "new"
+        },
+        {
+          "k": "Valdo 'the Hidden'",
+          "neu": "→ 'the Remembered'",
+          "t": "chg"
+        },
+        {
+          "k": "Valdo Breachlord maps",
+          "neu": "→ additional Unstable Breaches",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Scarab → of the Hive",
+          "neu": "Area contains a Breach Hive",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Scarab of Snares → of Instability",
+          "neu": "+2 Unstable Breaches (limit 2)",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Scarab of Lordship → of the Marshal",
+          "neu": "Unstable have Boss; Hives → Hive Fortress",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Scarab of Splintering → of the Incensed Swarm",
+          "neu": "Ailith's skills enrage the Hive",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Scarab of Resonant Cascade",
+          "neu": "Unstable 10% faster per already-opened",
+          "t": "chg"
+        },
+        {
+          "k": "Breach sub-stash",
+          "neu": "Remove-Only",
+          "t": "chg"
+        },
+        {
+          "k": "Disabled Divination Cards",
+          "neu": "The Bargain, The Obscured, The Puzzle",
+          "t": "nerf"
+        },
+        {
+          "k": "Eye of Terror",
+          "neu": "Now rewards Foulborn Mageblood",
+          "t": "chg"
+        },
+        {
+          "k": "Home / Gemcutter's Mercy",
+          "neu": "State Empower/Enhance/Enlighten (not Exceptional Gem)",
+          "t": "chg"
+        },
+        {
+          "k": "Foulborn Berek's Respite",
+          "neu": "No longer rolls Ignited Enemies Explode",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn The Embalmer",
+          "neu": "No longer rolls Poison-on-kill aura",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn Reverberation Rod",
+          "old": "L1 Awakened Spell Cascade",
+          "neu": "L1 Greater Spell Cascade",
+          "t": "chg"
+        },
+        {
+          "k": "Foulborn Tulborn",
+          "old": "+2-4 Cold Spell gem levels",
+          "neu": "+2-3",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn The Red Dream",
+          "old": "75% Life from Fire/El res",
+          "neu": "50%",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn The Green Dream",
+          "old": "100% Mana from Cold/El res",
+          "neu": "75%",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn The Blue Dream",
+          "old": "100% ES from Light/El res",
+          "neu": "75%",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn Hand of Thought and Motion",
+          "old": "5% Acc per Int",
+          "neu": "3% per 25 Int",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn Choir of the Storm",
+          "old": "1% Mana per 2% Overcap Light res",
+          "neu": "1% per 4%",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn Deidbell",
+          "old": "25-50% Warcry Buff",
+          "neu": "20-35%",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn Ghostwrithe",
+          "old": "ES = 50% Life",
+          "neu": "40% Life",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn Doon Cuebiyari",
+          "old": "1% ES per 16 Str (off), 1% Mana per 12 Str (main)",
+          "neu": "1% ES per 25 Str, 1% Mana per 18 Str",
+          "t": "nerf"
+        }
       ]
     },
     {
@@ -205,30 +866,127 @@
       "n": "06",
       "title": "Harbinger Removed as a Core League",
       "rows": [
-        {"k":"Harbingers","neu":"Departed; Beachhead quiet","t":"nerf"},
-        {"k":"Fracturing Orbs / Ancient Orbs","neu":"Now drop in core pool","t":"new"},
-        {"k":"Engineer's / Harbinger's / Horizon Orbs","neu":"No longer obtainable; existing non-functional","t":"nerf"},
-        {"k":"Shards (Ancient/Binding/Engineer/Harbinger/Horizon)","neu":"No longer obtainable; deleted on login","t":"nerf"},
-        {"k":"Removed Currency","neu":"Deregulation, Electroshock, Fragmentation, Haemocombustion, Specularity, Time-light Scrolls","t":"nerf"},
-        {"k":"The Landing","neu":"Temporarily disabled","t":"nerf"},
-        {"k":"The Journey","neu":"Now rewards a Journey Tattoo","t":"chg"},
-        {"k":"The Messenger","neu":"Now rewards a Harbinger Unique","t":"chg"},
-        {"k":"Removed Unique Fragments","neu":"All Arcane/Brutality/Directions/Focus/Storms/Time pieces","t":"nerf"},
-        {"k":"Removed Uniques","neu":"The Beachhead, Infused Beachhead, Enmity Divine, Flow Untethered, Fracturing Spinner, Rippling Thoughts, Tempest's Binding, Unshattered Will","t":"nerf"},
-        {"k":"Uniques added to core pool","neu":"The Immortal Will, Shattered Divinity, Surging Thoughts, Tempest's Liberation, Torrent's Reclamation, Yielding Mortality","t":"new"},
-        {"k":"Harbinger Atlas Passives","neu":"All removed","t":"nerf"},
-        {"k":"Harbinger Scarabs","neu":"No longer drop; converted to Veiled on login","t":"nerf"},
-        {"k":"Harrowing Carapaces","old":"Harbinger Scarab chance","neu":"100% Divination Scarab chance","t":"chg"},
-        {"k":"Unexpected Stranger (new cluster)","neu":"Maps inhabited by +1 Rogue Exile","t":"new"},
-        {"k":"Harbinger implicit maps","neu":"→ additional Tormented Spirits","t":"chg"},
-        {"k":"Valdo Regal Harbinger","neu":"→ Bismuth Ore Deposit","t":"chg"},
-        {"k":"Obscured Delirium Orbs","neu":"No longer obtainable; drop Breach Rings","t":"nerf"},
-        {"k":"Foreboding Delirium Orbs","neu":"→ Fine Delirium Orbs","t":"chg"},
-        {"k":"Foreboding Incubators","neu":"No longer drop; grant Currency","t":"nerf"},
-        {"k":"Harbinger Blueprints","neu":"→ Gold Rewards","t":"chg"},
-        {"k":"Harbinger Heist Trinkets","neu":"→ Gold chance","t":"chg"},
-        {"k":"Runed Cavern Delve nodes","neu":"→ Underground Stashes","t":"chg"},
-        {"k":"Currency Shards drops","neu":"Most cases removed (vendor recipes unchanged)","t":"nerf"}
+        {
+          "k": "Harbingers",
+          "neu": "Departed; Beachhead quiet",
+          "t": "nerf"
+        },
+        {
+          "k": "Fracturing Orbs / Ancient Orbs",
+          "neu": "Now drop in core pool",
+          "t": "new"
+        },
+        {
+          "k": "Engineer's / Harbinger's / Horizon Orbs",
+          "neu": "No longer obtainable; existing non-functional",
+          "t": "nerf"
+        },
+        {
+          "k": "Shards (Ancient/Binding/Engineer/Harbinger/Horizon)",
+          "neu": "No longer obtainable; deleted on login",
+          "t": "nerf"
+        },
+        {
+          "k": "Removed Currency",
+          "neu": "Deregulation, Electroshock, Fragmentation, Haemocombustion, Specularity, Time-light Scrolls",
+          "t": "nerf"
+        },
+        {
+          "k": "The Landing",
+          "neu": "Temporarily disabled",
+          "t": "nerf"
+        },
+        {
+          "k": "The Journey",
+          "neu": "Now rewards a Journey Tattoo",
+          "t": "chg"
+        },
+        {
+          "k": "The Messenger",
+          "neu": "Now rewards a Harbinger Unique",
+          "t": "chg"
+        },
+        {
+          "k": "Removed Unique Fragments",
+          "neu": "All Arcane/Brutality/Directions/Focus/Storms/Time pieces",
+          "t": "nerf"
+        },
+        {
+          "k": "Removed Uniques",
+          "neu": "The Beachhead, Infused Beachhead, Enmity Divine, Flow Untethered, Fracturing Spinner, Rippling Thoughts, Tempest's Binding, Unshattered Will",
+          "t": "nerf"
+        },
+        {
+          "k": "Uniques added to core pool",
+          "neu": "The Immortal Will, Shattered Divinity, Surging Thoughts, Tempest's Liberation, Torrent's Reclamation, Yielding Mortality",
+          "t": "new"
+        },
+        {
+          "k": "Harbinger Atlas Passives",
+          "neu": "All removed",
+          "t": "nerf"
+        },
+        {
+          "k": "Harbinger Scarabs",
+          "neu": "No longer drop; converted to Veiled on login",
+          "t": "nerf"
+        },
+        {
+          "k": "Harrowing Carapaces",
+          "old": "Harbinger Scarab chance",
+          "neu": "100% Divination Scarab chance",
+          "t": "chg"
+        },
+        {
+          "k": "Unexpected Stranger (new cluster)",
+          "neu": "Maps inhabited by +1 Rogue Exile",
+          "t": "new"
+        },
+        {
+          "k": "Harbinger implicit maps",
+          "neu": "→ additional Tormented Spirits",
+          "t": "chg"
+        },
+        {
+          "k": "Valdo Regal Harbinger",
+          "neu": "→ Bismuth Ore Deposit",
+          "t": "chg"
+        },
+        {
+          "k": "Obscured Delirium Orbs",
+          "neu": "No longer obtainable; drop Breach Rings",
+          "t": "nerf"
+        },
+        {
+          "k": "Foreboding Delirium Orbs",
+          "neu": "→ Fine Delirium Orbs",
+          "t": "chg"
+        },
+        {
+          "k": "Foreboding Incubators",
+          "neu": "No longer drop; grant Currency",
+          "t": "nerf"
+        },
+        {
+          "k": "Harbinger Blueprints",
+          "neu": "→ Gold Rewards",
+          "t": "chg"
+        },
+        {
+          "k": "Harbinger Heist Trinkets",
+          "neu": "→ Gold chance",
+          "t": "chg"
+        },
+        {
+          "k": "Runed Cavern Delve nodes",
+          "neu": "→ Underground Stashes",
+          "t": "chg"
+        },
+        {
+          "k": "Currency Shards drops",
+          "neu": "Most cases removed (vendor recipes unchanged)",
+          "t": "nerf"
+        }
       ]
     },
     {
@@ -237,32 +995,144 @@
       "title": "League Changes",
       "sub": "Settlers / Bestiary / Betrayal / Delve / etc.",
       "rows": [
-        {"k":"Settlers: Mota Aro port","neu":"New Karui port; ores→Currency, crops→Equipment","t":"new"},
-        {"k":"Favoured Resources","neu":"Reroll at Ports for 15,000 Gold","t":"new"},
-        {"k":"Shipping rewards","neu":"Karui/Kalguuran ports grant specific Tattoos/Runegrafts","t":"chg"},
-        {"k":"Smelters","neu":"2x faster smelting, more Gold cost","t":"chg"},
-        {"k":"Farmer wage","old":"-","neu":"-50% Gold","t":"buff"},
-        {"k":"Mapper wage","neu":"+25% Gold","t":"nerf"},
-        {"k":"Mappers Cluster Jewels","old":"Up to IL83","neu":"No IL83+","t":"nerf"},
-        {"k":"Beastcrafting: 3 Orbs of Horizons","old":"Stack of 3 Horizons","neu":"Stack of 3 Unmaking","t":"chg"},
-        {"k":"Beastcrafting: 5 Kirac Missions","neu":"→ Nightmare Map","t":"chg"},
-        {"k":"Beastcrafting: free Map craft","neu":"→ valuable Scarab","t":"chg"},
-        {"k":"Beastcrafting: Awakened Gem +1","neu":"→ 500m XP to Exceptional Support","t":"chg"},
-        {"k":"Beastcrafting: Reroll Awakened","neu":"→ sacrifice Exceptional for 3 high-level Supports","t":"chg"},
-        {"k":"Beastcrafting: Corrupt Map 30% Q","neu":"→ Corrupt Map to have Implicit Modifier","t":"chg"},
-        {"k":"Harvest Beasts","neu":"Majority much more common","t":"buff"},
-        {"k":"Betrayal: It That Fled (Transport)","old":"Corrupted Maps + Breaches","neu":"Trapped stash with Foulborn Uniques","t":"chg"},
-        {"k":"Betrayal: It That Fled (Fort)","old":"Breachstone crafts","neu":"Crafting spree w/ Breach Ring","t":"chg"},
-        {"k":"Betrayal: Rin (Transport)","old":"Scouting Reports/Map Currency","neu":"Originator-influenced Maps","t":"chg"},
-        {"k":"Betrayal: Rin (Research)","old":"Map craft bench","neu":"Trapped stash with Scarabs","t":"chg"},
-        {"k":"Betrayal: Vagan (Transport)","old":"Harbinger Scarabs","neu":"Incubators","t":"chg"},
-        {"k":"Delve: Sulphite Scarab","neu":"No longer +150% Sulphite; veins/chests ~doubled at high level","t":"chg"},
-        {"k":"Delve Fossils","neu":"Removed outside Delve; more behind fractured walls","t":"chg"},
-        {"k":"Delirium: Fossilised Orbs/Incubators","neu":"No longer obtainable","t":"nerf"},
-        {"k":"Expedition: Tujen","neu":"No longer sells Cluster/Abyss Jewels","t":"nerf"},
-        {"k":"Heist: Brute Force Contracts","neu":"Can grant Fragment Rewards","t":"new"},
-        {"k":"Legion: Possessed Monsters","neu":"No longer release Spirits when broken out (only after)","t":"chg"},
-        {"k":"Ultimatum","neu":"Modifier preventing Block added","t":"new"}
+        {
+          "k": "Settlers: Mota Aro port",
+          "neu": "New Karui port; ores→Currency, crops→Equipment",
+          "t": "new"
+        },
+        {
+          "k": "Favoured Resources",
+          "neu": "Reroll at Ports for 15,000 Gold",
+          "t": "new"
+        },
+        {
+          "k": "Shipping rewards",
+          "neu": "Karui/Kalguuran ports grant specific Tattoos/Runegrafts",
+          "t": "chg"
+        },
+        {
+          "k": "Smelters",
+          "neu": "2x faster smelting, more Gold cost",
+          "t": "chg"
+        },
+        {
+          "k": "Farmer wage",
+          "old": "-",
+          "neu": "-50% Gold",
+          "t": "buff"
+        },
+        {
+          "k": "Mapper wage",
+          "neu": "+25% Gold",
+          "t": "nerf"
+        },
+        {
+          "k": "Mappers Cluster Jewels",
+          "old": "Up to IL83",
+          "neu": "No IL83+",
+          "t": "nerf"
+        },
+        {
+          "k": "Beastcrafting: 3 Orbs of Horizons",
+          "old": "Stack of 3 Horizons",
+          "neu": "Stack of 3 Unmaking",
+          "t": "chg"
+        },
+        {
+          "k": "Beastcrafting: 5 Kirac Missions",
+          "neu": "→ Nightmare Map",
+          "t": "chg"
+        },
+        {
+          "k": "Beastcrafting: free Map craft",
+          "neu": "→ valuable Scarab",
+          "t": "chg"
+        },
+        {
+          "k": "Beastcrafting: Awakened Gem +1",
+          "neu": "→ 500m XP to Exceptional Support",
+          "t": "chg"
+        },
+        {
+          "k": "Beastcrafting: Reroll Awakened",
+          "neu": "→ sacrifice Exceptional for 3 high-level Supports",
+          "t": "chg"
+        },
+        {
+          "k": "Beastcrafting: Corrupt Map 30% Q",
+          "neu": "→ Corrupt Map to have Implicit Modifier",
+          "t": "chg"
+        },
+        {
+          "k": "Harvest Beasts",
+          "neu": "Majority much more common",
+          "t": "buff"
+        },
+        {
+          "k": "Betrayal: It That Fled (Transport)",
+          "old": "Corrupted Maps + Breaches",
+          "neu": "Trapped stash with Foulborn Uniques",
+          "t": "chg"
+        },
+        {
+          "k": "Betrayal: It That Fled (Fort)",
+          "old": "Breachstone crafts",
+          "neu": "Crafting spree w/ Breach Ring",
+          "t": "chg"
+        },
+        {
+          "k": "Betrayal: Rin (Transport)",
+          "old": "Scouting Reports/Map Currency",
+          "neu": "Originator-influenced Maps",
+          "t": "chg"
+        },
+        {
+          "k": "Betrayal: Rin (Research)",
+          "old": "Map craft bench",
+          "neu": "Trapped stash with Scarabs",
+          "t": "chg"
+        },
+        {
+          "k": "Betrayal: Vagan (Transport)",
+          "old": "Harbinger Scarabs",
+          "neu": "Incubators",
+          "t": "chg"
+        },
+        {
+          "k": "Delve: Sulphite Scarab",
+          "neu": "No longer +150% Sulphite; veins/chests ~doubled at high level",
+          "t": "chg"
+        },
+        {
+          "k": "Delve Fossils",
+          "neu": "Removed outside Delve; more behind fractured walls",
+          "t": "chg"
+        },
+        {
+          "k": "Delirium: Fossilised Orbs/Incubators",
+          "neu": "No longer obtainable",
+          "t": "nerf"
+        },
+        {
+          "k": "Expedition: Tujen",
+          "neu": "No longer sells Cluster/Abyss Jewels",
+          "t": "nerf"
+        },
+        {
+          "k": "Heist: Brute Force Contracts",
+          "neu": "Can grant Fragment Rewards",
+          "t": "new"
+        },
+        {
+          "k": "Legion: Possessed Monsters",
+          "neu": "No longer release Spirits when broken out (only after)",
+          "t": "chg"
+        },
+        {
+          "k": "Ultimatum",
+          "neu": "Modifier preventing Block added",
+          "t": "new"
+        }
       ]
     },
     {
@@ -270,12 +1140,40 @@
       "n": "08",
       "title": "Player Changes",
       "rows": [
-        {"k":"Templar starter","old":"Old starting gem","neu":"Holy Strike + Hallow Support","t":"chg"},
-        {"k":"Totem Placement speed","neu":"Now also scales Totem emerge speed","t":"chg"},
-        {"k":"Ranged Attack Totems placement","old":"0.35s","neu":"0.5s","t":"nerf"},
-        {"k":"Channelling Totems range","neu":"Channel toward enemies from further (Lightning Tendrils/Blight)","t":"buff"},
-        {"k":"Intelligence → ES","old":"1% per 5 Int","neu":"1% per 10 Int","t":"nerf"},
-        {"k":"Reflected Damage Taken","old":"Reduced Reflected Damage Taken","neu":"% Damage cannot be Reflected","t":"chg"}
+        {
+          "k": "Templar starter",
+          "old": "Old starting gem",
+          "neu": "Holy Strike + Hallow Support",
+          "t": "chg"
+        },
+        {
+          "k": "Totem Placement speed",
+          "neu": "Now also scales Totem emerge speed",
+          "t": "chg"
+        },
+        {
+          "k": "Ranged Attack Totems placement",
+          "old": "0.35s",
+          "neu": "0.5s",
+          "t": "nerf"
+        },
+        {
+          "k": "Channelling Totems range",
+          "neu": "Channel toward enemies from further (Lightning Tendrils/Blight)",
+          "t": "buff"
+        },
+        {
+          "k": "Intelligence → ES",
+          "old": "1% per 5 Int",
+          "neu": "1% per 10 Int",
+          "t": "nerf"
+        },
+        {
+          "k": "Reflected Damage Taken",
+          "old": "Reduced Reflected Damage Taken",
+          "neu": "% Damage cannot be Reflected",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -284,39 +1182,189 @@
       "title": "Skill Gem Changes",
       "sub": "Notable skill adjustments",
       "rows": [
-        {"k":"Holy Slam (Herald/Dominating minions)","neu":"+32% Area of Effect","t":"buff"},
-        {"k":"Absolution / of Inspiring","old":"1s debuff, 10s minion","neu":"3s debuff, 15s minion","t":"buff"},
-        {"k":"Sentinels of Absolution","neu":"+44% AoE Empowered Lightning Blast, +40% Damage","t":"buff"},
-        {"k":"Animate Guardian of Smiting","old":"0-38% more Damage","neu":"0-76%","t":"buff"},
-        {"k":"Charged Dash","neu":"Desc clarified (no functional change)","t":"chg"},
-        {"k":"Consecrated Path","old":"227-417% dmg eff","neu":"273-468%","t":"buff"},
-        {"k":"Consecrated Path Q","old":"+0-10% close target","neu":"+0-15%","t":"buff"},
-        {"k":"Consecrated Path of Endurance Q","old":"+0-10%","neu":"+0-15%","t":"buff"},
-        {"k":"Detonate Dead of Scavenging","old":"60% less Ailment dmg","neu":"70%","t":"nerf"},
-        {"k":"Dominating Blow","neu":"Normal Sentinel on Rare (not just Unique); 3s/30s durations","t":"buff"},
-        {"k":"Dominating Blow of Inspiring","neu":"3s debuff / 30s sentinel","t":"buff"},
-        {"k":"Earthshatter","old":"171-393% added dmg","neu":"158-329%","t":"nerf"},
-        {"k":"Elemental Hit (Cryogenesis)","neu":"Added Damage cannot be replaced this way","t":"chg"},
-        {"k":"Energy Blade Q","old":"0-5% more ES","neu":"0-10% Attack Speed","t":"chg"},
-        {"k":"Holy Flame Totem","old":"3 proj all levels","neu":"3-6 proj; AoE tag","t":"buff"},
-        {"k":"Holy Flame Totem of Ire","neu":"+20% Damage; 40% eff (was 35%); AoE tag","t":"buff"},
-        {"k":"Orb of Storms","neu":"Can be supported by Spell Echo","t":"new"},
-        {"k":"Penance Brand","old":"470-570% eff, 30% less Ailment","neu":"520-630% eff, no less Ailment","t":"buff"},
-        {"k":"Penance Brand Q","old":"+0-10% Branded","neu":"+0-15%","t":"buff"},
-        {"k":"Penance Brand of Conduction","old":"0.15s activate","neu":"0.1s; Q +0-30% (was +0-15%)","t":"buff"},
-        {"k":"Penance Brand of Dissipation","old":"0.75s, 30% per Energy","neu":"1s, 20% per Energy; Q +0-15%","t":"chg"},
-        {"k":"Portal","neu":"No longer interrupted by self-damage","t":"chg"},
-        {"k":"Purifying Flame of Revelations","old":"6-25 mana, 0.7s cast","neu":"5-20 mana, 0.6s; Shockwave +150% (was 110%)","t":"buff"},
-        {"k":"Raised Spectres","neu":"No hidden elem bonus on phys→elem; L30 spectre = L85 (was 81)","t":"chg"},
-        {"k":"Static Strike","old":"2m range, 3s, 40% less beam","neu":"2.5m, 4s, 30% less","t":"buff"},
-        {"k":"Storm Brand","old":"3-8 → 92-277, 30% eff, 80-130%","neu":"3-10 → 150-449, 45-55% eff, 80% all levels","t":"buff"},
-        {"k":"Storm Brand of Indecision Q","old":"+0-10% Branded","neu":"+0-15%","t":"buff"},
-        {"k":"Storm Burst","neu":"Places orb immediately on cast","t":"chg"},
-        {"k":"Summon Holy Relic","old":"9-464 Life regen","neu":"9-985","t":"buff"},
-        {"k":"Sweep → Holy Sweep","neu":"Reworked: circle swing, calls Holy Hammers (cannot be evaded)","t":"chg"},
-        {"k":"Thunderstorm","neu":"Explosion +300% (was 'more', hits-only)","t":"buff"},
-        {"k":"Viper Strike of the Mamba","neu":"30% less Atk Spd / 20% less Hit dmg DW; no multi-Poison per Hit","t":"nerf"},
-        {"k":"Winter Orb","neu":"Projectile Speed now affects ground-impact time","t":"chg"}
+        {
+          "k": "Holy Slam (Herald/Dominating minions)",
+          "neu": "+32% Area of Effect",
+          "t": "buff"
+        },
+        {
+          "k": "Absolution / of Inspiring",
+          "old": "1s debuff, 10s minion",
+          "neu": "3s debuff, 15s minion",
+          "t": "buff"
+        },
+        {
+          "k": "Sentinels of Absolution",
+          "neu": "+44% AoE Empowered Lightning Blast, +40% Damage",
+          "t": "buff"
+        },
+        {
+          "k": "Animate Guardian of Smiting",
+          "old": "0-38% more Damage",
+          "neu": "0-76%",
+          "t": "buff"
+        },
+        {
+          "k": "Charged Dash",
+          "neu": "Desc clarified (no functional change)",
+          "t": "chg"
+        },
+        {
+          "k": "Consecrated Path",
+          "old": "227-417% dmg eff",
+          "neu": "273-468%",
+          "t": "buff"
+        },
+        {
+          "k": "Consecrated Path Q",
+          "old": "+0-10% close target",
+          "neu": "+0-15%",
+          "t": "buff"
+        },
+        {
+          "k": "Consecrated Path of Endurance Q",
+          "old": "+0-10%",
+          "neu": "+0-15%",
+          "t": "buff"
+        },
+        {
+          "k": "Detonate Dead of Scavenging",
+          "old": "60% less Ailment dmg",
+          "neu": "70%",
+          "t": "nerf"
+        },
+        {
+          "k": "Dominating Blow",
+          "neu": "Normal Sentinel on Rare (not just Unique); 3s/30s durations",
+          "t": "buff"
+        },
+        {
+          "k": "Dominating Blow of Inspiring",
+          "neu": "3s debuff / 30s sentinel",
+          "t": "buff"
+        },
+        {
+          "k": "Earthshatter",
+          "old": "171-393% added dmg",
+          "neu": "158-329%",
+          "t": "nerf"
+        },
+        {
+          "k": "Elemental Hit (Cryogenesis)",
+          "neu": "Added Damage cannot be replaced this way",
+          "t": "chg"
+        },
+        {
+          "k": "Energy Blade Q",
+          "old": "0-5% more ES",
+          "neu": "0-10% Attack Speed",
+          "t": "chg"
+        },
+        {
+          "k": "Holy Flame Totem",
+          "old": "3 proj all levels",
+          "neu": "3-6 proj; AoE tag",
+          "t": "buff"
+        },
+        {
+          "k": "Holy Flame Totem of Ire",
+          "neu": "+20% Damage; 40% eff (was 35%); AoE tag",
+          "t": "buff"
+        },
+        {
+          "k": "Orb of Storms",
+          "neu": "Can be supported by Spell Echo",
+          "t": "new"
+        },
+        {
+          "k": "Penance Brand",
+          "old": "470-570% eff, 30% less Ailment",
+          "neu": "520-630% eff, no less Ailment",
+          "t": "buff"
+        },
+        {
+          "k": "Penance Brand Q",
+          "old": "+0-10% Branded",
+          "neu": "+0-15%",
+          "t": "buff"
+        },
+        {
+          "k": "Penance Brand of Conduction",
+          "old": "0.15s activate",
+          "neu": "0.1s; Q +0-30% (was +0-15%)",
+          "t": "buff"
+        },
+        {
+          "k": "Penance Brand of Dissipation",
+          "old": "0.75s, 30% per Energy",
+          "neu": "1s, 20% per Energy; Q +0-15%",
+          "t": "chg"
+        },
+        {
+          "k": "Portal",
+          "neu": "No longer interrupted by self-damage",
+          "t": "chg"
+        },
+        {
+          "k": "Purifying Flame of Revelations",
+          "old": "6-25 mana, 0.7s cast",
+          "neu": "5-20 mana, 0.6s; Shockwave +150% (was 110%)",
+          "t": "buff"
+        },
+        {
+          "k": "Raised Spectres",
+          "neu": "No hidden elem bonus on phys→elem; L30 spectre = L85 (was 81)",
+          "t": "chg"
+        },
+        {
+          "k": "Static Strike",
+          "old": "2m range, 3s, 40% less beam",
+          "neu": "2.5m, 4s, 30% less",
+          "t": "buff"
+        },
+        {
+          "k": "Storm Brand",
+          "old": "3-8 → 92-277, 30% eff, 80-130%",
+          "neu": "3-10 → 150-449, 45-55% eff, 80% all levels",
+          "t": "buff"
+        },
+        {
+          "k": "Storm Brand of Indecision Q",
+          "old": "+0-10% Branded",
+          "neu": "+0-15%",
+          "t": "buff"
+        },
+        {
+          "k": "Storm Burst",
+          "neu": "Places orb immediately on cast",
+          "t": "chg"
+        },
+        {
+          "k": "Summon Holy Relic",
+          "old": "9-464 Life regen",
+          "neu": "9-985",
+          "t": "buff"
+        },
+        {
+          "k": "Sweep → Holy Sweep",
+          "neu": "Reworked: circle swing, calls Holy Hammers (cannot be evaded)",
+          "t": "chg"
+        },
+        {
+          "k": "Thunderstorm",
+          "neu": "Explosion +300% (was 'more', hits-only)",
+          "t": "buff"
+        },
+        {
+          "k": "Viper Strike of the Mamba",
+          "neu": "30% less Atk Spd / 20% less Hit dmg DW; no multi-Poison per Hit",
+          "t": "nerf"
+        },
+        {
+          "k": "Winter Orb",
+          "neu": "Projectile Speed now affects ground-impact time",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -324,9 +1372,23 @@
       "n": "10",
       "title": "Vaal Gem Changes",
       "rows": [
-        {"k":"Vaal Domination","old":"+1 radius/stage, 200% more dmg","neu":"+2 radius/stage, 300% more","t":"buff"},
-        {"k":"Vaal Absolution","old":"200% more dmg, 15s","neu":"300% more dmg, 20s; +44% AoE cascade","t":"buff"},
-        {"k":"Vaal Breach","neu":"Cannot be obtained; temporarily disabled (future rework)","t":"nerf"}
+        {
+          "k": "Vaal Domination",
+          "old": "+1 radius/stage, 200% more dmg",
+          "neu": "+2 radius/stage, 300% more",
+          "t": "buff"
+        },
+        {
+          "k": "Vaal Absolution",
+          "old": "200% more dmg, 15s",
+          "neu": "300% more dmg, 20s; +44% AoE cascade",
+          "t": "buff"
+        },
+        {
+          "k": "Vaal Breach",
+          "neu": "Cannot be obtained; temporarily disabled (future rework)",
+          "t": "nerf"
+        }
       ]
     },
     {
@@ -334,16 +1396,60 @@
       "n": "11",
       "title": "Support Gem Changes",
       "rows": [
-        {"k":"Awakened Supports","old":"All obtainable","neu":"Only Empower/Enlighten/Enhance remain","t":"nerf"},
-        {"k":"The Cheater","neu":"Temporarily disabled","t":"nerf"},
-        {"k":"Desecrated Virtue","neu":"Now rewards L4 23% Quality Exceptional Support","t":"chg"},
-        {"k":"Chain Support","old":"140%? (150% mult)","neu":"140% Cost & Reservation Multiplier (was 150%)","t":"buff"},
-        {"k":"Labyrinth: Awakened exchange","neu":"Removed","t":"nerf"},
-        {"k":"Labyrinth: Exceptional exchange","neu":"Now states Empower/Enlighten/Enhance","t":"chg"},
-        {"k":"Greater Supports","neu":"No longer stack with non-Greater (Greater priority)","t":"chg"},
-        {"k":"Lesser Multiple Projectiles → Multiple Projectiles","neu":"Renamed","t":"chg"},
-        {"k":"Autoexertion","old":"15% mana res","neu":"20%","t":"nerf"},
-        {"k":"Overexertion","old":"12-18% per Warcry, 10% if Exerted","neu":"7-10% per Warcry, 10-14% if Exerted","t":"nerf"}
+        {
+          "k": "Awakened Supports",
+          "old": "All obtainable",
+          "neu": "Only Empower/Enlighten/Enhance remain",
+          "t": "nerf"
+        },
+        {
+          "k": "The Cheater",
+          "neu": "Temporarily disabled",
+          "t": "nerf"
+        },
+        {
+          "k": "Desecrated Virtue",
+          "neu": "Now rewards L4 23% Quality Exceptional Support",
+          "t": "chg"
+        },
+        {
+          "k": "Chain Support",
+          "old": "140%? (150% mult)",
+          "neu": "140% Cost & Reservation Multiplier (was 150%)",
+          "t": "buff"
+        },
+        {
+          "k": "Labyrinth: Awakened exchange",
+          "neu": "Removed",
+          "t": "nerf"
+        },
+        {
+          "k": "Labyrinth: Exceptional exchange",
+          "neu": "Now states Empower/Enlighten/Enhance",
+          "t": "chg"
+        },
+        {
+          "k": "Greater Supports",
+          "neu": "No longer stack with non-Greater (Greater priority)",
+          "t": "chg"
+        },
+        {
+          "k": "Lesser Multiple Projectiles → Multiple Projectiles",
+          "neu": "Renamed",
+          "t": "chg"
+        },
+        {
+          "k": "Autoexertion",
+          "old": "15% mana res",
+          "neu": "20%",
+          "t": "nerf"
+        },
+        {
+          "k": "Overexertion",
+          "old": "12-18% per Warcry, 10% if Exerted",
+          "neu": "7-10% per Warcry, 10-14% if Exerted",
+          "t": "nerf"
+        }
       ]
     },
     {
@@ -351,19 +1457,79 @@
       "n": "12",
       "title": "Ascendancy Changes",
       "rows": [
-        {"k":"Chieftain: Hinekora, Death's Fury","old":"5% explode, 500% Life fire","neu":"10% explode, 250% Life fire","t":"nerf"},
-        {"k":"Guardian: Sentinel of Radiance","neu":"Permanent minion, +36% Move Speed, persists between areas","t":"buff"},
-        {"k":"Guardian: Shrine effects","neu":"Now Greater Shocking/Freezing/Skeletal Shrine","t":"chg"},
-        {"k":"Guardian: Time of Need","old":"Remove Curses + El Ailments","neu":"Remove Curses + ALL Ailments","t":"buff"},
-        {"k":"Guardian: Marshal of Divinity (new)","neu":"Inflict Hallowing Flame, +1 per enemy, 10% phys as lightning per removed (up to 80%)","t":"new"},
-        {"k":"Warden: Lesson of the Seasons","old":"-15 Fire/Cold/Light dmg taken","neu":"-25 per Bark","t":"buff"},
-        {"k":"Warden: Avatar of the Wilds","old":"80% more Ele dmg Unbound","neu":"100%","t":"buff"},
-        {"k":"Assassin: Opportunistic","old":"Crit dmg not reflected","neu":"Damage cannot be Reflected","t":"buff"},
-        {"k":"Saboteur: Perfect Crime","old":"35% less Triggered Spell dmg","neu":"30%","t":"buff"},
-        {"k":"Saboteur: Like Clockwork","old":"40% CD recovery","neu":"50%","t":"buff"},
-        {"k":"Saboteur: Calculated Risk","neu":"Enemy Hit dmg Unlucky","t":"new"},
-        {"k":"Elementalist: Liege of the Primordial","neu":"No longer 50% inc Golem buff effect","t":"nerf"},
-        {"k":"Ascendant: Assassin","old":"Crit dmg not reflected","neu":"Damage cannot be Reflected","t":"buff"}
+        {
+          "k": "Chieftain: Hinekora, Death's Fury",
+          "old": "5% explode, 500% Life fire",
+          "neu": "10% explode, 250% Life fire",
+          "t": "nerf"
+        },
+        {
+          "k": "Guardian: Sentinel of Radiance",
+          "neu": "Permanent minion, +36% Move Speed, persists between areas",
+          "t": "buff"
+        },
+        {
+          "k": "Guardian: Shrine effects",
+          "neu": "Now Greater Shocking/Freezing/Skeletal Shrine",
+          "t": "chg"
+        },
+        {
+          "k": "Guardian: Time of Need",
+          "old": "Remove Curses + El Ailments",
+          "neu": "Remove Curses + ALL Ailments",
+          "t": "buff"
+        },
+        {
+          "k": "Guardian: Marshal of Divinity (new)",
+          "neu": "Inflict Hallowing Flame, +1 per enemy, 10% phys as lightning per removed (up to 80%)",
+          "t": "new"
+        },
+        {
+          "k": "Warden: Lesson of the Seasons",
+          "old": "-15 Fire/Cold/Light dmg taken",
+          "neu": "-25 per Bark",
+          "t": "buff"
+        },
+        {
+          "k": "Warden: Avatar of the Wilds",
+          "old": "80% more Ele dmg Unbound",
+          "neu": "100%",
+          "t": "buff"
+        },
+        {
+          "k": "Assassin: Opportunistic",
+          "old": "Crit dmg not reflected",
+          "neu": "Damage cannot be Reflected",
+          "t": "buff"
+        },
+        {
+          "k": "Saboteur: Perfect Crime",
+          "old": "35% less Triggered Spell dmg",
+          "neu": "30%",
+          "t": "buff"
+        },
+        {
+          "k": "Saboteur: Like Clockwork",
+          "old": "40% CD recovery",
+          "neu": "50%",
+          "t": "buff"
+        },
+        {
+          "k": "Saboteur: Calculated Risk",
+          "neu": "Enemy Hit dmg Unlucky",
+          "t": "new"
+        },
+        {
+          "k": "Elementalist: Liege of the Primordial",
+          "neu": "No longer 50% inc Golem buff effect",
+          "t": "nerf"
+        },
+        {
+          "k": "Ascendant: Assassin",
+          "old": "Crit dmg not reflected",
+          "neu": "Damage cannot be Reflected",
+          "t": "buff"
+        }
       ]
     },
     {
@@ -371,19 +1537,82 @@
       "n": "13",
       "title": "Bloodline Changes",
       "rows": [
-        {"k":"Aul (King's Might/Heritage/Contempt)","old":"No charges","neu":"Grant aura while min Frenzy/End/Pwr Charge","t":"buff"},
-        {"k":"Breachlord: Otherworldly Appendages → Cryogenesis","neu":"Added dmg typed by highest attr (Int→Light, Dex→Cold)","t":"chg"},
-        {"k":"Catarina: Prolonged Servitude","old":"15% minion dmg on low Life","neu":"20%","t":"buff"},
-        {"k":"Delirious: Misty Reflection","old":"2s, 10% Life","neu":"3s, 5% Life","t":"chg"},
-        {"k":"Farrul: Primal Roar","old":"2% Atk Spd per minion","neu":"4% per minion (max 80%)","t":"buff"},
-        {"k":"Farrul: Spectral Tigers","neu":"50% less Life, more dmg, +Atk Spd; show Life in panel","t":"chg"},
-        {"k":"Lycia: Sinner Saint","old":"50% Fire/Cold/Light→Chaos","neu":"67%","t":"buff"},
-        {"k":"Nameless: Unlight Silhouette","old":"20% added Chaos from Life Cost","neu":"25%","t":"buff"},
-        {"k":"Olroth: Boon of the Mountain","old":"30% less DoT while Unbroken Ward","neu":"50%","t":"buff"},
-        {"k":"Olroth: Boon of the Sun","old":"20% Ward restore","neu":"30%","t":"buff"},
-        {"k":"Olroth: Enhanced Starlight","old":"40% Ward from Armour","neu":"70%","t":"buff"},
-        {"k":"Olroth: Volatile Runes","old":"80% more dmg, 250-300% Ward, 0.5s CD","neu":"200% more, 160-240% Ward, 0.15s CD; no Enervation on players","t":"chg"},
-        {"k":"Oshabi: Vivid Cat","old":"50% Stealth while Elusive","neu":"50% inc Marks effect while Elusive","t":"chg"}
+        {
+          "k": "Aul (King's Might/Heritage/Contempt)",
+          "old": "No charges",
+          "neu": "Grant aura while min Frenzy/End/Pwr Charge",
+          "t": "buff"
+        },
+        {
+          "k": "Breachlord: Otherworldly Appendages → Cryogenesis",
+          "neu": "Added dmg typed by highest attr (Int→Light, Dex→Cold)",
+          "t": "chg"
+        },
+        {
+          "k": "Catarina: Prolonged Servitude",
+          "old": "15% minion dmg on low Life",
+          "neu": "20%",
+          "t": "buff"
+        },
+        {
+          "k": "Delirious: Misty Reflection",
+          "old": "2s, 10% Life",
+          "neu": "3s, 5% Life",
+          "t": "chg"
+        },
+        {
+          "k": "Farrul: Primal Roar",
+          "old": "2% Atk Spd per minion",
+          "neu": "4% per minion (max 80%)",
+          "t": "buff"
+        },
+        {
+          "k": "Farrul: Spectral Tigers",
+          "neu": "50% less Life, more dmg, +Atk Spd; show Life in panel",
+          "t": "chg"
+        },
+        {
+          "k": "Lycia: Sinner Saint",
+          "old": "50% Fire/Cold/Light→Chaos",
+          "neu": "67%",
+          "t": "buff"
+        },
+        {
+          "k": "Nameless: Unlight Silhouette",
+          "old": "20% added Chaos from Life Cost",
+          "neu": "25%",
+          "t": "buff"
+        },
+        {
+          "k": "Olroth: Boon of the Mountain",
+          "old": "30% less DoT while Unbroken Ward",
+          "neu": "50%",
+          "t": "buff"
+        },
+        {
+          "k": "Olroth: Boon of the Sun",
+          "old": "20% Ward restore",
+          "neu": "30%",
+          "t": "buff"
+        },
+        {
+          "k": "Olroth: Enhanced Starlight",
+          "old": "40% Ward from Armour",
+          "neu": "70%",
+          "t": "buff"
+        },
+        {
+          "k": "Olroth: Volatile Runes",
+          "old": "80% more dmg, 250-300% Ward, 0.5s CD",
+          "neu": "200% more, 160-240% Ward, 0.15s CD; no Enervation on players",
+          "t": "chg"
+        },
+        {
+          "k": "Oshabi: Vivid Cat",
+          "old": "50% Stealth while Elusive",
+          "neu": "50% inc Marks effect while Elusive",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -391,11 +1620,35 @@
       "n": "14",
       "title": "Passive Skill Tree Changes",
       "rows": [
-        {"k":"Templar west clusters","neu":"New: Accuracy+Consecrated Ground; Accuracy+Attack AoE","t":"new"},
-        {"k":"Protection Mastery","old":"65% red Wither on You","neu":"50% of Hit dmg cannot be Reflected","t":"chg"},
-        {"k":"Defiled Forces","old":"Refresh Ignite on Cursed enemy","neu":"15% inc Curse Cast Speed","t":"chg"},
-        {"k":"Evasion/ES Mastery","old":"1% EV per 5 Int","neu":"1% per 10 Int","t":"nerf"},
-        {"k":"Fire Mastery","old":"50% refresh Ignite on crit","neu":"+12% Fire DoT mult, 50% inc Ignite Duration","t":"chg"}
+        {
+          "k": "Templar west clusters",
+          "neu": "New: Accuracy+Consecrated Ground; Accuracy+Attack AoE",
+          "t": "new"
+        },
+        {
+          "k": "Protection Mastery",
+          "old": "65% red Wither on You",
+          "neu": "50% of Hit dmg cannot be Reflected",
+          "t": "chg"
+        },
+        {
+          "k": "Defiled Forces",
+          "old": "Refresh Ignite on Cursed enemy",
+          "neu": "15% inc Curse Cast Speed",
+          "t": "chg"
+        },
+        {
+          "k": "Evasion/ES Mastery",
+          "old": "1% EV per 5 Int",
+          "neu": "1% per 10 Int",
+          "t": "nerf"
+        },
+        {
+          "k": "Fire Mastery",
+          "old": "50% refresh Ignite on crit",
+          "neu": "+12% Fire DoT mult, 50% inc Ignite Duration",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -403,22 +1656,96 @@
       "n": "15",
       "title": "Unique Item Changes",
       "rows": [
-        {"k":"Bino's Kitchen Knife","old":"1.5m poison, 200 Life/s; 8-12% Chaos res","neu":"3m poison, 400 Life/s; 17-27% Chaos res","t":"buff"},
-        {"k":"Bloodnotch","old":"40-60% dmg from Stun→Life","neu":"20-30%","t":"nerf"},
-        {"k":"Bloodseeker","old":"200-220% phys; +5% Atk Spd/Move","neu":"200-250% phys; 15-25% Life Res Eff + leech recovery; no Atk/Move spd","t":"chg"},
-        {"k":"Essentia Sanguis","old":"600-700 light, 30-40 ES","neu":"1-650-850 light, 200-300 ES; no block; doubled ES leech; 2% Attack Leeched as Life","t":"buff"},
-        {"k":"Hand of Heresy","neu":"+0.8-1.6% crit vs Excommunicated","t":"new"},
-        {"k":"Marohi Erqi","neu":"+40-50% Area of Effect","t":"new"},
-        {"k":"Lioneye's Glare","neu":"Attacks repeat +1, +50% Atk Spd; implicit 20-24% Global Phys (was Elem); no 10-20% Atk Spd","t":"chg"},
-        {"k":"Pledge of Hands","old":"L30 Greater Spell Echo","neu":"L1 Greater Spell Echo; +50-100% max Mana","t":"chg"},
-        {"k":"Replica Gifts from Above","neu":"New Replica Unique","t":"new"},
-        {"k":"Shaper's Touch","old":"+4 Acc per Int","neu":"+2 Acc per 2 Int","t":"nerf"},
-        {"k":"Sibyl's Lament","old":"80% reflect immune (L/R)","neu":"100% (L/R)","t":"buff"},
-        {"k":"Soul Taker","neu":"Eat 2-4 Souls on Rare/Unique kill","t":"new"},
-        {"k":"Supreme Truth","old":"20% inc Elem dmg","neu":"Inflict Hallowing Flame on Hit","t":"chg"},
-        {"k":"Unseen Hue","neu":"Drops from regular Incarnation of Fear","t":"chg"},
-        {"k":"Voltaxic Rift","old":"Shock as 300% more dmg","neu":"Inverts enemy Chaos res; no shock mod","t":"chg"},
-        {"k":"Woespike","old":"25-40% less Impale, 45-60% extra Hit","neu":"40-50% less Impale, 20-30% chance +1 Hit","t":"chg"}
+        {
+          "k": "Bino's Kitchen Knife",
+          "old": "1.5m poison, 200 Life/s; 8-12% Chaos res",
+          "neu": "3m poison, 400 Life/s; 17-27% Chaos res",
+          "t": "buff"
+        },
+        {
+          "k": "Bloodnotch",
+          "old": "40-60% dmg from Stun→Life",
+          "neu": "20-30%",
+          "t": "nerf"
+        },
+        {
+          "k": "Bloodseeker",
+          "old": "200-220% phys; +5% Atk Spd/Move",
+          "neu": "200-250% phys; 15-25% Life Res Eff + leech recovery; no Atk/Move spd",
+          "t": "chg"
+        },
+        {
+          "k": "Essentia Sanguis",
+          "old": "600-700 light, 30-40 ES",
+          "neu": "1-650-850 light, 200-300 ES; no block; doubled ES leech; 2% Attack Leeched as Life",
+          "t": "buff"
+        },
+        {
+          "k": "Hand of Heresy",
+          "neu": "+0.8-1.6% crit vs Excommunicated",
+          "t": "new"
+        },
+        {
+          "k": "Marohi Erqi",
+          "neu": "+40-50% Area of Effect",
+          "t": "new"
+        },
+        {
+          "k": "Lioneye's Glare",
+          "neu": "Attacks repeat +1, +50% Atk Spd; implicit 20-24% Global Phys (was Elem); no 10-20% Atk Spd",
+          "t": "chg"
+        },
+        {
+          "k": "Pledge of Hands",
+          "old": "L30 Greater Spell Echo",
+          "neu": "L1 Greater Spell Echo; +50-100% max Mana",
+          "t": "chg"
+        },
+        {
+          "k": "Replica Gifts from Above",
+          "neu": "New Replica Unique",
+          "t": "new"
+        },
+        {
+          "k": "Shaper's Touch",
+          "old": "+4 Acc per Int",
+          "neu": "+2 Acc per 2 Int",
+          "t": "nerf"
+        },
+        {
+          "k": "Sibyl's Lament",
+          "old": "80% reflect immune (L/R)",
+          "neu": "100% (L/R)",
+          "t": "buff"
+        },
+        {
+          "k": "Soul Taker",
+          "neu": "Eat 2-4 Souls on Rare/Unique kill",
+          "t": "new"
+        },
+        {
+          "k": "Supreme Truth",
+          "old": "20% inc Elem dmg",
+          "neu": "Inflict Hallowing Flame on Hit",
+          "t": "chg"
+        },
+        {
+          "k": "Unseen Hue",
+          "neu": "Drops from regular Incarnation of Fear",
+          "t": "chg"
+        },
+        {
+          "k": "Voltaxic Rift",
+          "old": "Shock as 300% more dmg",
+          "neu": "Inverts enemy Chaos res; no shock mod",
+          "t": "chg"
+        },
+        {
+          "k": "Woespike",
+          "old": "25-40% less Impale, 45-60% extra Hit",
+          "neu": "40-50% less Impale, 20-30% chance +1 Hit",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -427,38 +1754,176 @@
       "title": "Item Changes",
       "sub": "Currency / drops / crafting",
       "rows": [
-        {"k":"Currency drop share","neu":"Significantly larger portion of drops (not Scrolls)","t":"chg"},
-        {"k":"Non-Unique Equipment drops","neu":"~6% less common (not Ruthless)","t":"nerf"},
-        {"k":"Heist Trinket: Exalted conversion","neu":"Disabled; new Ancient Orb conversion; lower Divine values","t":"chg"},
-        {"k":"Inscribed Ultimatums","neu":"Enabled for Ancient/Fracturing Orbs; Exalted at higher stacks/lower difficulty","t":"new"},
-        {"k":"Eater Altars","neu":"Can grant Ancient Orbs (monsters/map bosses)","t":"new"},
-        {"k":"Ancient/Fracturing Orbs","neu":"Sanctum rewards","t":"new"},
-        {"k":"Currency Exchange Gold Fees","neu":"Lowered (Exalted/Exalted Shards/Regal)","t":"buff"},
-        {"k":"Crafting Bench (Exalted cost)","old":"1-3 Exalted","neu":"4 Exalted","t":"nerf"},
-        {"k":"Influenced set vendor recipe","old":"2 Exalted Shards","neu":"1 Exalted Orb","t":"buff"},
-        {"k":"Kingsmarch/Map/Gamble/Genesis rarity","neu":"Lowered Modifier Tier Rating","t":"nerf"},
-        {"k":"Currency relative rarities","neu":"Exalted/Regal comparatively more common","t":"buff"},
-        {"k":"Breach/Blight Gold+Map penalty","neu":"Increased","t":"nerf"},
-        {"k":"Essence of Insanity (Rings)","old":"40% reflect immune","neu":"60%","t":"buff"},
-        {"k":"Synthesis Implicits (Rings/Quivers)","old":"15% reflect immune","neu":"30%","t":"buff"},
-        {"k":"Influenced Mods (Rings)","old":"55% reflect immune","neu":"75%","t":"buff"},
-        {"k":"Watcher's Eye","old":"50% reflect immune","neu":"75%","t":"buff"},
-        {"k":"The Justified Ambition","neu":"Can again reward the Cortex","t":"chg"},
-        {"k":"The Emptiness","neu":"Temporarily disabled","t":"nerf"},
-        {"k":"Primordial Bond","old":"40% Golem buff","neu":"20%","t":"nerf"},
-        {"k":"Attack Block Clusters","neu":"Can roll Fiery Aegis","t":"new"},
-        {"k":"Exerted Attack Clusters","neu":"Can roll Holy Word","t":"new"},
-        {"k":"Runegraft of Refraction","old":"Skills chain +1","neu":"Projectiles chain +1","t":"chg"},
-        {"k":"Horticrafting Flask enchants","neu":"Removed","t":"nerf"},
-        {"k":"Hinekora's Lock on Corrupted","neu":"No longer allowed","t":"nerf"},
-        {"k":"Essence stack size","old":"9","neu":"10","t":"buff"},
-        {"k":"Follow-Through Cluster","old":"15% per chain, no cap","neu":"20% per chain, cap 100%","t":"buff"},
-        {"k":"Unique Map Gold fee","neu":"~2000 Gold from Merchant Tab","t":"new"},
-        {"k":"Itemised Beasts Gold fee","neu":"Vastly lower, no longer mod-dependent","t":"buff"},
-        {"k":"Rare Monster → Currency convert","neu":"More common","t":"buff"},
-        {"k":"New vendor recipe","neu":"+1 added","t":"new"},
-        {"k":"Valdo's Puzzle Box","neu":"+62 foiled Map options","t":"new"},
-        {"k":"Voidborn Reliquary","neu":"+72 foiled Unique options","t":"new"}
+        {
+          "k": "Currency drop share",
+          "neu": "Significantly larger portion of drops (not Scrolls)",
+          "t": "chg"
+        },
+        {
+          "k": "Non-Unique Equipment drops",
+          "neu": "~6% less common (not Ruthless)",
+          "t": "nerf"
+        },
+        {
+          "k": "Heist Trinket: Exalted conversion",
+          "neu": "Disabled; new Ancient Orb conversion; lower Divine values",
+          "t": "chg"
+        },
+        {
+          "k": "Inscribed Ultimatums",
+          "neu": "Enabled for Ancient/Fracturing Orbs; Exalted at higher stacks/lower difficulty",
+          "t": "new"
+        },
+        {
+          "k": "Eater Altars",
+          "neu": "Can grant Ancient Orbs (monsters/map bosses)",
+          "t": "new"
+        },
+        {
+          "k": "Ancient/Fracturing Orbs",
+          "neu": "Sanctum rewards",
+          "t": "new"
+        },
+        {
+          "k": "Currency Exchange Gold Fees",
+          "neu": "Lowered (Exalted/Exalted Shards/Regal)",
+          "t": "buff"
+        },
+        {
+          "k": "Crafting Bench (Exalted cost)",
+          "old": "1-3 Exalted",
+          "neu": "4 Exalted",
+          "t": "nerf"
+        },
+        {
+          "k": "Influenced set vendor recipe",
+          "old": "2 Exalted Shards",
+          "neu": "1 Exalted Orb",
+          "t": "buff"
+        },
+        {
+          "k": "Kingsmarch/Map/Gamble/Genesis rarity",
+          "neu": "Lowered Modifier Tier Rating",
+          "t": "nerf"
+        },
+        {
+          "k": "Currency relative rarities",
+          "neu": "Exalted/Regal comparatively more common",
+          "t": "buff"
+        },
+        {
+          "k": "Breach/Blight Gold+Map penalty",
+          "neu": "Increased",
+          "t": "nerf"
+        },
+        {
+          "k": "Essence of Insanity (Rings)",
+          "old": "40% reflect immune",
+          "neu": "60%",
+          "t": "buff"
+        },
+        {
+          "k": "Synthesis Implicits (Rings/Quivers)",
+          "old": "15% reflect immune",
+          "neu": "30%",
+          "t": "buff"
+        },
+        {
+          "k": "Influenced Mods (Rings)",
+          "old": "55% reflect immune",
+          "neu": "75%",
+          "t": "buff"
+        },
+        {
+          "k": "Watcher's Eye",
+          "old": "50% reflect immune",
+          "neu": "75%",
+          "t": "buff"
+        },
+        {
+          "k": "The Justified Ambition",
+          "neu": "Can again reward the Cortex",
+          "t": "chg"
+        },
+        {
+          "k": "The Emptiness",
+          "neu": "Temporarily disabled",
+          "t": "nerf"
+        },
+        {
+          "k": "Primordial Bond",
+          "old": "40% Golem buff",
+          "neu": "20%",
+          "t": "nerf"
+        },
+        {
+          "k": "Attack Block Clusters",
+          "neu": "Can roll Fiery Aegis",
+          "t": "new"
+        },
+        {
+          "k": "Exerted Attack Clusters",
+          "neu": "Can roll Holy Word",
+          "t": "new"
+        },
+        {
+          "k": "Runegraft of Refraction",
+          "old": "Skills chain +1",
+          "neu": "Projectiles chain +1",
+          "t": "chg"
+        },
+        {
+          "k": "Horticrafting Flask enchants",
+          "neu": "Removed",
+          "t": "nerf"
+        },
+        {
+          "k": "Hinekora's Lock on Corrupted",
+          "neu": "No longer allowed",
+          "t": "nerf"
+        },
+        {
+          "k": "Essence stack size",
+          "old": "9",
+          "neu": "10",
+          "t": "buff"
+        },
+        {
+          "k": "Follow-Through Cluster",
+          "old": "15% per chain, no cap",
+          "neu": "20% per chain, cap 100%",
+          "t": "buff"
+        },
+        {
+          "k": "Unique Map Gold fee",
+          "neu": "~2000 Gold from Merchant Tab",
+          "t": "new"
+        },
+        {
+          "k": "Itemised Beasts Gold fee",
+          "neu": "Vastly lower, no longer mod-dependent",
+          "t": "buff"
+        },
+        {
+          "k": "Rare Monster → Currency convert",
+          "neu": "More common",
+          "t": "buff"
+        },
+        {
+          "k": "New vendor recipe",
+          "neu": "+1 added",
+          "t": "new"
+        },
+        {
+          "k": "Valdo's Puzzle Box",
+          "neu": "+62 foiled Map options",
+          "t": "new"
+        },
+        {
+          "k": "Voidborn Reliquary",
+          "neu": "+72 foiled Unique options",
+          "t": "new"
+        }
       ]
     },
     {
@@ -466,10 +1931,27 @@
       "n": "17",
       "title": "Ruthless-specific Changes",
       "rows": [
-        {"k":"Quickstep","neu":"200% CD recovery if no enemies in Presence","t":"new"},
-        {"k":"The Paths Not Taken","neu":"Extra random Prefix+Suffix with 6 Gateways allocated","t":"chg"},
-        {"k":"Tora (Intervention)","old":"Harbinger Scarabs","neu":"Cartography Scarabs","t":"chg"},
-        {"k":"Harrowing Carapaces (Ruthless)","neu":"100% Influence Scarab chance","t":"chg"}
+        {
+          "k": "Quickstep",
+          "neu": "200% CD recovery if no enemies in Presence",
+          "t": "new"
+        },
+        {
+          "k": "The Paths Not Taken",
+          "neu": "Extra random Prefix+Suffix with 6 Gateways allocated",
+          "t": "chg"
+        },
+        {
+          "k": "Tora (Intervention)",
+          "old": "Harbinger Scarabs",
+          "neu": "Cartography Scarabs",
+          "t": "chg"
+        },
+        {
+          "k": "Harrowing Carapaces (Ruthless)",
+          "neu": "100% Influence Scarab chance",
+          "t": "chg"
+        }
       ]
     },
     {
@@ -477,7 +1959,11 @@
       "n": "18",
       "title": "Monster Changes",
       "rows": [
-        {"k":"Rusty Crusher shock rifle","neu":"~50% less damage","t":"nerf"}
+        {
+          "k": "Rusty Crusher shock rifle",
+          "neu": "~50% less damage",
+          "t": "nerf"
+        }
       ]
     },
     {
@@ -485,14 +1971,46 @@
       "n": "19",
       "title": "Quest Reward Changes",
       "rows": [
-        {"k":"Holy Strike","neu":"Scion buys from Nessa (Enemy at the Gate)","t":"new"},
-        {"k":"Hallow Support","neu":"Templar/Scion from Nessa (Enemy at the Gate / Mercy Mission)","t":"new"},
-        {"k":"Elemental Proliferation","neu":"Templar from Nessa (Mercy Mission)","t":"new"},
-        {"k":"Shield of Light","neu":"Templar (Intruders in Black); Scion from Yeena","t":"new"},
-        {"k":"Exemplar Support","neu":"Templar (Sharp and Cruel); Witch/Scion from Yeena","t":"new"},
-        {"k":"Divine Blast","neu":"Templar (Sever the Right Hand); Marauder/Scion from Clarissa","t":"new"},
-        {"k":"Blessed Call Support","neu":"Templar (Fixture of Fate); Marauder/Scion from Clarissa","t":"new"},
-        {"k":"Excommunicate Support","neu":"Templar (Fixture of Fate); Marauder/Scion from Clarissa","t":"new"}
+        {
+          "k": "Holy Strike",
+          "neu": "Scion buys from Nessa (Enemy at the Gate)",
+          "t": "new"
+        },
+        {
+          "k": "Hallow Support",
+          "neu": "Templar/Scion from Nessa (Enemy at the Gate / Mercy Mission)",
+          "t": "new"
+        },
+        {
+          "k": "Elemental Proliferation",
+          "neu": "Templar from Nessa (Mercy Mission)",
+          "t": "new"
+        },
+        {
+          "k": "Shield of Light",
+          "neu": "Templar (Intruders in Black); Scion from Yeena",
+          "t": "new"
+        },
+        {
+          "k": "Exemplar Support",
+          "neu": "Templar (Sharp and Cruel); Witch/Scion from Yeena",
+          "t": "new"
+        },
+        {
+          "k": "Divine Blast",
+          "neu": "Templar (Sever the Right Hand); Marauder/Scion from Clarissa",
+          "t": "new"
+        },
+        {
+          "k": "Blessed Call Support",
+          "neu": "Templar (Fixture of Fate); Marauder/Scion from Clarissa",
+          "t": "new"
+        },
+        {
+          "k": "Excommunicate Support",
+          "neu": "Templar (Fixture of Fate); Marauder/Scion from Clarissa",
+          "t": "new"
+        }
       ]
     },
     {
@@ -500,33 +2018,141 @@
       "n": "20",
       "title": "User Interface and Quality of Life Changes",
       "rows": [
-        {"k":"Final Ritual Altar","neu":"Notification + highlight Rewards button","t":"new"},
-        {"k":"Sales History (Merchant Tabs)","neu":"Full item detail on hover; old history deleted","t":"chg"},
-        {"k":"Currency Exchange Favorites","neu":"Can create Favorite trades","t":"new"},
-        {"k":"Currency Exchange stash/inventory toggle","neu":"Button added","t":"new"},
-        {"k":"Currency Exchange focus","neu":"Auto-focus search on open (PC)","t":"new"},
-        {"k":"Labyrinth Transfigured gem craft","neu":"Select desired version when multiple exist","t":"new"},
-        {"k":"Heist display cases","neu":"Untargetable after Lockdown","t":"chg"},
-        {"k":"Expedition modifier list","neu":"Splits into columns if offscreen","t":"new"},
-        {"k":"Ritual Shrine quick-use currency","neu":"Buttons if currency in inventory","t":"new"},
-        {"k":"Ctrl+Click Divination Cards","neu":"Auto turn-in; moves existing to inventory","t":"new"},
-        {"k":"Forbidden Tomes","neu":"Show Forbidden Sanctum area level on icon","t":"new"},
-        {"k":"Orb Spectre buff icon","neu":"Added","t":"new"},
-        {"k":"Shrines highlight","neu":"Easier to highlight near enemies","t":"chg"},
-        {"k":"Aiding an Archivist quest","neu":"Hidden from tracker outside Act 10","t":"chg"},
-        {"k":"Kingsmarch quests","neu":"Hidden from tracker outside Karui Shores","t":"chg"},
-        {"k":"Eternal Orbs","neu":"Tradeable on Currency Exchange (Standard)","t":"new"},
-        {"k":"Divine/Blessed hover","neu":"Highlights rerolled modifier values","t":"new"},
-        {"k":"Mythic Orb UI","neu":"Feedback when item destroyed","t":"new"},
-        {"k":"Currency hot-swap keybind","neu":"Customisable","t":"new"},
-        {"k":"Guild tags","neu":"No longer require Map items","t":"chg"},
-        {"k":"Lycia artwork arrows","neu":"100% aligned (was 0%)","t":"chg"},
-        {"k":"Fleeing reminder text","neu":"Added","t":"new"},
-        {"k":"Controller: Atlas tree","neu":"Confirm prompt on close with pending changes","t":"new"},
-        {"k":"Controller: guild filter","neu":"Filter offline members","t":"new"},
-        {"k":"Controller: Divination R1","neu":"Take reward items","t":"new"},
-        {"k":"Controller: Raise Zombie","neu":"Target in front","t":"new"},
-        {"k":"Controller: Currency/Fragment substashes","neu":"Navigational inputs","t":"new"}
+        {
+          "k": "Final Ritual Altar",
+          "neu": "Notification + highlight Rewards button",
+          "t": "new"
+        },
+        {
+          "k": "Sales History (Merchant Tabs)",
+          "neu": "Full item detail on hover; old history deleted",
+          "t": "chg"
+        },
+        {
+          "k": "Currency Exchange Favorites",
+          "neu": "Can create Favorite trades",
+          "t": "new"
+        },
+        {
+          "k": "Currency Exchange stash/inventory toggle",
+          "neu": "Button added",
+          "t": "new"
+        },
+        {
+          "k": "Currency Exchange focus",
+          "neu": "Auto-focus search on open (PC)",
+          "t": "new"
+        },
+        {
+          "k": "Labyrinth Transfigured gem craft",
+          "neu": "Select desired version when multiple exist",
+          "t": "new"
+        },
+        {
+          "k": "Heist display cases",
+          "neu": "Untargetable after Lockdown",
+          "t": "chg"
+        },
+        {
+          "k": "Expedition modifier list",
+          "neu": "Splits into columns if offscreen",
+          "t": "new"
+        },
+        {
+          "k": "Ritual Shrine quick-use currency",
+          "neu": "Buttons if currency in inventory",
+          "t": "new"
+        },
+        {
+          "k": "Ctrl+Click Divination Cards",
+          "neu": "Auto turn-in; moves existing to inventory",
+          "t": "new"
+        },
+        {
+          "k": "Forbidden Tomes",
+          "neu": "Show Forbidden Sanctum area level on icon",
+          "t": "new"
+        },
+        {
+          "k": "Orb Spectre buff icon",
+          "neu": "Added",
+          "t": "new"
+        },
+        {
+          "k": "Shrines highlight",
+          "neu": "Easier to highlight near enemies",
+          "t": "chg"
+        },
+        {
+          "k": "Aiding an Archivist quest",
+          "neu": "Hidden from tracker outside Act 10",
+          "t": "chg"
+        },
+        {
+          "k": "Kingsmarch quests",
+          "neu": "Hidden from tracker outside Karui Shores",
+          "t": "chg"
+        },
+        {
+          "k": "Eternal Orbs",
+          "neu": "Tradeable on Currency Exchange (Standard)",
+          "t": "new"
+        },
+        {
+          "k": "Divine/Blessed hover",
+          "neu": "Highlights rerolled modifier values",
+          "t": "new"
+        },
+        {
+          "k": "Mythic Orb UI",
+          "neu": "Feedback when item destroyed",
+          "t": "new"
+        },
+        {
+          "k": "Currency hot-swap keybind",
+          "neu": "Customisable",
+          "t": "new"
+        },
+        {
+          "k": "Guild tags",
+          "neu": "No longer require Map items",
+          "t": "chg"
+        },
+        {
+          "k": "Lycia artwork arrows",
+          "neu": "100% aligned (was 0%)",
+          "t": "chg"
+        },
+        {
+          "k": "Fleeing reminder text",
+          "neu": "Added",
+          "t": "new"
+        },
+        {
+          "k": "Controller: Atlas tree",
+          "neu": "Confirm prompt on close with pending changes",
+          "t": "new"
+        },
+        {
+          "k": "Controller: guild filter",
+          "neu": "Filter offline members",
+          "t": "new"
+        },
+        {
+          "k": "Controller: Divination R1",
+          "neu": "Take reward items",
+          "t": "new"
+        },
+        {
+          "k": "Controller: Raise Zombie",
+          "neu": "Target in front",
+          "t": "new"
+        },
+        {
+          "k": "Controller: Currency/Fragment substashes",
+          "neu": "Navigational inputs",
+          "t": "new"
+        }
       ]
     },
     {
@@ -534,10 +2160,26 @@
       "n": "21",
       "title": "Microtransaction Updates",
       "rows": [
-        {"k":"Last of the Druids Mystery Box","neu":"Enabled","t":"new"},
-        {"k":"Blood Moon Level-up Extra Effect","neu":"Enabled","t":"new"},
-        {"k":"Red Queen's Portal","neu":"Enabled","t":"new"},
-        {"k":"Crocolisk Armour Set","neu":"Enabled","t":"new"}
+        {
+          "k": "Last of the Druids Mystery Box",
+          "neu": "Enabled",
+          "t": "new"
+        },
+        {
+          "k": "Blood Moon Level-up Extra Effect",
+          "neu": "Enabled",
+          "t": "new"
+        },
+        {
+          "k": "Red Queen's Portal",
+          "neu": "Enabled",
+          "t": "new"
+        },
+        {
+          "k": "Crocolisk Armour Set",
+          "neu": "Enabled",
+          "t": "new"
+        }
       ]
     },
     {
@@ -545,66 +2187,577 @@
       "n": "22",
       "title": "Bug Fixes",
       "rows": [
-        {"k":"Allied Hiveborn raised as Spectres","neu":"Fixed","t":"chg"},
-        {"k":"Locus Mine / Runegraft of Refraction + Kinetic Blast/Spectral Helix","neu":"Fixed explosion/bounce interaction","t":"chg"},
-        {"k":"Triggered skills (Kinetic Flux) + Poet's Pen","neu":"Fixed trigger","t":"chg"},
-        {"k":"Living Lightning + restricted supports (Shield Charge+Multistrike)","neu":"Fixed","t":"chg"},
-        {"k":"Storm Burst orbs stuck on terrain","neu":"Fixed","t":"chg"},
-        {"k":"Dream within a Dream achievement","neu":"Fixed","t":"chg"},
-        {"k":"Gladiator achievement","neu":"Now completable by clearing Pit Map","t":"chg"},
-        {"k":"Incarnation of Dread Lightning Tendrils persist","neu":"Fixed","t":"chg"},
-        {"k":"Multiple Evolving Shrine buffs + rarity upgrade","neu":"Fixed","t":"chg"},
-        {"k":"Spectral Shield Throw pierce","neu":"Fixed (stated cannot)","t":"chg"},
-        {"k":"Static Strike beams target chests","neu":"Fixed","t":"chg"},
-        {"k":"Static Strike buff from chest","neu":"Fixed","t":"chg"},
-        {"k":"Shockwave Totem nova visuals","neu":"Fixed (slightly larger than dmg area)","t":"chg"},
-        {"k":"Orb of Storms visual area","neu":"Fixed (smaller than dmg)","t":"chg"},
-        {"k":"Chance to Bleed / Rupture showing as Spell support","neu":"Fixed display","t":"chg"},
-        {"k":"Vaal Skills on Totems soul prevention","neu":"Fixed (only on placement)","t":"chg"},
-        {"k":"Torment Scarab Ruthless text (3 vs 2)","neu":"Fixed","t":"chg"},
-        {"k":"Champion Fortification via Fortitude notable","neu":"Fixed (Replica Badge interaction)","t":"chg"},
-        {"k":"Abhorrent Interrogation Chaos pen block","neu":"Fixed (was blocking Chaos)","t":"chg"},
-        {"k":"Steelworm quiver buff persist/swap","neu":"Fixed","t":"chg"},
-        {"k":"Taming level requirement removal via implicit","neu":"Fixed","t":"chg"},
-        {"k":"Claw Life Leech Mastery description","neu":"Fixed (Life only)","t":"chg"},
-        {"k":"Gold Dropped by Slain Enemies quantity","neu":"Fixed (hits-only)","t":"chg"},
-        {"k":"Incarnation of Dread Roses reappear","neu":"Fixed","t":"chg"},
-        {"k":"Trarthan Gems from Expedition chests","neu":"Fixed (Heist only)","t":"chg"},
-        {"k":"Price of Protection Corrupted Maps","neu":"Fixed implicit creation","t":"chg"},
-        {"k":"Herald of the Hive break pots","neu":"Fixed","t":"chg"},
-        {"k":"Cold Crits can't Stun immune/full-ailment enemies","neu":"Fixed","t":"chg"},
-        {"k":"Weapon Set 2 swap bug","neu":"Fixed (needed double swap)","t":"chg"},
-        {"k":"Beast capture fail","neu":"Fixed (rare)","t":"chg"},
-        {"k":"Ritual Tribute amount","neu":"Fixed (rare)","t":"chg"},
-        {"k":"King of the Mists phasing","neu":"Fixed (rare)","t":"chg"},
-        {"k":"Defiance/Dread Banner Quality from Siosa (Ruthless)","neu":"Fixed","t":"chg"},
-        {"k":"Trarthan Gems in Ruthless Heist","neu":"Fixed (now side-room chests)","t":"chg"},
-        {"k":"Summon Spectral Wolf Life display","neu":"Fixed","t":"chg"},
-        {"k":"Mirrored Maps + Delirium Orb highlight","neu":"Fixed","t":"chg"},
-        {"k":"Reflecting Mist UI pause","neu":"Fixed","t":"chg"},
-        {"k":"Ruthless Unique league rewards","neu":"Fixed generation","t":"chg"},
-        {"k":"Incursion Caster mods on Attack Wands","neu":"Fixed","t":"chg"},
-        {"k":"Vaal Orb on Essence achievement","neu":"Fixed + desc update","t":"chg"},
-        {"k":"Stash affinities on remove-only tabs","neu":"Fixed","t":"chg"},
-        {"k":"Oak/Alira/Kraityn Act 7 spectators","neu":"Fixed","t":"chg"},
-        {"k":"Thunderstorm party visuals","neu":"Fixed","t":"chg"},
-        {"k":"Level-up Effects first-session visuals","neu":"Fixed","t":"chg"},
-        {"k":"Heist alarm light artefacts","neu":"Fixed","t":"chg"},
-        {"k":"Incarnation of Dread rose uncollectable","neu":"Fixed","t":"chg"},
-        {"k":"Locale thousandths glyph","neu":"Fixed","t":"chg"},
-        {"k":"Ctrl+Left/Right text nav wrap","neu":"Fixed","t":"chg"},
-        {"k":"Dun Shield MTX effects lost","neu":"Fixed","t":"chg"},
-        {"k":"Sirus/Incarnation of Dread uniques over-drop in Feared","neu":"Fixed","t":"chg"},
-        {"k":"Vruun Marshal of Xesht damage variance","neu":"Fixed","t":"chg"},
-        {"k":"Arrogance Reservation vs Autoexertion Warcries","neu":"Fixed","t":"chg"},
-        {"k":"Commandment of Ire death crash","neu":"Fixed","t":"chg"},
-        {"k":"Respec Points cap 65535","neu":"Fixed (science credit)","t":"chg"},
-        {"k":"Phrecia Riker/Leo Unique Idols","neu":"Fixed","t":"chg"},
-        {"k":"Phrecia Orialchum Ore buffs","neu":"Fixed","t":"chg"},
-        {"k":"Maven clone Incarnation of Dread (Phrecia)","neu":"Fixed (disabled)","t":"chg"},
-        {"k":"Maven clone Elder in Uber Elder (Phrecia)","neu":"Fixed","t":"chg"},
-        {"k":"Give Points To Guild (consoles)","neu":"Fixed","t":"chg"},
-        {"k":"Checkpoint update on waypoint/leave","neu":"Fixed","t":"chg"}
+        {
+          "k": "Allied Hiveborn raised as Spectres",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Locus Mine / Runegraft of Refraction + Kinetic Blast/Spectral Helix",
+          "neu": "Fixed explosion/bounce interaction",
+          "t": "chg"
+        },
+        {
+          "k": "Triggered skills (Kinetic Flux) + Poet's Pen",
+          "neu": "Fixed trigger",
+          "t": "chg"
+        },
+        {
+          "k": "Living Lightning + restricted supports (Shield Charge+Multistrike)",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Storm Burst orbs stuck on terrain",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Dream within a Dream achievement",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Gladiator achievement",
+          "neu": "Now completable by clearing Pit Map",
+          "t": "chg"
+        },
+        {
+          "k": "Incarnation of Dread Lightning Tendrils persist",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Multiple Evolving Shrine buffs + rarity upgrade",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Spectral Shield Throw pierce",
+          "neu": "Fixed (stated cannot)",
+          "t": "chg"
+        },
+        {
+          "k": "Static Strike beams target chests",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Static Strike buff from chest",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Shockwave Totem nova visuals",
+          "neu": "Fixed (slightly larger than dmg area)",
+          "t": "chg"
+        },
+        {
+          "k": "Orb of Storms visual area",
+          "neu": "Fixed (smaller than dmg)",
+          "t": "chg"
+        },
+        {
+          "k": "Chance to Bleed / Rupture showing as Spell support",
+          "neu": "Fixed display",
+          "t": "chg"
+        },
+        {
+          "k": "Vaal Skills on Totems soul prevention",
+          "neu": "Fixed (only on placement)",
+          "t": "chg"
+        },
+        {
+          "k": "Torment Scarab Ruthless text (3 vs 2)",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Champion Fortification via Fortitude notable",
+          "neu": "Fixed (Replica Badge interaction)",
+          "t": "chg"
+        },
+        {
+          "k": "Abhorrent Interrogation Chaos pen block",
+          "neu": "Fixed (was blocking Chaos)",
+          "t": "chg"
+        },
+        {
+          "k": "Steelworm quiver buff persist/swap",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Taming level requirement removal via implicit",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Claw Life Leech Mastery description",
+          "neu": "Fixed (Life only)",
+          "t": "chg"
+        },
+        {
+          "k": "Gold Dropped by Slain Enemies quantity",
+          "neu": "Fixed (hits-only)",
+          "t": "chg"
+        },
+        {
+          "k": "Incarnation of Dread Roses reappear",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Trarthan Gems from Expedition chests",
+          "neu": "Fixed (Heist only)",
+          "t": "chg"
+        },
+        {
+          "k": "Price of Protection Corrupted Maps",
+          "neu": "Fixed implicit creation",
+          "t": "chg"
+        },
+        {
+          "k": "Herald of the Hive break pots",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Cold Crits can't Stun immune/full-ailment enemies",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Weapon Set 2 swap bug",
+          "neu": "Fixed (needed double swap)",
+          "t": "chg"
+        },
+        {
+          "k": "Beast capture fail",
+          "neu": "Fixed (rare)",
+          "t": "chg"
+        },
+        {
+          "k": "Ritual Tribute amount",
+          "neu": "Fixed (rare)",
+          "t": "chg"
+        },
+        {
+          "k": "King of the Mists phasing",
+          "neu": "Fixed (rare)",
+          "t": "chg"
+        },
+        {
+          "k": "Defiance/Dread Banner Quality from Siosa (Ruthless)",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Trarthan Gems in Ruthless Heist",
+          "neu": "Fixed (now side-room chests)",
+          "t": "chg"
+        },
+        {
+          "k": "Summon Spectral Wolf Life display",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Mirrored Maps + Delirium Orb highlight",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Reflecting Mist UI pause",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Ruthless Unique league rewards",
+          "neu": "Fixed generation",
+          "t": "chg"
+        },
+        {
+          "k": "Incursion Caster mods on Attack Wands",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Vaal Orb on Essence achievement",
+          "neu": "Fixed + desc update",
+          "t": "chg"
+        },
+        {
+          "k": "Stash affinities on remove-only tabs",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Oak/Alira/Kraityn Act 7 spectators",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Thunderstorm party visuals",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Level-up Effects first-session visuals",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Heist alarm light artefacts",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Incarnation of Dread rose uncollectable",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Locale thousandths glyph",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Ctrl+Left/Right text nav wrap",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Dun Shield MTX effects lost",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Sirus/Incarnation of Dread uniques over-drop in Feared",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Vruun Marshal of Xesht damage variance",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Arrogance Reservation vs Autoexertion Warcries",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Commandment of Ire death crash",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Respec Points cap 65535",
+          "neu": "Fixed (science credit)",
+          "t": "chg"
+        },
+        {
+          "k": "Phrecia Riker/Leo Unique Idols",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Phrecia Orialchum Ore buffs",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Maven clone Incarnation of Dread (Phrecia)",
+          "neu": "Fixed (disabled)",
+          "t": "chg"
+        },
+        {
+          "k": "Maven clone Elder in Uber Elder (Phrecia)",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Give Points To Guild (consoles)",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "Checkpoint update on waypoint/leave",
+          "neu": "Fixed",
+          "t": "chg"
+        }
+      ]
+    },
+    {
+      "id": "hotfixes",
+      "n": "23",
+      "title": "Hotfixes (post-launch)",
+      "sub": "Updates 2026-03-01 → 03-06",
+      "rows": [
+        {
+          "k": "2026-03-06: Atlas catch-up (Standard)",
+          "neu": "If account has Voidstones, completing a node completes all same-tier-and-lower",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-06: The Messenger",
+          "neu": "Now rewards a Harbinger Unique",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-06: The Journey",
+          "neu": "Now rewards a Journey Tattoo",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-06: Desecrated Virtue",
+          "neu": "Now rewards L4 23% Quality Exceptional Support",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-06: Guardian Sentinel of Radiance",
+          "neu": "Permanent minion, +36% Move Speed, persists between areas",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-06: The Landing",
+          "neu": "Temporarily disabled",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-06: Side Quest",
+          "neu": "Now rewards an Incarnation Echo",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-06: Disabled Divination Cards",
+          "neu": "The Bargain, The Obscured, The Puzzle",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-06: The Cheater",
+          "neu": "Temporarily disabled",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-05: Breach Rooms (Incursion/Delve)",
+          "neu": "Re-enabled, contain Unstable Breaches",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-05: Home / Gemcutter's Mercy",
+          "neu": "State Empower/Enhance/Enlighten (not Exceptional Gem)",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-05: Crocolisk Armour Set",
+          "neu": "Enabled",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-05: Harrowing Carapaces (Ruthless)",
+          "neu": "100% Influence Scarab chance",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Bestiary Corrupt Map",
+          "neu": "30% Q → Implicit Modifier",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Replenishing Shrine Buff",
+          "old": "Regen 10% Mana/s",
+          "neu": "200% inc Mana Regen",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-04: Lesser Replenishing Shrine",
+          "old": "Regen 3.33% Mana/s",
+          "neu": "100% inc Mana Regen",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-04: Delve Fossils",
+          "neu": "Removed outside Delve; more behind fractured walls",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Fossilised Delirium Orbs/Incubators",
+          "neu": "No longer obtainable",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-04: Heist Brute Force Contracts",
+          "neu": "Can grant Fragment Rewards",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-04: Respec Points cap",
+          "neu": "65535 (science credit)",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Phrecia Riker/Leo Unique Idols",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Phrecia Orialchum Ore buffs",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Maven clone Dread/Elder (Phrecia)",
+          "neu": "Disabled/fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Give Points To Guild (consoles)",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Checkpoint update",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-04: Red Queen's Portal",
+          "neu": "Enabled",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-03: Vaal Breach",
+          "neu": "Cannot be obtained; temporarily disabled (future rework)",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-03: The Emptiness",
+          "neu": "Temporarily disabled",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-03: Gladiator achievement",
+          "neu": "Completable by clearing Pit Map",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-03: Nightmare Maps monster count",
+          "neu": "Reduced to not greatly exceed regular",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-03: Valdo's Puzzle Box",
+          "neu": "+62 foiled Map options",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-03: Voidborn Reliquary",
+          "neu": "+72 foiled Unique options",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-03: Vruun damage variance",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-03: Arrogance vs Autoexertion",
+          "neu": "Fixed",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-03: Voidstones",
+          "neu": "Min Tier→16, +1 Tier drop, T15- → Gold, enable Nightmare",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-03: Cryogenesis (Breachlord)",
+          "neu": "Added Damage cannot be replaced this way",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-03: Tora (Ruthless)",
+          "old": "Harbinger Scarabs",
+          "neu": "Cartography Scarabs",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-02: Viper Strike of the Mamba",
+          "neu": "30% less Atk Spd / 20% less Hit dmg DW; no multi-Poison per Hit",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-02: Harvest Beasts",
+          "neu": "Majority much more common",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-02: Rare Monster → Currency convert",
+          "neu": "More common",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-02: Heist Trinket Exalted conversion",
+          "neu": "Disabled; new Ancient Orb conversion; lower Divine",
+          "t": "chg"
+        },
+        {
+          "k": "2026-03-02: Inscribed Ultimatums",
+          "neu": "Enabled for Ancient/Fracturing; Exalted higher stacks/lower diff",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-02: Eater Altars",
+          "neu": "Can grant Ancient Orbs",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-02: Ancient/Fracturing Orbs",
+          "neu": "Sanctum rewards",
+          "t": "new"
+        },
+        {
+          "k": "2026-03-02: Currency Exchange Gold Fees",
+          "neu": "Lowered",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-02: Crafting Bench (Exalted cost)",
+          "old": "1-3 Exalted",
+          "neu": "4 Exalted",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-02: Influenced set recipe",
+          "old": "2 Exalted Shards",
+          "neu": "1 Exalted Orb",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-02: Low Tolerance Cluster",
+          "old": "300% poison on non-poisoned",
+          "neu": "200%",
+          "t": "nerf"
+        },
+        {
+          "k": "2026-03-01: Chain Support",
+          "old": "150% mult",
+          "neu": "140%",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-01: Follow-Through Cluster",
+          "old": "15% per chain, no cap",
+          "neu": "20% per chain, cap 100%",
+          "t": "buff"
+        },
+        {
+          "k": "2026-03-01: Sirus/Dread uniques over-drop (Feared)",
+          "neu": "Fixed",
+          "t": "chg"
+        }
       ]
     }
   ]
