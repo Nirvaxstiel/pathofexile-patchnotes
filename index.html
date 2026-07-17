@@ -67,6 +67,21 @@
   .b-new{color:var(--amber);border-color:rgba(232,161,58,.5);background:rgba(232,161,58,.07)}
   .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11px;color:var(--dim)}
   .legend span{border:1px solid var(--line);padding:2px 8px}
+  /* sleek themed scrollbars */
+  *{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--amber),var(--cyan));border-radius:6px;border:2px solid var(--bg)}
+  ::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--cyan),var(--amber))}
+  /* searchable league combobox */
+  .dd{position:relative;margin-bottom:10px}
+  .dd input{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--ink);padding:8px 12px;font-size:13px;outline:none}
+  .dd input:focus{border-color:var(--cyan)}
+  .dd .list{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:30;background:var(--bg2);border:1px solid var(--line);box-shadow:4px 4px 0 rgba(0,0,0,.45);max-height:240px;overflow-y:auto;display:none}
+  .dd .list.open{display:block}
+  .dd .list .opt{padding:7px 12px;font-size:12.5px;color:var(--dim);cursor:pointer;display:flex;justify-content:space-between;gap:8px}
+  .dd .list .opt:hover,.dd .list .opt.active{color:var(--ink);background:rgba(95,208,224,.1)}
+  .dd .list .opt .lg{color:var(--amber);font-size:11px}
   code{font-family:"Cascadia Code",ui-monospace,monospace;background:rgba(255,255,255,.05);padding:1px 5px;border-radius:2px;font-size:12px;color:var(--cyan)}
   .loading{color:var(--dim);padding:30px;font-style:italic}
   footer{margin-top:64px;border-top:1px solid var(--line);padding-top:20px;color:var(--dim);font-size:11.5px;letter-spacing:.5px;line-height:1.7}
@@ -95,16 +110,14 @@
     </div>
   </header>
 
-  <div class="bar">
-    <label for="leagueSel">League</label>
-    <select id="leagueSel"></select>
-  </div>
-
   <div class="layout">
-    <!-- SIDE CONTENTS: selected league -> collapsible sections, searchable -->
+    <!-- SIDE CONTENTS: league selector + collapsible sections, searchable -->
     <aside class="side">
       <h2 class="s">Contents</h2>
-      <div class="lg" id="sideLeague"></div>
+      <div class="dd" id="leagueDD">
+        <input id="leagueIn" type="text" placeholder="Select league…" autocomplete="off" readonly>
+        <div class="list" id="leagueList"></div>
+      </div>
       <input id="tocSearch" type="text" placeholder="Filter sections / rows…" autocomplete="off">
       <nav class="toc" id="toc"></nav>
     </aside>
@@ -187,13 +200,19 @@ function countRows(s){
 const $ = id => document.getElementById(id);
 
 function renderLeague(data){
-  $("meta").innerHTML = metaHtml(data.meta);
-  $("sideLeague").innerHTML = leagueLabel(data.meta);
+  const m = data.meta || {};
+  const ttl = `Patch Differ — ${m.version||""} ${m.league||""}`.trim();
+  document.title = ttl;
+  document.querySelector("h1").textContent = ttl;
+  $("meta").innerHTML = metaHtml(m);
   $("app").innerHTML = data.sections.map(sectionHtml).join("");
   $("toc").innerHTML = tocHtml(data.sections, 0);
   $("mnav").innerHTML = data.sections.map(s=>`<a href="#${esc(s.id)}">${esc(s.title.split(' ').slice(0,2).join(' '))}</a>`).join("");
   $("tocSearch").value = "";
+  $("leagueIn").value = `${m.version||""} · ${m.league||""}`.trim();
 }
+
+let LEAGUES = [];
 
 async function loadLeague(path){
   $("app").innerHTML = `<div class="loading">Loading ${esc(path)}…</div>`;
@@ -207,13 +226,38 @@ async function loadLeague(path){
   }
 }
 
+function buildLeagueList(filter){
+  const q = (filter||"").trim().toLowerCase();
+  const list = $("leagueList");
+  const opts = LEAGUES
+    .filter(l => !q || `${l.version} ${l.league}`.toLowerCase().includes(q))
+    .sort((a,b)=>(b.version||"").localeCompare(a.version||""));
+  list.innerHTML = opts.map(l=>`<div class="opt" data-json="${esc(l.json)}"><span>${esc(l.version)} · ${esc(l.league)}</span><span class="lg">${esc(l.version)}</span></div>`).join("");
+  list.querySelectorAll(".opt").forEach(o=>{
+    o.addEventListener("click", ()=>{
+      $("leagueIn").value = o.querySelector("span").textContent;
+      list.classList.remove("open");
+      loadLeague(o.dataset.json);
+    });
+  });
+  return opts.length;
+}
+
 function init(){
-  const sel = $("leagueSel");
-  // sort by version desc
-  const list = [...MANIFEST].sort((a,b)=>(b.version||"").localeCompare(a.version||""));
-  sel.innerHTML = list.map(l=>`<option value="${esc(l.json)}">${esc(l.version)} · ${esc(l.league)}</option>`).join("");
-  sel.addEventListener("change", ()=>loadLeague(sel.value));
-  if(list.length) loadLeague(list[0].json);
+  LEAGUES = [...MANIFEST].sort((a,b)=>(b.version||"").localeCompare(a.version||""));
+  const dd = $("leagueDD"), inp = $("leagueIn"), list = $("leagueList");
+  buildLeagueList("");
+  if(LEAGUES.length) loadLeague(LEAGUES[0].json);
+
+  inp.addEventListener("focus", ()=>{ inp.removeAttribute("readonly"); buildLeagueList(""); list.classList.add("open"); });
+  inp.addEventListener("input", ()=>{ buildLeagueList(inp.value); list.classList.add("open"); });
+  inp.addEventListener("keydown", e=>{
+    if(e.key === "Enter"){
+      const first = list.querySelector(".opt");
+      if(first){ $("leagueIn").value = first.querySelector("span").textContent; list.classList.remove("open"); loadLeague(first.dataset.json); }
+    } else if(e.key === "Escape"){ list.classList.remove("open"); }
+  });
+  document.addEventListener("click", e=>{ if(!dd.contains(e.target)) list.classList.remove("open"); });
 
   $("tocSearch").addEventListener("input", function(e){
     const q = e.target.value.trim().toLowerCase();

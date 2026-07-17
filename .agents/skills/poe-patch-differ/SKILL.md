@@ -19,19 +19,21 @@ If opinion is wanted later, that is a SEPARATE artifact, not this differ.
 ## Design principles (user-stated)
 - **FP / data-as-pure-structure.** The JSON is the single source of truth. Rendering is a pure
   function of the data; the template never changes per-league. Do NOT hand-edit generated HTML.
-- **Dead-easy plug-and-play.** Each league = ONE json file run through `build.py`. No server, no
-  build step beyond that one command, no hand-authored markup. Restyle once in the template,
+- **Dead-easy plug-and-play.** Each league = ONE json file under `leagues/<ver>/<ver>.json`, then a
+  single `build_site.py --root .`. No per-league HTML to author. Restyle once in the template,
   rebuild all leagues.
 
 ## Invocation (read this — host quirks)
 - Use `python` (NOT `python3` — `python3` is missing on this Windows/MSYS host; `python` is 3.11).
 - The vault path contains spaces (`Path of Exile`). The interactive terminal shell mangles spaced
-  paths under MSYS, so `python build.py "path/with spaces.json"` can fail with a FileNotFoundError
+  paths under MSYS, so `python build_site.py "/path/with spaces"` can fail with a FileNotFoundError
   on write. **Reliable invocation:** run the builder from execute_code via subprocess with absolute
-  Windows-style paths, OR `cd` into the skill dir first and pass only the json filename + `-o`.
+  Windows-style paths, OR `cd` into the skill dir and run `python scripts/build_site.py --root <repo>`.
   Verify the output exists afterward.
-- Output HTML embeds the JSON inline, so it opens from `file://` with no server. Keep it that way
-  (do not switch to fetch() — breaks local opening).
+- The SPA fetches league JSON at runtime, so **`file://` opening is blocked by most browsers**
+  (opaque-origin `fetch`). Serve the folder (`python -m http.server` from repo root) or deploy to
+  GitHub/Forgejo Pages (works natively). Document this in the repo README so users don't open
+  `index.html` directly and see a blank pane.
 
 ## Sourcing the patch notes (when authoring a new league json)
 - poewiki (`Version X.Y.Z`) is **Anubis bot-walled** via curl/web_extract — do not rely on it.
@@ -91,27 +93,46 @@ If `t` is `new` or `old` is absent, only `neu` is shown (amber/green). Otherwise
 
 The site is a single-page app. `index.html` is the shell (league selector + collapsible contents
 panel); each league renders client-side by fetching its own JSON. No per-league HTML is generated.
+`build_site.py` scans `leagues/*/*.json` (skipping `leagues/index.json`), writes the manifest
+`leagues/index.json` (`[{version, league, json}]`), and emits `index.html` with the manifest
+inlined (`__MANIFEST__` token). League *data* is fetched at runtime, NOT embedded — so re-run the
+builder after editing any league JSON.
 
 ```bash
-python build_site.py --root .
-# -> leagues/index.json  (manifest: [{version, league, json}, ...])
-# -> index.html          (SPA shell; opens from file:// or GitHub/Forgejo Pages)
+python scripts/build_site.py --root .
+# -> leagues/index.json  (manifest)
+# -> index.html          (SPA shell; serve over http(s) or Pages — file:// fetch is blocked)
 ```
 
-The template lives at `templates/patch.template.html`. `build_site.py` scans `leagues/*/*.json`,
-writes the manifest, and emits `index.html` with the manifest inlined (`__MANIFEST__` token).
 To add a league: drop `leagues/<ver>/<ver>.json`, re-run `build_site.py`. To restyle, edit ONLY
-the template's CSS — never the data.
+the template's CSS — never the data. Verify a build headlessly: `node scripts/verify_spa.js
+index.html leagues/3.29/3.29.json Winter` (stubs DOM + fetch, no browser).
 
 ## Conventions for a patch repo
 - Folder e.g. `Patchnotes/`. Each league = one JSON file under `leagues/<ver>/<ver>.json`.
 - The JSON is the durable, diffable artifact. `index.html` + `leagues/index.json` are build outputs.
-- `index.html` fetches league JSON at runtime; serve over http(s) or a browser that permits
-  local `file://` fetches. (GitHub/Forgejo Pages works natively.)
+- `index.html` fetches league JSON at runtime; serve over http(s) (GitHub/Forgejo Pages native).
+
+## Pitfalls
+
+- **CSS tag-vs-ID scoping.** A bare `nav{display:none}` hides *every* `<nav>` — including the
+  sidebar `<nav id="toc">`. Scope the mobile top bar to `#mnav` only. Symptom of getting this
+  wrong: the contents panel shows only the league header and the filter "does nothing" (it toggles
+  classes on nodes you can't see). This bug shipped once and looked like a dead filter.
+- **`file://` blocks local fetch.** The SPA loads league JSON via `fetch()`; most browsers refuse
+  `fetch()` of local files over `file://`. Serve the folder or deploy to Pages. Document this.
+- **Recursion is a data invariant, not a feature.** `sections[].sections[]` nests arbitrarily;
+  `sectionHtml` AND `tocHtml` must both recurse, and the filter walk (`#toc > details`, then nested
+  `:scope details`) must too. A leaf omits `sections`; a branch omits `rows`.
+- **Manifest, not data, is embedded.** `index.html` embeds only `__MANIFEST__`. After editing any
+  league JSON, re-run `build_site.py` — editing JSON alone won't change a stale `index.html`.
+- Deeper debugging notes in `references/pitfalls.md`.
 
 ## Files in this skill
 - `templates/patch.template.html` — the SPA shell + client-side renderer (Wallace Corp / Blade Runner palette).
 - `scripts/build_site.py` — scan leagues -> manifest + index.html.
+- `scripts/verify_spa.js` — headless render check (no browser needed).
 - `references/schema.md` — full field reference.
 - `references/sourcing.md` — how the notes were pulled into JSON.
+- `references/pitfalls.md` — deeper debugging notes (CSS, fetch, recursion).
 - `examples/3.29.json` — the extracted 3.29 dataset (reference).
