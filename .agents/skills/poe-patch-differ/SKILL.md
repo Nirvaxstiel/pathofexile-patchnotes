@@ -40,9 +40,21 @@ If opinion is wanted later, that is a SEPARATE artifact, not this differ.
 - The official forum thread (`pathofexile.com/forum/view-thread/...`) extracts cleanly via
   `web_extract` (full notes body; the middle may be truncated in the tool preview — the full text
   is saved to a cache file you can read in chunks).
+- **The live forum AND poewiki are Cloudflare-blocked to `curl`** (returns a 5KB challenge page or
+  a 4.6KB block). Do NOT try to re-fetch art URLs headlessly — they won't resolve, and you must
+  never fabricate `web.poecdn.com`/wiki URLs. Ask the user to paste the real image links.
+- **`web_extract` strips ALL images** — the cached markdown has zero `<img>`/poecdn URLs. The real
+  art links only exist on the live notes page (inline `web.poecdn.com/...`). When the user provides
+  one, copy it verbatim into the row's `img` field.
 - Process: extract notes → chunk into sections → write rows as `{k,old,neu,t}`. For reworks/bug
   fixes with no clean number, omit `old` (qualitative) rather than inventing a before-value.
 - See `references/sourcing.md` for the extraction/chunking recipe.
+
+## Hosting (GitHub Pages / Codeberg Pages)
+- GitHub: the bundled `.github/workflows/build.yml` rebuilds + deploys on push.
+- **Codeberg/Forgejo needs NO dedicated CI file.** Codeberg Pages serves
+  `https://<user>.codeberg.page/<repo>/` directly from the repo (enable Pages in repo settings).
+  Do NOT add a `.forgejo/workflows/*.yml` — it's dead weight. Push the same repo and it works.
 
 ## When to use
 - You have a set of patch notes and want a scannable differ (nerfs red, buffs green, changes cyan, new amber).
@@ -89,6 +101,27 @@ A patch is a JSON object:
 If `t` is `new` or `old` is absent, only `neu` is shown (amber/green). Otherwise both `old`
 (struck-through) and `neu` render side by side — that is the differ.
 
+### Mixed-signal rows: `pos` / `neg` classification
+A single change can help AND hurt (e.g. "no longer counts as party member" — combat penalty gone,
+but the item-quantity/rarity bonus is also gone). Players weight effects by impact, so the badge is
+NOT a naive "any buff ⇒ BUFF". Add `pos` / `neg` arrays of category tags; resolution in
+`resolveClass()` is priority-ordered **`loot` (3) > `combat` (2) > `other` (1)**:
+- higher-priority side wins; equal priority → `chg`; neither present → fall back to `t`.
+- `loot` = quantity/rarity/currency/drop rate/vendor. `combat` = damage/life/defense/cost/cooldown/
+  monster stats. `other` = AI/UI/QoL/behaviour.
+- Example: `{...,"t":"buff","neg":["loot"]}` → resolves **NERF** (loot loss outranks absent combat).
+This is encoded in `templates/patch.template.html` (`resolveClass`) and documented in
+`references/schema.md`. Always tag mixed rows with `pos`/`neg` rather than a manual `t`.
+
+### `img` — official art (lightbox)
+Rows may carry `"img": "<url>"`. It renders an `IMG` button → a lightbox with zoom (buttons +
+scroll), pan (drag), flip H/V, rotate, reset, close. **Source rule:** patch-note bodies embed
+`web.poecdn.com/...` image URLs inline (ascendancy trees, uniques, skill icons). Copy those
+VERBATIM into `img`. Do NOT invent URLs and do NOT hotlink from wikis. Note: `web_extract` returns
+TEXT ONLY (images stripped), so the URL will NOT appear in the extracted notes — the user must
+paste the real `web.poecdn.com` link (or you transcribe it from the live notes page). Fabricating
+an image URL breaks the objective/source-attributed standard.
+
 ## Build (plug and play)
 
 The site is a single-page app. `index.html` is the shell (league selector + collapsible contents
@@ -126,6 +159,27 @@ index.html leagues/3.29/3.29.json Winter` (stubs DOM + fetch, no browser).
   `:scope details`) must too. A leaf omits `sections`; a branch omits `rows`.
 - **Manifest, not data, is embedded.** `index.html` embeds only `__MANIFEST__`. After editing any
   league JSON, re-run `build_site.py` — editing JSON alone won't change a stale `index.html`.
+- **Title/h1 is render state, not build-time.** `__TITLE__` is only the initial (newest) league.
+  `renderLeague` MUST set `document.title` and `h1.textContent` from the loaded `meta`, or switching
+  leagues leaves a stale title. Shipped once: title never changed on league switch.
+- **Native `<select>` is not searchable.** Use a custom combobox for the league/version picker
+  (text input + filtered `.list` of `.opt`, click/Enter to select, Esc/outside-click to close).
+  Make the input `readonly` and `removeAttribute('readonly')` on focus so mobile keyboards stay
+  hidden. Do NOT duplicate the league name in both the selector and the contents panel — show it once.
+- **Cross-browser themed scrollbars.** WebKit needs `::-webkit-scrollbar*` (thumb/track/width);
+  Firefox needs `scrollbar-width:thin` + `scrollbar-color`. Set both, applied to `body`, `.side`,
+  `.toc`, `.diff`. A bare OS scrollbar clashes with the dark palette.
+- **Preserve the `const $ = id => document.getElementById(id)` helper.** Every render/init function
+  uses `$`. A mid-patch edit that replaces the function block can silently drop this line (it lived
+  between `countRows` and `renderLeague`); the build still emits but the page throws `ReferenceError:
+  $ is not defined` at runtime. After any `<script>` edit, rebuild AND headless-run `verify_spa.js`
+  so the error surfaces before commit.
+- **Favicon: inline SVG data-URI, not a file.** `<link rel="icon" href="data:image/svg+xml,...">`
+  (URL-encoded `<svg>`). No asset to commit, no 404 on Pages. Works on GitHub + Codeberg.
+- **Images: data field only, never fabricated.** `img` is optional per row; the lightbox reads it
+  as-is. There is NO image extraction step — `web_extract` strips art and the forum is CF-blocked to
+  curl. If a row needs art, the `img` URL must come from the user (verbatim `web.poecdn.com` link).
+  Shipping a guessed URL breaks source-attribution.
 - Deeper debugging notes in `references/pitfalls.md`.
 
 ## Files in this skill
@@ -134,5 +188,6 @@ index.html leagues/3.29/3.29.json Winter` (stubs DOM + fetch, no browser).
 - `scripts/verify_spa.js` — headless render check (no browser needed).
 - `references/schema.md` — full field reference.
 - `references/sourcing.md` — how the notes were pulled into JSON.
+- `references/img-and-classification.md` — image sourcing + `pos`/`neg` loot>combat>other hierarchy.
 - `references/pitfalls.md` — deeper debugging notes (CSS, fetch, recursion).
 - `examples/3.29.json` — the extracted 3.29 dataset (reference).

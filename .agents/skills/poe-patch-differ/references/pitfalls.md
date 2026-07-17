@@ -59,3 +59,35 @@ has `<details>`. Run it in CI or after every template edit:
     node scripts/verify_spa.js index.html leagues/3.29/3.29.json Winter
 
 This catches the "sidebar empty / filter dead" class of bug without launching a browser.
+
+## 6. Title / h1 is render state, not build-time
+`__TITLE__` is only the newest league, baked at build time. `renderLeague(data)` MUST set
+`document.title` and `h1.textContent` from `data.meta` (`Patch Differ — <version> <league>`), or
+switching leagues leaves a stale title. Shipped once: title never changed on league switch. When
+patching the template, grep the built JS for `document.title =` to confirm it tracks the load.
+
+## 7. Searchable selector — never a native `<select>`
+Native `<select>` cannot be typed into. For the league/version picker use a custom combobox:
+- markup: `<div class="dd"><input id="leagueIn" readonly><div class="list" id="leagueList"></div></div>`
+- `buildLeagueList(q)` filters `LEAGUES` by `(version + " " + league)` lowercased, sorts newest-first,
+  renders `<div class="opt" data-json=...>`. Click / Enter(top match) selects; Esc / outside-click closes.
+- `readonly` + `removeAttribute('readonly')` on focus keeps mobile keyboards from popping on a picker.
+- Do NOT duplicate the league name in both the selector and the contents panel — show it once.
+
+## 8. Themed scrollbars (cross-browser)
+A bare OS scrollbar clashes with the dark palette. Set both engines:
+```css
+*{scrollbar-width:thin;scrollbar-color:var(--line) transparent}      /* Firefox */
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--amber),var(--cyan));border-radius:6px;border:2px solid var(--bg)}
+```
+Apply to `body`, `.side`, `.toc`, `.diff`.
+
+## 9. Headless recipe caveats
+When hand-rolling a `node` DOM stub (instead of `verify_spa.js`), `document.querySelector('h1')`
+must return the SAME node each call or `textContent` won't persist (a stub returning a fresh node
+shows empty `H1` even though the real DOM keeps it — assert `document.title` instead). And `let`
+declarations inside an `eval(js)` are block-scoped to the eval, so reassigning a top-level
+`LEAGUES` from outside won't reach the eval'd functions — unit-test pure helpers (the
+`buildLeagueList` filter expression) in isolation to avoid that scoping trap.

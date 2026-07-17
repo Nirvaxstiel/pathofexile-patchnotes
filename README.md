@@ -16,13 +16,18 @@ Hosted on GitHub Pages / Forgejo Pages (auto-built by `.github/workflows/build.y
 > runs. You are free to **copy it, fork it, or replicate it yourself**; nothing here is secret or
 > proprietary. The data model and build scripts are plain JSON + Python and need no special runtime.
 >
-> - `index.html` (the SPA shell) and `leagues/index.json` (manifest) are **build outputs** — do not
->   hand-edit them; edit the skill's `templates/patch.template.html` and rebuild.
-> - The JSON under `leagues/<ver>/<ver>.json` is the **durable data** you author per league.
->   The site fetches it at runtime and renders all sections in the side contents panel.
-> - `.agents/skills/` here is a **snapshot** of the agent's skill directory. The canonical copy
->   lives in the agent's skill store; when the skill is updated we re-copy it in. If they drift,
->   re-copy from the skill.
+- `index.html` (the SPA shell) and `leagues/index.json` (manifest) are **build outputs** — do not
+  hand-edit them; edit the skill's `templates/patch.template.html` and rebuild.
+- The JSON under `leagues/<ver>/<ver>.json` is the **durable data** you author per league.
+  The site fetches it at runtime and renders all sections in the side contents panel.
+- `.agents/skills/` here is a **snapshot** of the agent's skill directory. The canonical copy
+  lives in the agent's skill store; when the skill is updated we re-copy it in. If they drift,
+  re-copy from the skill.
+- **Favicon**: an inline SVG (palette diamond) is embedded in `index.html` — no asset file needed.
+- **Images**: rows may carry an `img` field (official `web.poecdn.com` art URLs copied verbatim
+  from the patch notes). An `IMG` button opens a lightbox with zoom / pan / flip / rotate.
+- **Classification**: mixed-signal rows use `pos`/`neg` category tags (`loot` > `combat` > `other`)
+  so the badge reflects player-weighted impact (see `schema.md`).
 >
 > **Not affiliated with Grinding Gear Games.** Patch text is sourced from official POE forum notes;
 > all interpretation, colour-coding, and tooling are ours.
@@ -48,11 +53,20 @@ Patchnotes/
 
 ## How it works
 
-`index.html` is a single-page app. A league `<select>` switches leagues; the left **contents
-panel** lists the selected league's sections (collapsible `<details>`), each expandable to its
-rows, with a live **filter box** that narrows sections + rows. The right pane renders the differ
-(buffs green, nerfs red, changes cyan, new amber). Each league is fetched as JSON on demand — no
-per-league HTML files.
+`index.html` is a single-page app. A league **searchable selector** (in the sidebar) switches
+leagues; the left **contents panel** lists the selected league's sections (collapsible
+`<details>`), each expandable to its rows, with a live **filter box** that narrows sections +
+rows. The right pane renders the differ (buffs green, nerfs red, changes cyan, new amber). Each
+league is fetched as JSON on demand — no per-league HTML files. Rows that carry an `img` field show
+an `IMG` button that opens a lightbox (zoom / pan / flip / rotate). The page `<title>` tracks the
+selected league.
+
+## Hosting (GitHub Pages / Codeberg Pages)
+
+The build is static. On **GitHub** the bundled `.github/workflows/build.yml` rebuilds and deploys
+to Pages on push. On **Codeberg/Forgejo** the same repo works unchanged — Codeberg Pages serves
+`https://<user>.codeberg.page/<repo>/` directly with no extra CI file needed. Just push the repo
+and enable Pages in the repo settings.
 
 ## Per-league workflow
 

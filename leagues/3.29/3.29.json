@@ -205,13 +205,17 @@
         },
         {
           "k": "Party member?",
-          "neu": "No longer counts as party member (no life/qty/rarity penalty)",
-          "t": "buff"
+          "neu": "No longer counts as party member (removes the +item quantity / +rarity bonus; the -life / -damage penalty is also gone)",
+          "t": "buff",
+          "neg": [
+            "loot"
+          ]
         },
         {
           "k": "Luminary (Scion)",
           "neu": "New ascendancy — permanently Hire Mercs (up to 3; 1 active)",
-          "t": "new"
+          "t": "new",
+          "img": ""
         },
         {
           "k": "Restored to Merc drops",
@@ -792,7 +796,8 @@
         {
           "k": "Reliquarian",
           "neu": "Notables shuffled for 3.29",
-          "t": "chg"
+          "t": "chg",
+          "img": "https://web.poecdn.com/public/news/2026-07-14/LeftReliqaurianAsendancy.jpg"
         }
       ]
     },
