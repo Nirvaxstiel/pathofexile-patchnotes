@@ -275,12 +275,6 @@
           "t": "chg"
         },
         {
-          "k": "Jewel top-tier mods",
-          "old": "—",
-          "neu": "Cold/Lightning Ailment eff 20% (was 15); Impale 8% (was 6); +34 Mana (was 40); 5% mana recoup (was 3); added spell dmg bumps; 8% Unholy Might on melee kill (was 5%); minion move spd 15% (was 10%); curse/elusive/blind adjustments.",
-          "t": "buff"
-        },
-        {
           "k": "Abyssal Pits pre-opened",
           "old": "—",
           "neu": "Abyssal Pits and the cracks leading to them are now already opened before you approach, subjugating souls of nearby enemies.",
@@ -291,6 +285,132 @@
           "old": "—",
           "neu": "If an area already has an Abyss, modifiers causing additional Abysses instead add two additional pits.",
           "t": "chg"
+        },
+        {
+          "k": "Jewel: Cold Ailment Effect",
+          "old": "up to 15%",
+          "neu": "20% increased Effect of Cold Ailments",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Lightning Ailment Effect",
+          "old": "up to 15%",
+          "neu": "20% increased Effect of Lightning Ailments",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Impale Effect",
+          "old": "up to 6%",
+          "neu": "8% increased Impale Effect (no longer rolls on Hypnotic or Ghastly Eye Jewels)",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Maximum Mana",
+          "old": "up to +40",
+          "neu": "+34 to maximum Mana",
+          "t": "nerf"
+        },
+        {
+          "k": "Jewel: Mana Recoup",
+          "old": "up to 3%",
+          "neu": "5% of Damage taken Recouped as Mana",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Fire Dmg to Spells",
+          "old": "up to 23 to 32",
+          "neu": "Adds 30 to 42 Fire Damage to Spells",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Cold Dmg to Spells",
+          "old": "up to 23 to 32",
+          "neu": "Adds 28 to 38 Cold Damage to Spells",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Lightning Dmg to Spells",
+          "old": "up to 6 to 45",
+          "neu": "Adds 8 to 59 Lightning Damage to Spells",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Physical Dmg to Spells",
+          "old": "up to 16 to 22",
+          "neu": "Adds 23 to 32 Physical Damage to Spells",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Chaos Dmg to Spells",
+          "old": "up to 16 to 22",
+          "neu": "Adds 23 to 32 Chaos Damage to Spells",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Fire Dmg (Shield/2H/DW)",
+          "old": "up to 25 to 34",
+          "neu": "Adds 33 to 44 Fire Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Cold Dmg (Shield/2H/DW)",
+          "old": "up to 25 to 34",
+          "neu": "Adds 20 to 41 Cold Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Lightning Dmg (Shield/2H/DW)",
+          "old": "up to 6 to 51",
+          "neu": "Adds 8 to 66 Lightning Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Physical Dmg (Shield/2H/DW)",
+          "old": "up to 17 to 24",
+          "neu": "Adds 24 to 35 Physical Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Chaos Dmg (Shield/2H/DW)",
+          "old": "up to 17 to 24",
+          "neu": "Adds 24 to 35 Chaos Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Unholy Might on Melee Kill",
+          "old": "up to 5%",
+          "neu": "8% chance to Gain Unholy Might for 4s on Melee Kill",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Minion Move Speed",
+          "old": "up to 10%",
+          "neu": "Minions have 15% increased Movement Speed",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Curse Effect (Consecrated)",
+          "old": "up to 15%",
+          "neu": "25% reduced Effect of Curses on you while on Consecrated Ground",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Avoid Ailments (Elusive)",
+          "old": "up to 10%",
+          "neu": "20% chance to Avoid Elemental Ailments while you have Elusive",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Hindered Enemy Regen",
+          "old": "up to 20%",
+          "neu": "Enemies Hindered by you have 35% reduced Life Regeneration rate",
+          "t": "buff"
+        },
+        {
+          "k": "Jewel: Blinded Enemy Crit",
+          "old": "up to 20%",
+          "neu": "Enemies Blinded by you have 30% reduced Critical Strike Chance",
+          "t": "buff"
         }
       ]
     },
@@ -2097,6 +2217,12 @@
           "k": "Caster Staff corruption",
           "old": "—",
           "neu": "22-28% Cast Speed (was 12-15); local phys can roll on Warstaves; Two-Hand Axe +0.2-0.4m range (was 0.1-0.2, also 1H Axes/Swords)",
+          "t": "buff"
+        },
+        {
+          "k": "Caster Weapon Hybrid Prefixes",
+          "old": "up to 39% increased at max tier (one-hand)",
+          "neu": "Hybrid increased Spell/Minion Damage and Mana Prefix Modifiers on caster weapons increased at all tiers, up to 49% increased at max tier on one-hand weapons (previously 39%)",
           "t": "buff"
         }
       ]
