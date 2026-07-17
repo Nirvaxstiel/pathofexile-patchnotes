@@ -180,12 +180,58 @@ index.html leagues/3.29/3.29.json Winter` (stubs DOM + fetch, no browser).
   as-is. There is NO image extraction step — `web_extract` strips art and the forum is CF-blocked to
   curl. If a row needs art, the `img` URL must come from the user (verbatim `web.poecdn.com` link).
   Shipping a guessed URL breaks source-attribution.
+- **`img` is ROW-LEVEL ONLY.** The renderer reads `r.img` inside `renderRow`; a section-level
+  `"img"` key is silently ignored (no button appears). If an entire section's art should be
+  viewable, put `img` on the first row of that section (or every row that warrants it). Do NOT put
+  `img` on the section object — it looks wired but renders nothing. (If you want section-header
+  art later, that is a template change to `sectionHtml`, not a data convention.)
+- **TWO COPIES OF THE SKILL EXIST — edit the one the build actually reads.** On this host the
+  repo ships a copy at `<repo>/.agents/skills/poe-patch-differ/` AND the agent's copy lives at
+  `~/.hermes/skills/poe-patch-differ/`. They are NOT symlinked. `build_site.py` resolves the
+  template via `here("..//templates/patch.template.html")` — i.e. **relative to the build script
+  that's running**, which is the `.agents` copy when invoked from the repo. Editing the `.hermes`
+  copy alone produced a silently-stale `index.html` for a whole turn (template edits "worked" but
+  never reached the build). Rule: **always edit the `.agents/skills/poe-patch-differ/` copy** (the
+  build source), then sync it back to `~/.hermes/skills/poe-patch-differ/` so the two don't drift.
+  After ANY template-or-data change, rebuild AND headless-verify before committing.
+- **`web_extract` collapses the forum into few very long lines.** The cached `.md` is ~108K chars
+  but only ~67 newlines — the whole notes body is one or two giant lines. So naive `search_files`
+  / line-grep misses content. To slice into sections: use `re.finditer` over the full string, and
+  for each TOC title pick the **largest offset** occurrence (the TOC copy sits near the top at a
+  small offset; the real section body is much later). Split each section on `"Return to top"`.
+- **Verify completeness with `scripts/coverage_scan.py` (STRICT, per-section).** Hand-transcribing
+  400+ bullets always drops some (a whole Breach section was missing once; an Abyssal Jewel
+  numeric block was dropped by a summary row). The scanner is strict:
+  - Slices the forum cache into its real TOC sections (largest-offset occurrence of each known
+    title; forum collapses the notes into one/two giant lines, so titles are space-joined and
+    detected via a curated `KNOWN_TITLES` list — NOT a regex that would merge adjacent titles).
+  - Reports a **per-section coverage %** so a whole missing section (0%) is obvious.
+  - **Numeric-token enforcement:** a change fact carrying ≥2 distinct numbers (ranges like
+    "30 to 42", percentages, "(was 23 to 32)") is a HARD miss if NONE of those numbers appear
+    in the JSON. Word overlap alone can't fake a missing number — this is what catches dropped
+    numeric-value lists that a summary row "covers" on word-overlap.
+  - **Truncation detection:** any row whose `neu`/`old` contains "..." is flagged for expansion.
+  Run:
+  ```bash
+  python scripts/coverage_scan.py <forum_cache.md> <league.json>
+  ```
+  Titles are auto-detected; pass `--titles "A|B|C"` to override. Expect ~90%+ on a finished
+  league. The remaining misses are mostly **flavor/lore text and generic footnotes** ("Existing
+  versions can be updated with a Divine Orb", "We really hope you enjoy…") that are correctly NOT
+  rows — grep-confirm each miss before adding. The per-section % is the real signal: a section
+  at <80% with several numeric misses needs a look; a section at 100% with a couple of word-level
+  flags is fine.
+- **Signal words** the scanner keys on (in `coverage_scan.py` `SIGNALS`): `now, previously, up to,
+  increased, reduced, decreased, grants?, removed, added, changed, no longer, instead, chance,
+  renamed, reworked, replaces?, converted, split, doubled, halved, tripled, multiplier, more,
+  less, from \d, per , duration, radius, cooldown, cost, cap, limit, \bwas\b, \(was, deals, adds,
+  scales?, effectiveness, qualit(y|ies), implicit, modifier tier, tier rating, %`. Add to this set
+  whenever you find a change type the scanner misses.
 - Deeper debugging notes in `references/pitfalls.md`.
 
 ## Files in this skill
 - `templates/patch.template.html` — the SPA shell + client-side renderer (Wallace Corp / Blade Runner palette).
-- `scripts/build_site.py` — scan leagues -> manifest + index.html.
-- `scripts/verify_spa.js` — headless render check (no browser needed).
+- `scripts/coverage_scan.py` — line-by-line forum-vs-JSON coverage check (catches dropped bullets).
 - `references/schema.md` — full field reference.
 - `references/sourcing.md` — how the notes were pulled into JSON.
 - `references/img-and-classification.md` — image sourcing + `pos`/`neg` loot>combat>other hierarchy.

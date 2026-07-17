@@ -231,6 +231,18 @@
           "old": "—",
           "neu": "Endgame Rucksacks no longer roll Transmutation/Augmentation Orbs. Searing Exarch Altars can drop Merc Scarabs. Merc info sheet added.",
           "t": "chg"
+        },
+        {
+          "k": "Wager mechanic",
+          "old": "—",
+          "neu": "Duel a Mercenary by wagering an item they carry. Lose → forfeited gold + Merc teleports out. Win → Merc allies for a number of areas plus spoils.",
+          "t": "new"
+        },
+        {
+          "k": "Mercenary info sheet",
+          "old": "—",
+          "neu": "Hired Mercenaries now have an information sheet listing all their passive stats.",
+          "t": "new"
         }
       ]
     },
@@ -459,6 +471,12 @@
           "old": "—",
           "neu": "Splinters only from Legion encounters + Kingsmarch runners. Generals drop more; Sergeants/Chests lower chance but bigger stacks. Emblematic passive 0.3%→Emblems (was 0.6%).",
           "t": "chg"
+        },
+        {
+          "k": "Timeless Emblem — monster mods (Eternal)",
+          "old": "—",
+          "neu": "Each Emblem: 10% inc XP, 20% inc reward progress, Monsters deal 10% inc Damage, +10% Toughness/Accuracy/AoE per Revive (Eternal); +50% crit chance/+5% crit mult per Revive (Karui); etc.",
+          "t": "chg"
         }
       ]
     },
@@ -662,6 +680,18 @@
           "k": "Misc",
           "old": "—",
           "neu": "Pit of the Chimera: 1 wave/phase. Memory Thread Maps show target. Enshrouded Astrolabe→Deceptive Astrolabe. Remembered/Feared item-drop delay removed. Reflecting Mist currency more common, less modifier eff.",
+          "t": "chg"
+        },
+        {
+          "k": "Reflect Thorns — Physical",
+          "old": "% reflect of Hit Damage",
+          "neu": "Rare Monsters have Physical Thorns: activates on Phys Hit, lasts 5s, reflects a fixed Phys amount per Phys Hit; can't gain more than once/10s; you take it at most once/0.1s.",
+          "t": "chg"
+        },
+        {
+          "k": "Reflect Thorns — Elemental",
+          "old": "% reflect of Hit Damage",
+          "neu": "Rare Monsters have Elemental Thorns: activates on Ele Hit, lasts 5s, reflects fixed Ele Damage of the highest Ele type in the Hit; can't gain more than once/10s.",
           "t": "chg"
         }
       ]

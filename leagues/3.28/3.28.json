@@ -1364,6 +1364,12 @@
           "k": "Winter Orb",
           "neu": "Projectile Speed now affects ground-impact time",
           "t": "chg"
+        },
+        {
+          "k": "Smite",
+          "old": "impact radius 1.5 metres",
+          "neu": "impact radius 2.1 metres",
+          "t": "buff"
         }
       ]
     },

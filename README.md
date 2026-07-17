@@ -79,6 +79,24 @@ python .agents/skills/poe-patch-differ/scripts/build_site.py --root .
 To add a league: drop `leagues/<ver>/<ver>.json`, run `build_site.py`. On push, the workflow
 rebuilds and redeploys to Pages.
 
+## Completeness check (audit a league against the forum)
+
+After authoring a league, verify nothing was dropped from the official notes:
+
+```bash
+python .agents/skills/poe-patch-differ/scripts/coverage_scan.py \
+  ~/.hermes/cache/web/www.pathofexile.com-<hash>.md \
+  leagues/<ver>/<ver>.json
+```
+
+The scanner (strict, per-section) slices the cached forum notes into their real TOC sections,
+reports a **coverage % per section**, enforces that numeric values actually appear in the JSON
+(catches dropped numeric lists hidden behind a summary row), and flags any row whose text was
+truncated with `...`. A finished league should sit at ~90%+; the remaining misses are mostly
+lore/flavour text and generic footnotes that are correctly *not* rows — grep-confirm each before
+adding. The forum cache is produced by `web_extract` (full notes body saved even though the tool
+preview is truncated); image URLs are stripped from it, so art still comes from the user.
+
 ## Sync the skill in
 
 Whenever the agent's skill changes, copy it in:
