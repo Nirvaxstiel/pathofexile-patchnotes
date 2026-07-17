@@ -279,6 +279,18 @@
           "old": "—",
           "neu": "Cold/Lightning Ailment eff 20% (was 15); Impale 8% (was 6); +34 Mana (was 40); 5% mana recoup (was 3); added spell dmg bumps; 8% Unholy Might on melee kill (was 5%); minion move spd 15% (was 10%); curse/elusive/blind adjustments.",
           "t": "buff"
+        },
+        {
+          "k": "Abyssal Pits pre-opened",
+          "old": "—",
+          "neu": "Abyssal Pits and the cracks leading to them are now already opened before you approach, subjugating souls of nearby enemies.",
+          "t": "new"
+        },
+        {
+          "k": "Additional Abysses",
+          "old": "—",
+          "neu": "If an area already has an Abyss, modifiers causing additional Abysses instead add two additional pits.",
+          "t": "chg"
         }
       ]
     },
@@ -405,6 +417,12 @@
           "old": "—",
           "neu": "Scaeva, Triad Grip, Untouched Soul, Bow/Staff/Two-Hand masteries, Omen of Blanching→Trichromatism, Vorici safehouse rewards reworked.",
           "t": "chg"
+        },
+        {
+          "k": "White Socket enchantments",
+          "old": "Appeared on Heist Rewards and from Tailoring/Tempering Orbs",
+          "neu": "Enchantments on Body Armour/Weapons related to White Sockets or setting all Sockets to Blue/Green/Red no longer appear on Heist Rewards or from Tailoring and Tempering Orbs.",
+          "t": "nerf"
         }
       ]
     },
@@ -634,6 +652,12 @@
           "neu": "Notables shuffled for this league. See node list.",
           "t": "chg",
           "img": "https://web.poecdn.com/public/news/2026-07-14/RightReliqaurianAsendancy.jpg"
+        },
+        {
+          "k": "Bifurcated Critical Strikes",
+          "old": "—",
+          "neu": "Critical Strike Chance is rolled twice; if either roll succeeds the hit is a Critical Strike, if both succeed the extra damage is increased. Lucky/Unlucky applies individually to each roll.",
+          "t": "new"
         }
       ]
     },
@@ -1480,6 +1504,12 @@
           "old": "—",
           "neu": "2-3 proj (was 1); 25% Freeze; Crit 7.5% (was 6); 360-539 (was 360-450)",
           "t": "buff"
+        },
+        {
+          "k": "Cleave / Vaal Cleave Quality",
+          "old": "+0-0.1m Radius gave no benefit past 1% Quality",
+          "neu": "Now both have +0-0.1 metres to Radius for their Quality stat.",
+          "t": "chg"
         }
       ]
     },
@@ -2730,6 +2760,72 @@
           "old": "—",
           "neu": "Merc can Taunt on hit; +50% Non-Curse Aura eff on Merc",
           "t": "new"
+        }
+      ]
+    },
+    {
+      "id": "breach",
+      "title": "Breach Changes",
+      "rows": [
+        {
+          "k": "Unstable Breach monster packs",
+          "old": "—",
+          "neu": "Average Monsters in Breach Monster packs reduced; packs spawned in Unstable Breaches reduced by 25%.",
+          "t": "nerf"
+        },
+        {
+          "k": "Unstable Breach cap",
+          "old": "3 maximum open at once",
+          "neu": "2 maximum open at once",
+          "t": "nerf"
+        },
+        {
+          "k": "Swelling Ranks (Atlas Passive)",
+          "old": "Breach Monsters in your Maps have 20% increased Pack Size",
+          "neu": "10% increased Pack Size",
+          "t": "nerf"
+        },
+        {
+          "k": "Evolving Hives (Atlas Passive)",
+          "old": "Breaches in your Maps spawn 25% increased Rare and Magic Monsters",
+          "neu": "15% increased Rare and Magic Monsters",
+          "t": "nerf"
+        },
+        {
+          "k": "Breach Small Passives (Pack Size)",
+          "old": "granted Breach Monsters in your Maps 5% increased Pack Size",
+          "neu": "now grant Breaches in your Maps spawn 5% increased Rare Monsters",
+          "t": "chg"
+        },
+        {
+          "k": "Breach Small Passives (Magic)",
+          "old": "granted Breaches in your Maps spawn 8% increased Magic Monsters",
+          "neu": "now have values of 5%",
+          "t": "nerf"
+        },
+        {
+          "k": "Genesis Tree — Equipment bias",
+          "old": "—",
+          "neu": "Equipment Items birthed by the Genesis Tree inherently have slightly less Modifier Tier Rating and bias towards higher tier base types; lower inherent chance to birth additional Equipment items.",
+          "t": "nerf"
+        },
+        {
+          "k": "Genesis Tree Passive Points",
+          "old": "20 maximum",
+          "neu": "16 maximum",
+          "t": "nerf"
+        },
+        {
+          "k": "Genesis Tree Small Passives (Wombgifts)",
+          "old": "25% chance for Wombgifts to Birth an additional Equipment Item",
+          "neu": "now have values of 25% (previously 50%)",
+          "t": "nerf"
+        },
+        {
+          "k": "Genesis Tree Notables (Wombgifts)",
+          "old": "300% increased chance for Modifiers of a specific type",
+          "neu": "now have values of 300% (previously 500%)",
+          "t": "nerf"
         }
       ]
     }
