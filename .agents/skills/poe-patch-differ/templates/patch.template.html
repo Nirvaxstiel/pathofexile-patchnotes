@@ -226,7 +226,8 @@ function rowHtml(r){
   const val = (t === "new" || r.old == null || r.old === "")
     ? `<span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`
     : `<span class="old">${escapeHtml(r.old)}</span><span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`;
-  const img = r.img ? `<button class="imgbtn" data-img="${escapeHtml(r.img)}" title="View image">IMG</button>` : "";
+  const imgs = Array.isArray(r.img) ? r.img : r.img ? [r.img] : [];
+  const img = imgs.map(u => `<button class="imgbtn" data-img="${escapeHtml(u)}" title="View image">IMG</button>`).join("");
   return `<div class="row" data-t="${t}"><div class="k">${escapeHtml(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
 }
 

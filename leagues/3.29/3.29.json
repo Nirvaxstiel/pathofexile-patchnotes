@@ -801,7 +801,12 @@
           "old": "—",
           "neu": "Notables shuffled for this league. See node list.",
           "t": "chg",
-          "img": "https://web.poecdn.com/public/news/2026-07-14/RightReliqaurianAsendancy.jpg"
+          "img": [
+            "https://web.poecdn.com/public/news/2026-07-14/LeftReliqaurianAsendancy.jpg",
+            "https://web.poecdn.com/public/news/2026-07-14/TopReliqaurianAsendancy.jpg",
+            "https://web.poecdn.com/public/news/2026-07-14/RightReliqaurianAsendancy.jpg",
+            "https://web.poecdn.com/public/news/2026-07-14/BottomReliqaurianAsendancy.jpg"
+          ]
         },
         {
           "k": "Bifurcated Critical Strikes",
