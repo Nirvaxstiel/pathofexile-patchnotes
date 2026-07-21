@@ -205,8 +205,7 @@
           "k": "Luminary Ascendancy (Scion)",
           "old": "—",
           "neu": "New Luminary Ascendancy: permanently Hire Mercenaries (up to 3 hired, 2 reserve, 1 active). Can change equipped items on hired Mercs.",
-          "t": "new",
-          "img": "https://web.poecdn.com/public/news/2026-07-14/LeftReliqaurianAsendancy.jpg"
+          "t": "new"
         },
         {
           "k": "Merc-unique reintroduction",
@@ -2708,8 +2707,7 @@
           "k": "Vaal Caress",
           "old": "—",
           "neu": "+2 to Level of all Vaal Skill Gems; Onslaught for 20s on using a Vaal Skill",
-          "t": "new",
-          "img": "https://web.poecdn.com/public/news/2026-07-14/LeftReliqaurianAsendancy.jpg"
+          "t": "new"
         },
         {
           "k": "Elevore",
@@ -2853,8 +2851,7 @@
           "k": "Noble Blood (free)",
           "old": "—",
           "neu": "Hire a Mercenary permanently (free node)",
-          "t": "new",
-          "img": "https://web.poecdn.com/public/news/2026-07-14/RightReliqaurianAsendancy.jpg"
+          "t": "new"
         },
         {
           "k": "Legendary Helmet",

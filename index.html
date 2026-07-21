@@ -77,6 +77,11 @@
   /* image button + lightbox */
   .imgbtn{background:var(--bg);color:var(--cyan);border:1px solid var(--cyan);font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 6px;cursor:pointer;align-self:center}
   .imgbtn:hover{background:rgba(95,208,224,.12)}
+  .lb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(6,9,13,.7);color:var(--cyan);border:1px solid var(--cyan);width:36px;height:36px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:101;opacity:.7;transition:opacity .15s}
+  .lb .nav:hover{opacity:1}
+  .lb .nav.prev{left:8px}
+  .lb .nav.next{right:8px}
+  .lb .counter{color:var(--dim);font-size:11px;margin-top:4px;text-align:center}
   .lb{position:fixed;inset:0;z-index:100;background:rgba(6,9,13,.92);display:none;align-items:center;justify-content:center;flex-direction:column}
   .lb.open{display:flex}
   .lb .stage{position:relative;max-width:92vw;max-height:80vh;overflow:hidden;cursor:grab;touch-action:none}
@@ -157,7 +162,10 @@
   </footer>
 
   <div class="lb" id="lightbox">
+    <button class="nav prev" data-act="prev" style="display:none">‹</button>
+    <button class="nav next" data-act="next" style="display:none">›</button>
     <div class="stage" id="lbStage"><img id="lbImg" alt="patch visual"></div>
+    <div class="counter" id="lbCounter" style="display:none"></div>
     <div class="bar">
       <button data-act="in">Zoom +</button>
       <button data-act="out">Zoom −</button>
@@ -227,7 +235,7 @@ function rowHtml(r){
     ? `<span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`
     : `<span class="old">${escapeHtml(r.old)}</span><span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`;
   const imgs = Array.isArray(r.img) ? r.img : r.img ? [r.img] : [];
-  const img = imgs.map(u => `<button class="imgbtn" data-img="${escapeHtml(u)}" title="View image">IMG</button>`).join("");
+  const img = imgs.length ? `<button class="imgbtn" data-imgs='${JSON.stringify(imgs).replace(/'/g,"&#39;").replace(/"/g,"&quot;")}' title="View image${imgs.length>1?'s':''}">${imgs.length>1?'IMAGES':'IMG'}</button>` : "";
   return `<div class="row" data-t="${t}"><div class="k">${escapeHtml(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
 }
 
@@ -379,18 +387,34 @@ function wireLegendFilter(leagues){
 }
 function wireImageLightbox(leagues){
   const lb = $("lightbox"), img = $("lbImg"), stage = $("lbStage");
+  const prevBtn = lb.querySelector(".nav.prev"), nextBtn = lb.querySelector(".nav.next");
+  const counter = $("lbCounter");
   let tf = {s:1, x:0, y:0, fh:1, fv:1, r:0};
+  let gallery = [], gIdx = 0;
   const applyTransform = () => { img.style.transform = `translate(${tf.x}px,${tf.y}px) rotate(${tf.r}deg) scale(${tf.s*tf.fh},${tf.s*tf.fv})`; };
-  const open = src => { img.src = src; tf = {s:1,x:0,y:0,fh:1,fv:1,r:0}; applyTransform(); lb.classList.add("open"); };
-  const close = () => { lb.classList.remove("open"); img.src = ""; };
+  const showImg = i => {
+    gIdx = i; img.src = gallery[i];
+    tf = {s:1,x:0,y:0,fh:1,fv:1,r:0}; applyTransform();
+    const multi = gallery.length > 1;
+    prevBtn.style.display = multi ? "" : "none";
+    nextBtn.style.display = multi ? "" : "none";
+    counter.style.display = multi ? "" : "none";
+    counter.textContent = multi ? `${i+1} / ${gallery.length}` : "";
+  };
+  const open = (imgs, idx) => { gallery = imgs; showImg(idx||0); lb.classList.add("open"); };
+  const close = () => { lb.classList.remove("open"); img.src = ""; gallery = []; };
+  const goPrev = () => { if(gallery.length>1) showImg((gIdx - 1 + gallery.length) % gallery.length); };
+  const goNext = () => { if(gallery.length>1) showImg((gIdx + 1) % gallery.length); };
   document.addEventListener("click", e => {
     const btn = e.target.closest(".imgbtn");
-    if(btn){ open(btn.dataset.img); return; }
+    if(btn){ try { open(JSON.parse(btn.dataset.imgs), 0); } catch(ex) { open([btn.dataset.img||btn.dataset.imgs], 0); } return; }
     if(e.target === lb || e.target.closest('[data-act="close"]')) close();
   });
   lb.querySelectorAll("[data-act]").forEach(b => b.addEventListener("click", () => {
     const a = b.dataset.act;
-    if(a==="in") tf.s = Math.min(6, tf.s*1.2);
+    if(a==="prev") goPrev();
+    else if(a==="next") goNext();
+    else if(a==="in") tf.s = Math.min(6, tf.s*1.2);
     else if(a==="out") tf.s = Math.max(0.3, tf.s/1.2);
     else if(a==="flipH") tf.fh *= -1;
     else if(a==="flipV") tf.fv *= -1;
@@ -399,6 +423,12 @@ function wireImageLightbox(leagues){
     else if(a==="reset") tf = {s:1,x:0,y:0,fh:1,fv:1,r:0};
     applyTransform();
   }));
+  document.addEventListener("keydown", e => {
+    if(!lb.classList.contains("open")) return;
+    if(e.key==="Escape") close();
+    else if(e.key==="ArrowLeft") goPrev();
+    else if(e.key==="ArrowRight") goNext();
+  });
   lb.addEventListener("wheel", e => { e.preventDefault(); tf.s = Math.max(0.3, Math.min(6, tf.s * (e.deltaY<0?1.12:0.89))); applyTransform(); }, {passive:false});
   let drag = null;
   stage.addEventListener("pointerdown", e => { drag = {px:e.clientX, py:e.clientY, ox:tf.x, oy:tf.y}; stage.classList.add("grab"); stage.setPointerCapture(e.pointerId); });
