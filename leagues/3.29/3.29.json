@@ -10,19 +10,22 @@
           "k": "Overview",
           "old": "—",
           "neu": "New challenge league: dive ocean floor via Charts, board The Sovereign, build Voyages, feed items to ship's heart for ghostly outcomes, use Ducats to warp items. 40 challenges (8 Ruthless).",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "League variations",
           "old": "—",
           "neu": "Standard, Hardcore, SSF; HC parented to Standard (death → continue in Standard). Private leagues supported.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Challenge rewards",
           "old": "—",
           "neu": "Totem Pole decoration pieces from 19th challenge onward (every 3rd). MT rewards league-exclusive.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -34,139 +37,162 @@
           "k": "New Bloodline Classes",
           "old": "—",
           "neu": "Two new Bloodline Classes added, one exclusive to Curse of the Allflame.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Pact of Beidat (Exceptional Gem)",
           "old": "—",
           "neu": "Empowers projectile/area/chaining-beam spells (more damage, enhanced coverage) but burdens you with an Affliction.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Pact of Ghorr (Exceptional Gem)",
           "old": "—",
           "neu": "Empowers DoT spells; grants Hunger of Ghorr buff (periodic Fleshrend). Affliction.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Pact of K'tash (Exceptional Gem)",
           "old": "—",
           "neu": "Empowers Vaal spells: more damage, less soul gain prevention, refunds souls on use. Affliction.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Pact of Lycia (Exceptional Gem)",
           "old": "—",
           "neu": "Empowers next channelling spells (more damage, periodic lightning while channelling). Affliction.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Coursing Currents (Exceptional Support)",
           "old": "—",
           "neu": "Increased Chill/Shock effect; chilled enemies shocked by hits, shocked enemies chilled by hits.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Crystalfall (Exceptional Support)",
           "old": "—",
           "neu": "Triggers Falling Crystal on Hit (abyssal soulstone slam). Supports Slam skills.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Mana-Infused Staff (Int/Str Skill)",
           "old": "—",
           "neu": "Infuses staff, lowers mana cost, boosts block; releases arcane wave on block.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Divine Blast of Radiance (Transfigured)",
           "old": "—",
           "neu": "Beam of holy light → imploding orb lingering with larger explosions.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Holy Hammers of Spirals (Transfigured)",
           "old": "—",
           "neu": "Slam ground, consume Power Charges, call cascade of holy hammers in outward spiral.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Holy Sweep of Hammerfalls (Transfigured)",
           "old": "—",
           "neu": "Two-hand mace/staff sweep calling waves of holy hammers; Attack Speed affects rate.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Reap of Butchery (Transfigured)",
           "old": "—",
           "neu": "Bloody scythe swipe, physical DoT debuff; blood charges (max 5) raise damage/cost.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "New Unique Items",
           "old": "—",
           "neu": "15 new Unique Items added.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "New Divination Cards",
           "old": "—",
           "neu": "3 new Divination Cards added.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Keywording & popup pinning",
           "old": "—",
           "neu": "POE2-style keyword inspection popups added (gradual rollout).",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Pearlescent Amulet",
           "old": "—",
           "neu": "New base: all-Elemental-Resistances implicit modifier.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Party interaction",
           "old": "—",
           "neu": "Any player can now use Expedition Detonator, Eldritch Altars, Harvest Plots, Sentinels in parties.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Currency stash slots",
           "old": "—",
           "neu": "Volatile Vaal Orbs & Crystallised Rancour get dedicated Currency Stash Tab slots.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Crafting bench options",
           "old": "—",
           "neu": "2 new default-unlocked: Reroll 3 Mods (3 Chaos), Reroll 1 Mod (8 Chaos).",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "NPC identify",
           "old": "—",
           "neu": "Isla (Kingsmarch), Niko (Mine), Einhar (Menagerie) can now identify items.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Town crafting bench",
           "old": "—",
           "neu": "Crafting Bench available in every Town from Act 2 onward.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Catalyst stack size",
           "old": "—",
           "neu": "Max stack size 20 (previously 10).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Misc audio/UX",
           "old": "—",
           "neu": "Quieter Raised Spectre audio; Solaris Temple L1 waypoint moved; continued sound/art/env improvements.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -178,19 +204,22 @@
           "k": "Core league addition",
           "old": "—",
           "neu": "Mercenaries found from Act 3 onward; duel for their item; win → ally for N areas. Guaranteed in Sceptre of God, Grand Arena, Ridge, Hidden Underbelly (no Rucksack).",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Scaling",
           "old": "—",
           "neu": "Hired Mercs scale passive stats/skills to area level (max 68). Equip level capped by find-area level.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Warrants",
           "old": "—",
           "neu": "Request a Warrant to re-duel a Merc later (new items, same skills); tradeable. Each Merc grants Warrant once.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Party member?",
@@ -199,61 +228,71 @@
           "t": "nerf",
           "neg": [
             "loot"
-          ]
+          ],
+          "version": "2026-07-16"
         },
         {
           "k": "Luminary Ascendancy (Scion)",
           "old": "—",
           "neu": "New Luminary Ascendancy: permanently Hire Mercenaries (up to 3 hired, 2 reserve, 1 active). Can change equipped items on hired Mercs.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Merc-unique reintroduction",
           "old": "—",
           "neu": "Azadi Crest, Binds of Bloody Vengeance, The Ghastly Theatre, Hand of Heresy, Howlcrack, Scornflux: now Merc-encounter only, removed from core drop pool.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Trarthan Gems",
           "old": "—",
           "neu": "No longer from Heist Gem Chests; obtained from Mercenary encounters again.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Atlas + Scarabs",
           "old": "—",
           "neu": "Atlas Passive Tree support added; new Trarthan Scarabs (base, Infamy, Renown, Surprising Alliances).",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Rucksack/Altar",
           "old": "—",
           "neu": "Endgame Rucksacks no longer roll Transmutation/Augmentation Orbs. Searing Exarch Altars can drop Merc Scarabs. Merc info sheet added.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Wager mechanic",
           "old": "—",
           "neu": "Duel a Mercenary by wagering an item they carry. Lose → forfeited gold + Merc teleports out. Win → Merc allies for a number of areas plus spoils.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Mercenary info sheet",
           "old": "—",
           "neu": "Hired Mercenaries now have an information sheet listing all their passive stats.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Valdo Map Modifier + Mercenary",
           "old": "",
           "neu": "Valdo Map Modifier causing Players/Minions to deal 10% less Damage per equipped item now also applies to a Luminary's Mercenary and their Minions.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         },
         {
           "k": "Campaign Temp Mercs",
           "old": "temporary Mercenaries",
           "neu": "Campaign temporary Mercenaries can now aide you in combat for multiple areas (up to a maximum of 3).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -265,175 +304,204 @@
           "k": "Pit behaviour",
           "old": "—",
           "neu": "Abyssal Pits/cracks pre-opened; slaying enemies feeds souls, spawns the Abyssal legion (no more chasing cracks).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Pinnacle Boss",
           "old": "—",
           "neu": "New Abyss Endgame Pinnacle Boss with its own new Unique items.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Source changes",
           "old": "—",
           "neu": "Abyss now exclusive source of Abyssal Jewels & Stygian Vises (jewels still rare in Delve Abyss biomes). Abyssal Delirium Orbs removed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel mod bans",
           "old": "—",
           "neu": "Abyssal Jewels can no longer roll: dmg vs Abyssal, minion dmg vs Abyssal, PDR vs Abyssal, PDR if not hit recently. Impale no longer on Hypnotic/Ghastly.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Scarab base limit",
           "old": "—",
           "neu": "Base Abyss Scarab limit 5 (from 2). Extra-Abyss mods add 2 pits instead.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Scarab renames",
           "old": "—",
           "neu": "Of Edifice → Of Crystals (pits without reward make Abyssal Crystal). Of Profound Depth → Of the Consort (spawns Abyssal Consort).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Abyssal Pits pre-opened",
           "old": "—",
           "neu": "Abyssal Pits and the cracks leading to them are now already opened before you approach, subjugating souls of nearby enemies.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Additional Abysses",
           "old": "—",
           "neu": "If an area already has an Abyss, modifiers causing additional Abysses instead add two additional pits.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Cold Ailment Effect",
           "old": "up to 15%",
           "neu": "20% increased Effect of Cold Ailments",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Lightning Ailment Effect",
           "old": "up to 15%",
           "neu": "20% increased Effect of Lightning Ailments",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Impale Effect",
           "old": "up to 6%",
           "neu": "8% increased Impale Effect (no longer rolls on Hypnotic or Ghastly Eye Jewels)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Maximum Mana",
           "old": "up to +40",
           "neu": "+34 to maximum Mana",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Mana Recoup",
           "old": "up to 3%",
           "neu": "5% of Damage taken Recouped as Mana",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Fire Dmg to Spells",
           "old": "up to 23 to 32",
           "neu": "Adds 30 to 42 Fire Damage to Spells",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Cold Dmg to Spells",
           "old": "up to 23 to 32",
           "neu": "Adds 28 to 38 Cold Damage to Spells",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Lightning Dmg to Spells",
           "old": "up to 6 to 45",
           "neu": "Adds 8 to 59 Lightning Damage to Spells",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Physical Dmg to Spells",
           "old": "up to 16 to 22",
           "neu": "Adds 23 to 32 Physical Damage to Spells",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Chaos Dmg to Spells",
           "old": "up to 16 to 22",
           "neu": "Adds 23 to 32 Chaos Damage to Spells",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Fire Dmg (Shield/2H/DW)",
           "old": "up to 25 to 34",
           "neu": "Adds 33 to 44 Fire Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Cold Dmg (Shield/2H/DW)",
           "old": "up to 25 to 34",
           "neu": "Adds 20 to 41 Cold Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Lightning Dmg (Shield/2H/DW)",
           "old": "up to 6 to 51",
           "neu": "Adds 8 to 66 Lightning Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Physical Dmg (Shield/2H/DW)",
           "old": "up to 17 to 24",
           "neu": "Adds 24 to 35 Physical Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Chaos Dmg (Shield/2H/DW)",
           "old": "up to 17 to 24",
           "neu": "Adds 24 to 35 Chaos Damage to Spells while holding a Shield/wielding Two Handed or Dual Wielding",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Unholy Might on Melee Kill",
           "old": "up to 5%",
           "neu": "8% chance to Gain Unholy Might for 4s on Melee Kill",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Minion Move Speed",
           "old": "up to 10%",
           "neu": "Minions have 15% increased Movement Speed",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Curse Effect (Consecrated)",
           "old": "up to 15%",
           "neu": "25% reduced Effect of Curses on you while on Consecrated Ground",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Avoid Ailments (Elusive)",
           "old": "up to 10%",
           "neu": "20% chance to Avoid Elemental Ailments while you have Elusive",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Hindered Enemy Regen",
           "old": "up to 20%",
           "neu": "Enemies Hindered by you have 35% reduced Life Regeneration rate",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel: Blinded Enemy Crit",
           "old": "up to 20%",
           "neu": "Enemies Blinded by you have 30% reduced Critical Strike Chance",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -445,49 +513,57 @@
           "k": "Crystals of Permutation",
           "old": "—",
           "neu": "4 Crystals in Domain of Timeless Conflict: place Enshrouded item → transforms to another Unique of same class with Vestigial implicit. Charge by killing, interact when full.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Enshrouding Crystals",
           "old": "—",
           "neu": "New currency from Legion Generals (Map areas): Karui/Imperial/Maraketh/Templar/Vaal Enshrouding Crystal. Cannot drop in Domain.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Auto-breakout",
           "old": "—",
           "neu": "Encounter auto-breaks all Monsters/Chests/Sergeants/Generals at 90% broken.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Unrelenting Emblems",
           "old": "—",
           "neu": "Removed; converted to regular Timeless Emblems.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Emblem mods",
           "old": "—",
           "neu": "Eternal/Karui/Maraketh/Templar/Vaal Emblems reworked: +10% XP, +20% reward progress, +10% dmg, +10% Toughness per revive, plus emblem-specific per-revive bonuses.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Incubators",
           "old": "—",
           "neu": "No longer obtainable; Rog no longer applies random Incubator; Stash Affinity for Incubators removed.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Splinter drops",
           "old": "—",
           "neu": "Splinters only from Legion encounters + Kingsmarch runners. Generals drop more; Sergeants/Chests lower chance but bigger stacks. Emblematic passive 0.3%→Emblems (was 0.6%).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Timeless Emblem — monster mods (Eternal)",
           "old": "—",
           "neu": "Each Emblem: 10% inc XP, 20% inc reward progress, Monsters deal 10% inc Damage, +10% Toughness/Accuracy/AoE per Revive (Eternal); +50% crit chance/+5% crit mult per Revive (Karui); etc.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -499,79 +575,92 @@
           "k": "Socket any gem",
           "old": "—",
           "neu": "Gems can socket into any Equipment Socket regardless of colour match.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Quality bonus",
           "old": "—",
           "neu": "Socketed Gems gain +10% Quality in Red/Green/Blue Sockets if gem colour matches.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Default white sockets",
           "old": "—",
           "neu": "Item Sockets always White by default; small chance per socket to roll R/G/B (proportional to attribute req); chance scales with item level.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Chromatic Orbs",
           "old": "—",
           "neu": "Now force one Non-White socket; rest roll normally. Higher item Quality → more Non-White chance. Rarer; no longer vendor-sold for Jewellers; Currency Exchange gold fee up.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Orb corruption",
           "old": "—",
           "neu": "White-socket outcome removed; now turns a random White Socket Non-White. Locus of Corruption all-white outcome removed → turns all White Non-White.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Jeweller/Binding/Orbs",
           "old": "—",
           "neu": "Currency adding sockets (Jeweller's, Tainted Jeweller's, Binding, Crafting Bench) always generates White sockets.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Heist Trinkets",
           "old": "—",
           "neu": "Trinket mods dropping Chromatics as Jewellers/Fusing removed; new mods drop Jewellers/Fusing as Chromatics. Bestiary 8-Chromatic craft → Rare 4-Link Helmet.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Bench socket colours",
           "old": "—",
           "neu": "New bench: ≥2 Non-White (5 Chrom), ≥3 (20), ≥4 (75). Old R/G/B bench options removed. Horticrafting white-reforge removed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Dialla's Malefaction",
           "old": "—",
           "neu": "Now always has Quality bonus from Socket Colour (was ignore-colour). Green socket +20% Quality (was +30%). Divine to worsen.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Pariah",
           "old": "—",
           "neu": "+100-200 Life/Mana/ES per Red/Green/Blue Socket (was +100). Divine to update.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Prismatic Eclipse",
           "old": "—",
           "neu": "Per-socket bonuses reworked +0.2-0.3m melee range per White. Divine to update.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Other uniques",
           "old": "—",
           "neu": "Scaeva, Triad Grip, Untouched Soul, Bow/Staff/Two-Hand masteries, Omen of Blanching→Trichromatism, Vorici safehouse rewards reworked.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "White Socket enchantments",
           "old": "Appeared on Heist Rewards and from Tailoring/Tempering Orbs",
           "neu": "Enchantments on Body Armour/Weapons related to White Sockets or setting all Sockets to Blue/Green/Red no longer appear on Heist Rewards or from Tailoring and Tempering Orbs.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -583,19 +672,22 @@
           "k": "Enchantment mods",
           "old": "—",
           "neu": "Talismans now have Enchantment Modifiers (not Implicits); no longer Corrupted by default.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Drop source",
           "old": "—",
           "neu": "Chance to drop from Red Beasts / Bestiary Bosses; each tied to a specific Beast. Cannot be Anointed; Enchant cannot be bench-removed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Old bases",
           "old": "—",
           "neu": "Old Talisman base types no longer obtainable (still exist in Standard). Non-Unique Talismans only from Bestiary/Div Cards/Thane Jorgin.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -607,43 +699,50 @@
           "k": "Ritual",
           "old": "—",
           "neu": "Locusts now point to next Altar after an encounter.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Sanctum",
           "old": "—",
           "neu": "Flask Charges restored between rooms (not Writhing Jar). Volatile Vaal Orbs obtainable as Sanctum rewards.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ultimatum",
           "old": "—",
           "neu": "Now exclusive source of Catalysts; removed from Heist Demolition (→Map rewards), Expedition chests, Tujen, Ritual favours.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Verisium Ore",
           "old": "—",
           "neu": "Channeling Verisium Ore: cannot be damaged or stunned.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Betrayal — Allflame",
           "old": "—",
           "neu": "Syndicate Leaders no longer drop Allflame Embers; Mastermind only drops Ember of Kulemak.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Betrayal — Safehouses",
           "old": "—",
           "neu": "Avg Scarabs from chests doubled. Trapped Stash time limit 15s (was 10). Cluster Jewels from Trapped Stashes/Crafting Sprees max ilvl 83.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Betrayal — Vagan",
           "old": "—",
           "neu": "Fortification reward → Trapped Stash with Enshrouded Uniques (not Ruthless). Transportation reward → Trarthan Scarab chest.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -655,55 +754,64 @@
           "k": "Atlas Anomalies",
           "old": "—",
           "neu": "Voidstone-completed Maps may manifest Anomalies (no Map item needed). Reflecting Mists & Nameless Seer now in their own Anomaly areas. Unaffected by Atlas tree/Fragments.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Reflect Thorns rework",
           "old": "—",
           "neu": "Reflect Map mods → Rare Monsters have Physical/Elemental Thorns (fixed reflect, mitigable). Red Tier: 800 phys / 1500 elem thorns. Reflect removed from Campaign Corrupted Side Areas.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Maps added back",
           "old": "—",
           "neu": "Arachnid Nest, Basilica, Bazaar, Caldera, Cells, Channel, Colonnade, Colosseum, Conservatory, Crystal Ore, Desert, Desert Spring, Estuary, Forbidden Woods, Geode, Infested Valley, Laboratory, Malformation, Museum, Phantasmagoria, Pier, Plateau, Ramparts, Stagnation, Sunken City, Temple, Toxic Sewer, Vault.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Maps removed",
           "old": "—",
           "neu": "Acid Caverns, Arena, Ashen Wood, Bog, Canyon, Carcass, Castle Ruins, Courtyard, Coves, Crimson Temple, Crimson Township, Cursed Crypt, Defiled Cathedral, Dig, Dry Sea, Dungeon, Lava Chamber, Lighthouse, Maze, Moon Temple, Mud Geyser, Necropolis, Pen, Racecourse, Sepulchre, Underground Sea, Wasteland, Wharf.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Untainted Paradise",
           "old": "—",
           "neu": "No longer obtainable as Map; accessible via random Atlas event node (harder/more rewarding).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Voidstone sockets",
           "old": "—",
           "neu": "Decayed Voidstone now connects Forge of the Phoenix, Pit of the Chimera, Lair of the Hydra (added to Maze of the Minotaur).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Misc",
           "old": "—",
           "neu": "Pit of the Chimera: 1 wave/phase. Memory Thread Maps show target. Enshrouded Astrolabe→Deceptive Astrolabe. Remembered/Feared item-drop delay removed. Reflecting Mist currency more common, less modifier eff.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Reflect Thorns — Physical",
           "old": "% reflect of Hit Damage",
           "neu": "Rare Monsters have Physical Thorns: activates on Phys Hit, lasts 5s, reflects a fixed Phys amount per Phys Hit; can't gain more than once/10s; you take it at most once/0.1s.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Reflect Thorns — Elemental",
           "old": "% reflect of Hit Damage",
           "neu": "Rare Monsters have Elemental Thorns: activates on Ele Hit, lasts 5s, reflects fixed Ele Damage of the highest Ele type in the Hit; can't gain more than once/10s.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -715,25 +823,29 @@
           "k": "Altered Prophecy cluster",
           "old": "—",
           "neu": "New cluster: Notable → T14+ Maps 4% chance Scrying Orb on completion; small passives → increased Div Card drop chance. Ruthless: Scarab bonuses.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Scrying Orb",
           "old": "—",
           "neu": "New currency: stores the Map it dropped in; Scry that area's Div Cards onto an Atlas Map.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Brave the Tower",
           "old": "—",
           "neu": "Ultimatum Boss drops 10 of a random Catalyst (was full stack).",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Dutiful Soldier",
           "old": "—",
           "neu": "Blueprints in your Maps 15% chance of special Implicit.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -745,25 +857,29 @@
           "k": "Damage Avoidance",
           "old": "—",
           "neu": "Avoid-all-Damage and Avoid-specific-Type are now additive. Descriptions adjusted.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Spectre Life",
           "old": "—",
           "neu": "Lowered Life of various Spectres (none above Meatsack): Unholy Aberrations, Originator-Influenced, Refinery Robot monsters.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Minion attacking",
           "old": "—",
           "neu": "All non-Spectre Minions no longer pause while attacking (big DPS for Dom Blow, Zombies, Golems, SRS, Skeletons).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Arcane Might keyword",
           "old": "—",
           "neu": "'Increases/Reductions to Spell Damage apply to Attack Damage' replaced by Arcane Might keyword (descriptive only).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -775,37 +891,43 @@
           "k": "Assassin — Deathmarked",
           "old": "—",
           "neu": "No longer Marked Enemy cannot Evade Attacks. Now 10% inc Effect of Marks per max Power Charge, 3% of Leech Instant per max Power Charge.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Assassin — Mystical Infusion",
           "old": "—",
           "neu": "No longer Base Spell Crit = MH weapon. Now Spell Crit Bifurcates + 30% less Spell Crit.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-17"
         },
         {
           "k": "Hierophant — Ritual of Awakening",
           "old": "—",
           "neu": "3% more Damage per Totem (was 5%).",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Inquisitor — Instruments of Justice",
           "old": "—",
           "neu": "New Notable (req Instruments of Virtue): Base Spell Crit = MH weapon.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Inquisitor — Instruments of Zeal",
           "old": "—",
           "neu": "+3 max Fanatic Charges (was +4). Fanaticism 5s (was 4), 75% less Cost (was 75% reduced).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Occultist — Unhallowed Rite",
           "old": "—",
           "neu": "New Notable (req Vile Bastion/Forbidden Power): gain Spirit Infusion/s while Channelling (max 5); ES recharge start, +dmg, +cost.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Reliquarian (Curse of the Allflame)",
@@ -817,13 +939,15 @@
             "https://web.poecdn.com/public/news/2026-07-14/TopReliqaurianAsendancy.jpg",
             "https://web.poecdn.com/public/news/2026-07-14/RightReliqaurianAsendancy.jpg",
             "https://web.poecdn.com/public/news/2026-07-14/BottomReliqaurianAsendancy.jpg"
-          ]
+          ],
+          "version": "2026-07-16"
         },
         {
           "k": "Bifurcated Critical Strikes",
           "old": "—",
           "neu": "Critical Strike Chance is rolled twice; if either roll succeeds the hit is a Critical Strike, if both succeed the extra damage is increased. Lucky/Unlucky applies individually to each roll.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -835,61 +959,71 @@
           "k": "Arcane Conservation cluster",
           "old": "—",
           "neu": "New (NE of Witch): 10% Cast Speed, 20% Mana Cost Efficiency of Spells, 3% Int.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Contemplative Meditation cluster",
           "old": "—",
           "neu": "New (NW of Templar): 8% Reservation Efficiency of Spells, 20% Cost Efficiency.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Cost → Cost Efficiency",
           "old": "—",
           "neu": "All reduced Cost of Skills on tree converted to Cost Efficiency at appropriate values.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Totem/Shaman masteries",
           "old": "—",
           "neu": "Totem mastery crit (recent totem) 40% (was 60%). Shaman's Dominion 50% crit (was 60%); small passives +16% crit mult (was 20%).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Bitter Frost Keystone",
           "old": "",
           "neu": "North of Witch start. Enemies Chilled by your Hits have Damage taken increased by Chill Effect, Enemies in your Chilling Areas have Damage taken increased by Chill Effect. Cannot deal non-Cold Damage.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         },
         {
           "k": "Roiling Tempest Keystone",
           "old": "",
           "neu": "North of Witch start. 25% more Maximum Lightning Damage, 50% less Minimum Lightning Damage. Cannot deal non-Lightning Damage.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         },
         {
           "k": "Voracious Flame Keystone",
           "old": "",
           "neu": "North of Witch start. You can inflict an additional Ignite on each Enemy, Base Ignite Duration is 1 second, 25% less Damage with Ignite. Cannot deal non-Fire Damage.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         },
         {
           "k": "Unhallowed Rite Notable",
           "old": "",
           "neu": "Requires Vile Bastion or Forbidden Power. Gain Spirit Infusion every second while Channelling. Each stack: 30% faster ES Recharge start, 10% more Channelling Damage, 20% more Cost. Max 5 stacks.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         },
         {
           "k": "Abyss Clusters (Atlas Tree)",
           "old": "Abyss Clusters on Atlas Passive Tree",
           "neu": "Reworked in lieu of Abyss combat changes.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         },
         {
           "k": "Genesis Tree + Wombgift",
           "old": "",
           "neu": "Genesis Tree can now use Wombgift items from Stash Tab with Breach Affinity set.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -901,559 +1035,652 @@
           "k": "Arcane Cloak",
           "old": "—",
           "neu": "Buff: Added Lightning = 10% Mana Spent (was 10-14% at all levels)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Absolution",
           "old": "—",
           "neu": "Cast time 0.65s (was 0.75)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Absolution of Inspiring",
           "old": "—",
           "neu": "Cast time 0.65s (was 0.75)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Arc",
           "old": "—",
           "neu": "Cast time 0.6s (was 0.7); Mana Cost +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Arc of Oscillating",
           "old": "—",
           "neu": "Cast time 0.6s; Mana +25%; splits to 6-9 targets (was 4-7)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Arc of Surging",
           "old": "—",
           "neu": "Cast time 0.6s; Mana +25%; splits 6-9 (was 4-7)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Armageddon Brand of Volatility",
           "old": "—",
           "neu": "520% eff (was 370%); 2100-3150 Fire (was 1676-2514); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-17"
         },
         {
           "k": "Barrage",
           "old": "—",
           "neu": "Fires 6 Projectiles (was 5)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ball Lightning",
           "old": "—",
           "neu": "Radius 2m (was 1.8); cast 0.6s (was 0.7); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Ball Lightning of Orbiting",
           "old": "—",
           "neu": "Cast 0.5s (was 0.6); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Ball Lightning of Static",
           "old": "—",
           "neu": "Cast 0.6s; Mana +25%; 4 cooldown uses (was 3)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Blade Blast",
           "old": "—",
           "neu": "Radius 1.5m (was 1.4); Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Blade Blast of Dagger Detonation",
           "old": "—",
           "neu": "Radius 2.8m (was 2.6); Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Blade Blast of Unloading",
           "old": "—",
           "neu": "+100% AoE/blade (was 80%); Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Blade Vortex",
           "old": "—",
           "neu": "30% hit rate/blade (was 35%), 30% dmg/blade (was 35%); Crit 10% (was 6%)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Blade Vortex of the Scythe",
           "old": "—",
           "neu": "Crit 10% (was 6%); 370% eff (was 300%); 1684-2526 phys (was 1353-2030)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Bladefall",
           "old": "—",
           "neu": "160% eff (was 140%); 713-1070 phys (was 595-893)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Bladefall of Impaling",
           "old": "—",
           "neu": "Crit 25% (was 15%); 170% eff (was 140%); 771-1157 (was 595-893)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Bladefall of Trarthus",
           "old": "—",
           "neu": "140% eff (was 120%); 634-951 (was 536-803); Mana +5%/s",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Bladefall of Volleys",
           "old": "—",
           "neu": "120% eff (was 100%); 570-855 (was 446-669)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Blazing Salvo",
           "old": "—",
           "neu": "70% eff (was 60%); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Bodyswap",
           "old": "—",
           "neu": "6% max Life as Fire (was 4%); +300% AoE consuming corpse (was 200%); cast 0.65s (was 0.7)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Bodyswap of Sacrifice",
           "old": "—",
           "neu": "+300% AoE consuming minion (was 200%); cast 0.65s (was 0.7)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cold Snap",
           "old": "—",
           "neu": "25% Freeze; Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cold Snap of Power",
           "old": "—",
           "neu": "25% Freeze; 50% Power Charge on crit (was 30%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Crackling Lance",
           "old": "—",
           "neu": "190% eff (was 165%); 526-1578 (was 458-1375); cast 0.5s (was 0.65); Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Crackling Lance of Branching",
           "old": "—",
           "neu": "370% eff (was 330%); 1039-3116 (was 905-2715); cast 0.6s; Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Crackling Lance of Disintegration",
           "old": "—",
           "neu": "400% eff (was 360%); 1125-3376 (was 1054-3161); cast 0.6s; Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Creeping Frost",
           "old": "—",
           "neu": "Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Creeping Frost of Floes",
           "old": "—",
           "neu": "Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cremation (Quality)",
           "old": "—",
           "neu": "Projectiles 0-15% faster (was 0-10%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cremation of Exhuming",
           "old": "—",
           "neu": "Fires every 0.8s (was 1s); 3 projectiles (was 4)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Cremation of the Volcano",
           "old": "—",
           "neu": "Dur 2s (was 2.5); max 8 Geysers (was 6)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Dark Bargain",
           "old": "—",
           "neu": "Crit 10% (was 7%). (Dark Pact renamed Dark Bargain)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Dark Bargain of Trarthus",
           "old": "—",
           "neu": "7 Ruin → Sacrifice 50% Life for 600% (was 500%); Crit 10% (was 7%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Discharge",
           "old": "—",
           "neu": "Cooldown 1s (was 2s); +15% dmg/charge removed",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Discharge of Misery",
           "old": "—",
           "neu": "+15% dmg/charge removed",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Divine Blast",
           "old": "—",
           "neu": "184-276 phys (was 169-253); 3-6 per 15 armour shield (was 3-5); dur 1.2s (was 1.5)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Divine Ire",
           "old": "—",
           "neu": "75% eff (was 50%); 321-482 (was 253-380)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Divine Ire of Disintegration",
           "old": "—",
           "neu": "140% eff (was 130%); 623-934 (was 491-737)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Divine Ire of Holy Lightning",
           "old": "—",
           "neu": "100% eff (was 65%); 447-671 (was 353-529)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Divine Retribution",
           "old": "—",
           "neu": "Cooldown 4s (was 5); 540% eff (was 390%); 2395-3593 (was 1745-2617)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Elemental Hit",
           "old": "—",
           "neu": "Added Fire/Cold/Lightning -17% (all levels). Spectrum unaffected.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Essence Drain of Wickedness",
           "old": "—",
           "neu": "Fires 3-5 projectiles (was 1)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ethereal Knives",
           "old": "—",
           "neu": "10-13 proj→10-15; Crit 10% (was 6%); 250% eff; 1104-1656 (was 949-1423)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ethereal Knives of Lingering Blades",
           "old": "—",
           "neu": "7-8 proj→7-10; Crit 10% (was 6%); 250% eff; 1104-1656",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ethereal Knives of the Massacre",
           "old": "—",
           "neu": "Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Eye of Winter",
           "old": "—",
           "neu": "Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Eye of Winter of Finality",
           "old": "—",
           "neu": "Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Eye of Winter of Transience",
           "old": "—",
           "neu": "Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Fireball",
           "old": "—",
           "neu": "Radius 1-1.8m (was 0.9-1.4); Crit 5% (was 6%); Mana -20%; 480% eff (was 370%); 1883-2825 (was 1640-2460)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Firestorm",
           "old": "—",
           "neu": "100% eff (was 80%); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Firestorm of Meteors",
           "old": "—",
           "neu": "Radius 2.6m (was 2.3); Mana -20%; 520% eff (was 410%); 1960-2940 (was 1824-2735)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Firestorm of Pelting",
           "old": "—",
           "neu": "150% eff (was 120%); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Flame Dash",
           "old": "—",
           "neu": "Crit 5% (was 6%); 170% eff (was 140%)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Flame Dash of Return",
           "old": "—",
           "neu": "Crit 5% (was 6%); Burning Ground +15% dmg; 430% eff (was 340%); 1722-2583 (was 1501-2252); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Flame Surge",
           "old": "—",
           "neu": "Crit 5% (was 6%); Burning Ground 30% (was 25%); 270% eff (was 190%); 1042-1563 (was 832-1247); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Flame Surge of Combusting",
           "old": "—",
           "neu": "Crit 5% (was 6); 410% eff (was 310%); 1644-2466 (was 1374-2062); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Flameblast",
           "old": "—",
           "neu": "+0.4m/stage (was 0.3); 120% eff (was 90%); 494-741 (was 405-608); Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Flameblast of Celerity",
           "old": "—",
           "neu": "Radius 1m (was 0.8); Mana -20%; 140% eff (was 100%); 541-811 (was 443-665)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Flameblast of Contraction",
           "old": "—",
           "neu": "Radius 3.0m (was 2.6); Mana -20%; 40% eff (was 30%); 171-256 (was 140-210)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Forbidden Rite",
           "old": "—",
           "neu": "14% max Life as Chaos (was 12%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Freezing Pulse",
           "old": "—",
           "neu": "1-5 proj (was 1); Crit 7.5% (was 6); 370% eff (was 330); 1659-2488 (was 1458-2188)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Bane",
           "old": "radius 2.1-2.4m; 50% inc Debuff Duration per Curse; 1075.5 base Chaos DoT @20",
           "neu": "radius 2.4-2.7m (was 2.1-2.4); 100% inc Debuff Duration per Curse (was 50%); 1243.4 base Chaos DoT @20 (was 1075.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Bane of Condemnation",
           "old": "radius 0.8m; 60% more Dmg per Curse; 1341.7 base Chaos DoT @20",
           "neu": "radius 1.2m (was 0.8); 100% more Dmg per Curse (was 60%); 1685.3 base Chaos DoT @20 (was 1341.7).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Blight",
           "old": "421.5 base Chaos DoT @20",
           "neu": "+0.2m base Radius; 469 base Chaos DoT @20 (was 421.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Blight of Atrophy",
           "old": "cast time 0.25s; 421.5 base Chaos DoT @20",
           "neu": "+0.2m base Radius; cast time 0.2s (was 0.25); 469 base Chaos DoT @20 (was 421.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Blight of Contagion",
           "old": "837.6 base Chaos DoT @20",
           "neu": "+0.2m base Radius; 950.5 base Chaos DoT @20 (was 837.6).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Contagion",
           "old": "radius 1.7m at all levels; 281.5 base Chaos DoT @20",
           "neu": "radius 1.7-2.1m (was 1.7 at all); 336.5 base Chaos DoT @20 (was 281.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Contagion of Subsiding",
           "old": "radius 1.7m at all levels; 1531.3 base Chaos DoT @20",
           "neu": "radius 1.7-2.1m (was 1.7 at all); 2017.3 base Chaos DoT @20 (was 1531.3).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Contagion of Transference",
           "old": "radius 2m at all levels; 821.7 base Chaos DoT @20",
           "neu": "radius 2-2.4m (was 2 at all); 1117.7 base Chaos DoT @20 (was 821.7).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Corrupting Fever",
           "old": "debuff duration 1s; 335.4 base Phys DoT @20",
           "neu": "debuff duration 1.5s (was 1); 411.7 base Phys DoT @20 (was 335.4).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Death Aura (Death's Oath)",
           "old": "1250 base Chaos DoT @20",
           "neu": "1600 base Chaos DoT @20 (was 1250).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Energy Blade",
           "old": "any non-Bow Weapon",
           "neu": "Swords only (was any non-Bow).",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-22"
         },
         {
           "k": "Essence Drain",
           "old": "2170.2 base Chaos DoT @20; 926-1389 Chaos @20",
           "neu": "2729.1 base Chaos DoT @20 (was 2170.2); 786-1179 Chaos @20 (was 926-1389).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Essence Drain of Desperation",
           "old": "4726.1 base Chaos DoT @20; 926-1389 Chaos @20",
           "neu": "5321.8 base Chaos DoT @20 (was 4726.1); 786-1179 Chaos @20 (was 926-1389).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Exsanguinate",
           "old": "1534.2 base Phys DoT @20",
           "neu": "1905.5 base Phys DoT @20 (was 1534.2).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Exsanguinate of Transmission",
           "old": "1718.9 base Phys DoT @20",
           "neu": "2134.9 base Phys DoT @20 (was 1718.9).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Flame Wall",
           "old": "679.9 base Fire DoT @20; secondary 2266.4; quality +0-1 max",
           "neu": "778.7 base Fire DoT @20 (was 679.9); secondary 2595.7 (was 2266.4); quality +0-2 max Flame Walls (was +0-1).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Reap",
           "old": "2002.5 base Phys DoT @20",
           "neu": "2422.5 base Phys DoT @20 (was 2002.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Scorching Ray",
           "old": "cast time 0.25s; 780.7 base Fire DoT @20",
           "neu": "cast time 0.22s (was 0.25); 914 base Fire DoT @20 (was 780.7).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Scorching Ray of Immolation",
           "old": "duration 3s; 2343.7 base Fire DoT @20",
           "neu": "duration 4s (was 3); 2744 base Fire DoT @20 (was 2343.7).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Searing Bond",
           "old": "+1 max Totems; 3899.6 base Fire DoT @20",
           "neu": "+2 max Totems (was 1); 4430.6 base Fire DoT @20 (was 3899.6).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Searing Bond of Detonation",
           "old": "radius 2-2.4m; 2513.6 base Fire DoT @20",
           "neu": "radius 2.3-2.7m (was 2-2.4); 2977.7 base Fire DoT @20 (was 2513.6).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Siphoning Trap of Pain",
           "old": "radius 3m; beams 11-15; 2546.9 base Cold DoT @20",
           "neu": "radius 3-3.5m (was 3); beams 13-18 (was 11-15); 3085.7 base Cold DoT @20 (was 2546.9).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Soulrend",
           "old": "cast time 0.8s; 3149.4 base Chaos DoT @20",
           "neu": "cast time 0.7s (was 0.8); 3840.8 base Chaos DoT @20 (was 3149.4); -15% mana cost.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Soulrend of the Spiral",
           "old": "3149.4 base Chaos DoT @20",
           "neu": "3840.8 base Chaos DoT @20 (was 3149.4).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Storm Call of Trarthus",
           "old": "radius 0-0.6m; 235% effectiveness; 1935.9 base Phys DoT @20; 1085-1627 Phys",
           "neu": "radius +0.3-0.9m (was 0-0.6); 250% effectiveness (was 235%); 2316.8 base Phys DoT @20 (was 1935.9); 1150-1729 Phys (was 1085-1627).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Storm Cascade (Rippling/Surging Thoughts)",
           "old": "crit 5%; 100% effectiveness; 422-633 dmg; 5 bursts",
           "neu": "crit 6% (was 5%); 170% effectiveness (was 100%); 758-1137 dmg (was 422-633); 6 bursts (was 5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Wintertide Brand",
           "old": "debuff duration 1s; 298.5 base Cold DoT @20",
           "neu": "debuff duration 2s (was 1); 389.8 base Cold DoT @20 (was 298.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Vaal Reap",
           "old": "store 1; soul gain prevention 8s; Boiling Blood linger 2s; 3881.5 base Phys DoT @20",
           "neu": "store 2 (was 1); soul gain prevention 6s (was 8); Boiling Blood linger 4s (was 2); 4950.3 base Phys DoT @20 (was 3881.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Frigid Bond",
           "old": "linger 2s; 3566.4 base Cold DoT @20",
           "neu": "linger 3s (was 2); 4335.8 base Cold DoT @20 (was 3566.4).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Infernal Legion",
           "old": "2096.6 base Fire DoT @20",
           "neu": "+0.4m burning radius at all gem levels; 2486.6 base Fire DoT @20 (was 2096.6).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -1465,487 +1692,568 @@
           "k": "Frost Bomb",
           "old": "—",
           "neu": "25% Freeze; Crit 7.5% (was 6%); 380% eff (was 310%); 1712-2568 (was 1391-2086)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Frost Bomb of Forthcoming",
           "old": "—",
           "neu": "Dur 2s (was 2.5); Crit 7.5%; 25% Freeze; 460% eff (was 370%); 2067-3101 (was 1668-2502)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Frost Bomb of Instability",
           "old": "—",
           "neu": "25% Freeze; Crit 7.5% (was 6); 330% eff (was 260%); 1452-2178 (was 1178-1766)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Frostblink",
           "old": "—",
           "neu": "Crit 7.5% (was 5%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Frostblink of Wintry Blast",
           "old": "—",
           "neu": "Crit 7.5% (was 5%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Frostbolt",
           "old": "—",
           "neu": "25% Freeze; Crit 7.5% (was 5%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Galvanic Field",
           "old": "—",
           "neu": "Targets once per 0.5-0.4s (was 0.7-0.5); 50% Shock (was 20%); 130% eff; 70-1336 (was 56-1067); Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Galvanic Field of Intensity",
           "old": "—",
           "neu": "Targets once per 0.65-0.55s; 50% Shock; 470% eff (was 350%); 262-4980 (was 203-3858); Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "General's Cry",
           "old": "—",
           "neu": "No longer supports Skills with Cooldowns",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Glacial Cascade",
           "old": "—",
           "neu": "Crit 6% (was 5%); 75% eff (was 65%); 342-513 (was 300-450)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Hexblast",
           "old": "—",
           "neu": "Cooldown 1s (was 2s); cast 0.85s (was 1); Mana -15%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Hexblast of Contradiction",
           "old": "—",
           "neu": "Cooldown 1s; cast 0.85s; Crit 7.5% (was 6); Mana -15%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Hexblast of Havoc",
           "old": "—",
           "neu": "Radius 2.8m (was 2.5); Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Holy Flame Totem",
           "old": "—",
           "neu": "Crit 6% (was 5%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Holy Flame Totem of Ire",
           "old": "—",
           "neu": "Crit 6% (was 5%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Holy Hammers",
           "old": "—",
           "neu": "Radius 1.8m all levels (was 1.6-1.8)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Hydrosphere",
           "old": "—",
           "neu": "Crit 6% (was 5%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ice Nova",
           "old": "—",
           "neu": "25% Freeze; Crit 7.5% (was 6%); 250% eff (was 230%); 1122-1683 (was 988-1481)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ice Nova of Deep Freeze",
           "old": "—",
           "neu": "Always Freezes (was 50%); Crit 7.5%; 180% eff (was 140%); 817-1225 (was 642-963)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ice Nova of Frostbolts",
           "old": "—",
           "neu": "25% Freeze; Crit 7.5% (was 6)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ice Spear",
           "old": "—",
           "neu": "Crit 7.5% (was 7)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ice Spear of Splitting",
           "old": "—",
           "neu": "Crit 7.5% (was 5); splits 4-7 (was 2-5)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Icestorm (Whispering Ice)",
           "old": "—",
           "neu": "Max 8 Icestorms (was 5)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Incinerate",
           "old": "—",
           "neu": "10 stages (was 8); 70% eff (was 50%); 277-416 (was 207-311); cast 0.18s (was 0.2)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Incinerate of Expanse",
           "old": "—",
           "neu": "70% eff; 277-416 (was 207-311)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Incinerate of Venting",
           "old": "—",
           "neu": "70% eff (was 55%); 272-408 (was 228-342)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Kinetic Blast",
           "old": "—",
           "neu": "150% Arcane Might (was 200%); 40% less AoE (was 35%)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Kinetic Blast of Clustering",
           "old": "—",
           "neu": "150% Arcane Might (was 200%); added phys 10-15% max Life (was 10-17%)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Kinetic Fusillade",
           "old": "—",
           "neu": "Atk Spd 125% base (was 200%); dur 0.5s (was 0.7); 6-10 Mana (was 4-6)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Kinetic Rain",
           "old": "—",
           "neu": "200% Arcane Might (was 150%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Kinetic Rain of Impact",
           "old": "—",
           "neu": "200% Arcane Might (was 150%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lightning Conduit",
           "old": "—",
           "neu": "170% eff (was 140%); 486-1457 (was 387-1161); Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lightning Conduit of the Heavens",
           "old": "—",
           "neu": "Hits 8-15 (was 6-12); Shocks as 200% more (was 20-39); cast 0.6s; Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lightning Tendrils",
           "old": "—",
           "neu": "Radius 2.6-3.6m (was 2.4-3.1); cast 0.2s (was 0.23); Mana +25%; 190% eff (was 130%); 105-1986 (was 75-1420)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lightning Tendrils of Eccentricity",
           "old": "—",
           "neu": "Radius 2.6-3.6m; cast 0.2s; Mana +25%; 85% eff (was 60%); 48-916 (was 33-629)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lightning Tendrils of Escalation",
           "old": "—",
           "neu": "Radius 2.6-3.6m; cast 0.3s; Mana +25%; 370% eff (was 260%); 208-3949 (was 150-2858)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lightning Warp",
           "old": "—",
           "neu": "Cast 0.6s (was 0.7); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         },
         {
           "k": "Manabond",
           "old": "—",
           "neu": "Cast 0.6s (was 0.8)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Orb of Storms",
           "old": "—",
           "neu": "Cast 0.4s (was 0.5); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Orb of Storms of Squalls",
           "old": "—",
           "neu": "Cast 0.4s; Mana +25%; 190% eff (was 140%); 543-1628 (was 396-1187); 8-14 strikes (was 6-10)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Penance Mark",
           "old": "—",
           "neu": "Cursed enemies spawn 2 Shackled Phantasms (was 3)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Purifying Flame",
           "old": "—",
           "neu": "+0-0.4m radius (was 0.2); Crit 6% (was 5.5%); 350% eff (was 300%); 1426-2139 (was 1324-1986)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Purifying Flame of Revelations",
           "old": "—",
           "neu": "Crit 6% (was 5.5); 230% eff (was 190%); 927-1390 (was 860-1291)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Quickstep",
           "old": "—",
           "neu": "Can dash over terrain (not through enemies)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ravenous (Veruso's Ambition)",
           "old": "—",
           "neu": "Buff removed if you lose the Ravenous Skill (e.g. unequip boots)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Rolling Magma",
           "old": "—",
           "neu": "320% eff (was 280%); 1219-1828 (was 1245-1868); Mana -20%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Rune Blast",
           "old": "—",
           "neu": "Cast 0.16s (was 0.2); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Rune Blast of Teleportation",
           "old": "—",
           "neu": "Teleports if no detonation in past 0.5s (was 1s); cast 0.16s; Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Shock Nova",
           "old": "—",
           "neu": "Cast 0.6s (was 0.7); Mana +25%; 220% eff (was 190%); 242-2176 (was 537-1610)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Shock Nova of Procession",
           "old": "—",
           "neu": "242-2176→105-948 (was 263-790); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Somatic Shell",
           "old": "—",
           "neu": "35-60% base Atk Dmg (was 20-50); Atk Spd 115% (was 100%); 6-9 Mana (was 7-10); radius 1.8m (was 1.5)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Soulrend of Reaping",
           "old": "—",
           "neu": "3-5 projectiles (was 1); Crit 10% (was 7)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Spark",
           "old": "—",
           "neu": "Cast 0.6s (was 0.65); Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Spark of the Nova",
           "old": "—",
           "neu": "6-10 proj (was 8-12); cast 0.7s; Mana +25%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Spark of Unpredictability",
           "old": "—",
           "neu": "4-7 proj (was 3-6); cast 0.6s; Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Storm Burst",
           "old": "—",
           "neu": "45% eff (was 35%); 192-288 (was 168-252)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Storm Burst of Repulsion",
           "old": "—",
           "neu": "80% eff (was 70%); 353-530 (was 309-464)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Storm Call",
           "old": "—",
           "neu": "Cast 0.4s (was 0.5); Mana +25%; 270% eff (was 250%); 1074-1994 (was 949-1762)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Stormbind",
           "old": "—",
           "neu": "200% eff (was 160%); 552-1656 (was 444-1332); Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Stormbind of Teleportation",
           "old": "—",
           "neu": "200% eff (was 160%); 552-1656; Mana +25%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Tornado of Elemental Turbulence",
           "old": "—",
           "neu": "80% eff (was 65%); 366-549 (was 290-435)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Unearth",
           "old": "—",
           "neu": "Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Void Sphere",
           "old": "—",
           "neu": "Crit 7% (was 5); 60% phys→chaos (was 40%); 100% eff (was 75%); 464-696 (was 344-516)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Void Sphere of Rending",
           "old": "—",
           "neu": "Radius 2.8m (was 2.4); Crit 7% (was 5); 60% phys→chaos; 250% eff (was 190%); 1107-1660 (was 860-1290)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Volatile Dead of Confinement",
           "old": "—",
           "neu": "Explosion radius 2.3m (was 2)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Voltaxic Burst",
           "old": "—",
           "neu": "Crit 10% (was 5.5); 60% lightning→chaos (was 40%); explosion 10% corpse Life (was 6%); 250% eff (was 230%); 993-1845 (was 906-1683)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vortex",
           "old": "—",
           "neu": "Cast 0.6s (was 0.75); Crit 7.5% (was 6); 25% Freeze; Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vortex of Projection",
           "old": "—",
           "neu": "Cast 0.6s; Crit 7.5%; radius 2.2m (was 2); 25% Freeze; Mana -20%",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Wave of Conviction",
           "old": "—",
           "neu": "Cast 0.6s (was 0.7); Mana +15%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Wave of Conviction of Trarthus",
           "old": "—",
           "neu": "Cast 0.6s; Mana +15%",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Winter Orb",
           "old": "—",
           "neu": "2-3 proj (was 1); 25% Freeze; Crit 7.5% (was 6); 360-539 (was 360-450)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cleave / Vaal Cleave Quality",
           "old": "+0-0.1m Radius gave no benefit past 1% Quality",
           "neu": "Now both have +0-0.1 metres to Radius for their Quality stat.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Cold Snap (Update)",
           "old": "crit 6%; cast time 0.85s; 2259.5 base Cold DoT @20",
           "neu": "25% chance to Freeze; crit 7.5% (was 6%); cast time 0.8s (was 0.85); 2736.4 base Cold DoT @20 (was 2259.5).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Creeping Frost",
           "old": "crit 6%; 130% effectiveness; secondary radius 1.8m at all; 2225.7 base Cold DoT @20; 568-847 Cold",
           "neu": "crit 7.5% (was 6%); 90% effectiveness (was 130%); secondary radius 1.8-2.2m (was 1.8 at all); 2530.5 base Cold DoT @20 (was 2225.7); 356-532 Cold (was 568-847).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Creeping Frost of Floes",
           "old": "crit 6%; 80% effectiveness; secondary radius 2.2m at all; 2669.1 base Cold DoT @20; 395-592 Cold",
           "neu": "crit 7.5% (was 6%); 65% effectiveness (was 80%); secondary radius 2.2-2.6m (was 2.2 at all); 3035.2 base Cold DoT @20 (was 2669.1); 248-372 Cold (was 395-592).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Flame Dash (Update)",
           "old": "crit 6%; 140% effectiveness; 1738.6 base Fire DoT @20",
           "neu": "crit 5% (was 6%); 170% effectiveness (was 140%); 1999.3 base Fire DoT @20 (was 1738.6).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Icestorm (Whispering Ice)",
           "old": "max 5; crit 6%",
           "neu": "max 8 (was 5); crit 7.5% (was 6%).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Lightning Warp",
           "old": "cast time 0.7s; crit 5%",
           "neu": "cast time 0.6s (was 0.7); +25% mana cost; crit 6% (was 5%).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Vortex (Update)",
           "old": "cast time 0.75s; crit 6%; no freeze; radius 2m; 2772.8 base Cold DoT @20",
           "neu": "cast time 0.6s (was 0.75); crit 7.5% (was 6%); 25% Freeze; -20% mana cost; radius 2.3m (was 2); 3245.7 base Cold DoT @20 (was 2772.8).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Vortex of Projection",
           "old": "cast time 0.75s; crit 6%; radius 2m; 1386.4 base Cold DoT @20",
           "neu": "cast time 0.6s (was 0.75); crit 7.5% (was 6%); radius 2.2m (was 2); 25% Freeze; -20% mana cost; 2112 base Cold DoT @20 (was 1386.4).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Vaal Cold Snap (Update)",
           "old": "store 1; souls 35; soul gain prevention 6s; cast time 0.85s; crit 6%; 2924.2 base Cold DoT @20",
           "neu": "store 2 (was 1); souls 25 (was 35); soul gain prevention 5s (was 6); cast time 0.8s (was 0.85); crit 7.5% (was 6%); 3626.1 base Cold DoT @20 (was 2924.2).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -1957,49 +2265,57 @@
           "k": "Vaal Blade Vortex",
           "old": "—",
           "neu": "Crit 10% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Cold Snap",
           "old": "—",
           "neu": "Crit 7.5% (was 6%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Fireball",
           "old": "—",
           "neu": "Radius 1-1.8m (was 0.9-1.4); Crit 5% (was 6%); 330% eff (was 240%); 1276-1913 (was 1095-1643); +0-0.3m quality",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Firestorm",
           "old": "—",
           "neu": "Radius 1.8m (was 1.3); Burning Ground 6s (was 4); 920% eff (was 760%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Flameblast",
           "old": "—",
           "neu": "90% eff (was 60%); 360-540 (was 280-419)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Ice Nova",
           "old": "—",
           "neu": "25% Freeze; -15% AoE/repeat (was 20%); Crit 7.5% (was 6); 180% eff (was 120%); 834-1227 (was 518-762)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Spark",
           "old": "—",
           "neu": "Dur 3s (was 2); Crit 6% (was 5); cast 0.6s (was 0.65); 60% eff (was 40%); 32-613 (was 24-454)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vaal Storm Call",
           "old": "—",
           "neu": "Cast 0.4s (was 0.5); strike every 0.2s (was 0.25); 150% eff (was 130%); 591-1098 (was 510-947); +0-1s quality",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -2011,73 +2327,85 @@
           "k": "Archmage",
           "old": "—",
           "neu": "Added Lightning = 8-14% Unreserved Max Mana (was 10-16%)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Ballista Totem",
           "old": "—",
           "neu": "36-30% less Damage (was 32-24%)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Barrage",
           "old": "—",
           "neu": "50-44% less Damage (was 68-62%); +1 projectile (was 3→4); 10% more Atk Time/proj (was 5%); 200% mult (was 150%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Blastchain Mine",
           "old": "—",
           "neu": "60-55% less Damage (was 58-53%); 65% mult (was 50%)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Cast on Ward Break",
           "old": "—",
           "neu": "5% CD recovery per 100 Ward up to 400% (was uncapped)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Cast while Channelling",
           "old": "—",
           "neu": "Triggers every 0.4-0.32s (was 0.45-0.35); 20% less dmg (was 30%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Charged Mines",
           "old": "—",
           "neu": "8% throw speed/Frenzy (was 10%); 20% crit/Power (was 25%); 140% mult (was 120%)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Companionship",
           "old": "—",
           "neu": "No longer +max Life if only minion; now 24-28% less Damage taken if only minion",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Minion Pact → Communion",
           "old": "—",
           "neu": "Reworked & renamed Communion Support: Spell hits, not minion skills; 20-30 added phys per permanent minion @lvl3; 150 mult (was 100)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Spell Totem",
           "old": "—",
           "neu": "55-50% less Damage (was 49-40%)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Unleash",
           "old": "—",
           "neu": "45-26% less when Reoccurring (was 45-36%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Greater Unleash",
           "old": "—",
           "neu": "25-23% less when Reoccurring (was 35-31%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -2089,319 +2417,372 @@
           "k": "Abberath's Horn",
           "old": "—",
           "neu": "No longer 20-30% Fire Dmg; now 80-120% Global Crit (was 40-60%) + 30-50% DoT Mult for Ignite from Crits",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Atziri's Rule",
           "old": "—",
           "neu": "100-300% Spell Crit",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Breath of the Council",
           "old": "—",
           "neu": "Chaos Skill Eff Dur 40-80% (was 40); 80-120% Chaos (was 80-100); 10-20% AoE (was 10)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cane of Unravelling",
           "old": "—",
           "neu": "No longer 20-30% Chaos; +1 Max Power Charges; 5% cast/charge (was 2); 5 mana/charge (was 2)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Cerberus Limb",
           "old": "—",
           "neu": "20-40% Cast Speed (was 15-20%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Disintegrator",
           "old": "—",
           "neu": "2% PDR/hit per Siphon (was 1); Adds 20-23 to 26-30 phys (was 12-14 to 15-16)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Doryani's Delusion",
           "old": "—",
           "neu": "Now on Leviathan/Velour/Warlock Greaves (was Titan/Slink/Sorcerer); always Corrupted w/ implicit. Purity L30 (was 25). +0-100 Life, 0-40% move, 0-200% armour/ev/ES. Divine to update.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Duskdawn / Replica",
           "old": "—",
           "neu": "+20-30% Block while wielding Staff (was +10)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Emberwake",
           "old": "—",
           "neu": "10-20% Cast Speed (was 5-10); 35% less Burning (was 40)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Replica Emberwake",
           "old": "—",
           "neu": "10-20% Cast Speed (was 5-10); Ignites 40-60% faster (was 35-45)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Foulborn Ghostwrithe",
           "old": "—",
           "neu": "ES = 35% max Life (was 40)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Grey Spire",
           "old": "—",
           "neu": "Implicit Magnitudes Doubled; 300-400% Global Dmg (was 250-300); +1-5% all max res (was 1-4)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Grey Wind",
           "old": "—",
           "neu": "Added Fire = 6-10% max Life (was 8-12)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "The Gull",
           "old": "—",
           "neu": "25-50% Shrine buff eff (was 75); 25-50% Shrine dur (was 50)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Foulborn Heartbound Loop",
           "old": "—",
           "neu": "20-30% Mana Cost Eff of Minion Skills (was 10-20% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Hateforge",
           "old": "—",
           "neu": "20-40% Rage Cost Eff (was 10-25% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Honourhome",
           "old": "—",
           "neu": "30-50% Mana Cost Eff (was 10-20% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jiquani's Potential",
           "old": "—",
           "neu": "Adds 1 to 24-35 Lightning/10 Int (was 1 to 31-53)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Foulborn Kalisa's Grace",
           "old": "—",
           "neu": "100% Mana Cost Eff for 2s after 800 mana spent (was 50% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Lioneye's Remorse",
           "old": "—",
           "neu": "-150 phys from proj attacks (was -25)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Mask of the Stitched Demon",
           "old": "—",
           "neu": "Regen 1% Life/s per 500 Player max ES (was per 500 ES)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Mask of the Tribunal",
           "old": "—",
           "neu": "3% Mana Res Eff/250 attrs (was 2)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Martyr of Innocence",
           "old": "—",
           "neu": "+20-25% Block wielding Staff (was 12-16); 100-200% Fire Dmg",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Maw of Mischief",
           "old": "—",
           "neu": "40-60% Mana Cost Eff of Minion Skills (was 20-30% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Militant Faith",
           "old": "—",
           "neu": "3% Mana Cost Eff/10 Devotion (was 1% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Mystic Refractor",
           "old": "—",
           "neu": "10-50% Proj Speed (was 10-20)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Nebulis",
           "old": "—",
           "neu": "6-8% Ele dmg per 1% res above 75 (was 5-10)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ngamahu's Sign",
           "old": "—",
           "neu": "+400-600 Armour",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Praxis",
           "old": "—",
           "neu": "20-30% Mana Cost Eff",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Realmshaper",
           "old": "—",
           "neu": "+2 Fire gems (was +1); +2 Cold gems (was +1)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Rathpith Globe",
           "old": "—",
           "neu": "3% Spell Crit/100 Life, 3% Spell Dmg/100 Life (was 5)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Foulborn Rathpith Globe",
           "old": "—",
           "neu": "3% DoT/100 Life (was 5)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Shimmeron",
           "old": "—",
           "neu": "No longer +lightning or +spell dmg; +1 Max Power Charges; +3 to 15-25 lightning/charge (was 9); 300 lightning taken/s/charge (was 200)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Singularity",
           "old": "—",
           "neu": "10-20% Mana Cost Eff (was 6-8% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Stasis Prison",
           "old": "—",
           "neu": "No longer +80-100 Life; 80-100% Implicit magnitude",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Stormfire",
           "old": "—",
           "neu": "Adds 1-3 to 125-145 lightning to Ignited (was 1-3 to 62-70)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Taryn's Shiver",
           "old": "—",
           "neu": "No longer 50-60% Spell Dmg; +2-4 Cold gem lvl (was +2); 80-140% Cold (was 40-50); 25-50% Freeze (was 8)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-22"
         },
         {
           "k": "Tawhanuku's Timing",
           "old": "—",
           "neu": "+60-80 max ES; ES = upfront cost every 3rd pay (was 5th)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Tidebreaker",
           "old": "—",
           "neu": "No longer 10% phys/Endurance; 50% Brine Charge instead; 4% phys as cold+lightning/charge",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Tukohama's Fortress",
           "old": "—",
           "neu": "+500 Armour/totem (was 300)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Replica Tulfall",
           "old": "—",
           "neu": "20-30% Cold/charge (was 15-20)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Replica Tukohama's Fortress",
           "old": "—",
           "neu": "30% Crit/brand (was 20)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Valako's Sign",
           "old": "—",
           "neu": "+100-150 max Mana (was 20-40)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Vertex",
           "old": "—",
           "neu": "Socketed gems 50% less Mana Cost (was 50% reduced)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Void Battery",
           "old": "—",
           "neu": "10-15% Spell Dmg/charge (was 25); 50% reduced (was 80); +100-120 Mana (was 40-50)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Voidfletcher",
           "old": "—",
           "neu": "Now Ornate Quiver (was Primal Arrow); +2 Sockets (3 total); Void Charge/sec (was 0.5); worse via Divine",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-17"
         },
         {
           "k": "Wyrmsign",
           "old": "—",
           "neu": "10% Mana Cost Eff/Endurance (was 4% reduced)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Yaomac's Accord",
           "old": "—",
           "neu": "+1-2 Vaal gem lvl",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Synthesis implicits",
           "old": "—",
           "neu": "Reduced Mana Cost implicits no longer roll on Synthesis uniques",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "The Searing Touch",
           "old": "50-60% inc Spell Damage; 10% Cast Speed",
           "neu": "Now has Voracious Flame keystone. 20-40% inc Cast Speed (was 10%). No longer has Spell Damage.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         },
         {
           "k": "The Squire",
           "old": "All Sockets are White",
           "neu": "No longer has All Sockets are White (existing versions unaffected).",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-22"
         },
         {
           "k": "Foulborn The Squire",
           "old": "+3-5% Chance to Block",
           "neu": "Now replaces +3-5% Block with Ignore Attribute Requirements of Socketed Gems.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         },
         {
           "k": "Taryn's Shiver",
           "old": "50-60% inc Spell Damage; +2 Level Cold Spell Gems; 40-50% inc Cold Damage; 8% Freeze Chance",
           "neu": "Now has Bitter Frost keystone. +2-4 Level Cold Spell Gems (was +2). 80-140% inc Cold Damage (was 40-50%). 25-50% Freeze Chance (was 8%). No longer has Spell Damage. Divine Orb updates existing.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -2413,157 +2794,183 @@
           "k": "Synthesised items",
           "old": "—",
           "neu": "Non-Unique Synthesised no longer obtainable (except corrupting Synthesis uniques to Rare). Fracturing Orbs/Fossils/Mists no longer state they don't work on Synthesised. Harvest Synthesise removed. Beastcraft split → Fracture Talisman mods.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Fractured Fossils",
           "old": "—",
           "neu": "Now Fracture a random Modifier; can't be used on Fractured/Influenced",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Ancient Orbs",
           "old": "—",
           "neu": "Can no longer reroll into same-name Unique (e.g. Beacon of Madness, Volkuur's Guidance)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Volatile Vaal Orbs",
           "old": "—",
           "neu": "Can now be used on items with no out-of-range-scalable mods (consistent with Divine)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Ring Mana mods",
           "old": "—",
           "neu": "Mana / Reduced Mana Cost no longer Unveilable/Craftable on Rings; now Mana + Mana Cost Efficiency",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Searing Exarch Helmet",
           "old": "—",
           "neu": "Reduced Mana Cost of Attacks implicit replaced by Mana Cost Efficiency",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Openness Cluster",
           "old": "—",
           "neu": "+15% Mana Cost Efficiency",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Daring Ideas Cluster",
           "old": "—",
           "neu": "+25% Cost Efficiency of Attacks",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Jewel mod",
           "old": "—",
           "neu": "New: 10-15% Mana Cost Efficiency",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Staff block implicits",
           "old": "—",
           "neu": "No longer require Staff; Block Attack/Spell can roll on Staves",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Redeemer Staves",
           "old": "—",
           "neu": "Up to +22% block if hit recently (was +15)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Moonstone Ring",
           "old": "—",
           "neu": "Implicit 7-10% Cast Speed (was max ES)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Caster weapon bases",
           "old": "—",
           "neu": "Demon's Horn/Opal/Tornado Wand: Spell Dmg implicits (was added dmg)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Staff spell tiers",
           "old": "—",
           "neu": "Extra tier added; highest +4 (was +3); all caster prefix dmg tiers buffed (up to 200%); Trap/Mine/Burning/Poison/Bleeding prefixes buffed; highest-tier more common",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Caster weapon added dmg",
           "old": "—",
           "neu": "Added Damage to Spells prefixes buffed (higher tiers, staves bigger)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Caster weapon crit",
           "old": "—",
           "neu": "One-hand 40-109% Spell Crit (was 10-109); new Staves mods 50% higher; relevant Essence/Bench buffed",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Stun/Stun Duration mods",
           "old": "—",
           "neu": "No longer roll on Sceptres/caster Staves; Stun Duration only on Maces/attack Staves/Swords/Axes/Bows",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Caster cast speed",
           "old": "—",
           "neu": "Top-tier cast speed same weighting as lower tiers (was lower)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Dagger implicits",
           "old": "—",
           "neu": "30%→40-45%, 40%→50-55%, 50%→60-65% Global Crit (Blessed to update)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "New Corruption implicits",
           "old": "—",
           "neu": "Large set added: Aura Eff on Amulets, Mana Res Eff on Rings, +Charges on Rings/Shields/Amulets, Res caps, Versatile Combatant/Glancing Blows on Shields, block, ground-immunity, attribute/quality/level supports, explode-on-kill, etc.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Removed Corruption implicits",
           "old": "—",
           "neu": "Reduced AoE dmg taken, proj dmg taken, +4-5% block on Shields; lvl21/23 aura/curse skills; Burning Dmg on Helms; stationary/moving bonuses; cast speed from Warstaves; spell dmg from attack Daggers",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Aura Corruption implicits",
           "old": "—",
           "neu": "Now Amulets only (was Amulets/Rings/Belts), 20-30% (was 15-20)",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Ring phys corruption",
           "old": "—",
           "neu": "15-25% Global Physical Dmg (was Global Damage) — affects existing",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Belt life corruption",
           "old": "—",
           "neu": "6-10% max Life (was 6-8)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Caster Staff corruption",
           "old": "—",
           "neu": "22-28% Cast Speed (was 12-15); local phys can roll on Warstaves; Two-Hand Axe +0.2-0.4m range (was 0.1-0.2, also 1H Axes/Swords)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Caster Weapon Hybrid Prefixes",
           "old": "up to 39% increased at max tier (one-hand)",
           "neu": "Hybrid increased Spell/Minion Damage and Mana Prefix Modifiers on caster weapons increased at all tiers, up to 49% increased at max tier on one-hand weapons (previously 39%)",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -2575,37 +2982,43 @@
           "k": "Temporarily disabled",
           "old": "—",
           "neu": "Broken Promises, Imperfect Memories, Magnum Opus, Parasitic Passengers disabled; existing cannot be turned in.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "The Apocalypse",
           "old": "—",
           "neu": "Now states reward is Corrupted (descriptive only).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Call to the First Ones",
           "old": "—",
           "neu": "Now awards a Rare Talisman.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "The Catch / Matryoshka",
           "old": "—",
           "neu": "Rewards no longer Incubated.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "The Home",
           "old": "—",
           "neu": "Now awards an Exceptional Support Gem.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Imperfect Memories",
           "old": "disabled",
           "neu": "Re-enabled. Now awards a random Astrolabe.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -2617,37 +3030,43 @@
           "k": "Wombgifts",
           "old": "—",
           "neu": "Ancient Wombgifts relatively rarer.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Vorici Transportation",
           "old": "—",
           "neu": "Socket-colour reforge count reduced at all Ranks.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Talismans",
           "old": "—",
           "neu": "Do not drop from Red Beasts; beast-crafted as normal Talismans in Menagerie.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Inquisitor Instruments of Zeal",
           "old": "—",
           "neu": "Same as base game but +5 max Fanatic Charges (was +3).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Gladiator Determined Survivor",
           "old": "50% Chance to Block from Equipped Shield",
           "neu": "Now grants 40% Chance to Block from Equipped Shield (was 50%).",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-22"
         },
         {
           "k": "Gladiator More than Skill",
           "old": "",
           "neu": "Now also grants -5% to maximum Chance to Block Attack and Spell Damage.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -2659,19 +3078,22 @@
           "k": "Rare reward transforms",
           "old": "—",
           "neu": "Armour/Weapon transform-all modifiers removed (Horned Scarab of Tradition stronger).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Soul Eater",
           "old": "—",
           "neu": "Expires faster on non-Players: lose soul every 0.2s if none gained in 2s (was 0.5s/4s).",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Explode-on-Death orbs",
           "old": "—",
           "neu": "Minion Fire/Cold/Lightning Explode rares now always explode after duration.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -2683,19 +3105,22 @@
           "k": "Faster Attacks",
           "old": "—",
           "neu": "All classes can buy from Nessa after The Caged Brute.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Faster Casting",
           "old": "—",
           "neu": "All classes can buy from Yeena after Sharp and Cruel.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Mana-Infused Staff",
           "old": "—",
           "neu": "Templar gets on Intruders in Black; Witch/Shadow buy from Yeena.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -2707,79 +3132,92 @@
           "k": "Animated Guardian",
           "old": "—",
           "neu": "Right-click icon to view equipped items (read-only).",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Stack sizes",
           "old": "—",
           "neu": "Most stackables now 10,000 (was 5,000).",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Currency apply",
           "old": "—",
           "neu": "Drains full stacks in reverse-add order (not one-at-a-time).",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Expedition remnant popup",
           "old": "—",
           "neu": "Shows Remnants affected + total in area.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Syndicate release",
           "old": "—",
           "neu": "Ctrl-click skips confirm window.",
-          "t": "buff"
+          "t": "buff",
+          "version": "2026-07-16"
         },
         {
           "k": "Instance Manager",
           "old": "—",
           "neu": "Create/join Hideout areas without changing selected type.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Char select",
           "old": "—",
           "neu": "More characters visible when no events/priv leagues.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Wither debuff",
           "old": "—",
           "neu": "Total effect shown on debuff bar.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Item text copy",
           "old": "—",
           "neu": "Always copies advanced description; search matches advanced format.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Tree search",
           "old": "—",
           "neu": "Improved highlight on Passive & Atlas trees.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Breach Stash Tab",
           "old": "disabled",
           "neu": "Breach Stash Tab enabled for Path of Exile.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         },
         {
           "k": "Return to Hideout Keybind",
           "old": "",
           "neu": "Added optional keybind to return to your hideout.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         },
         {
           "k": "Scion Unlocked by Default",
           "old": "must free Scion from Upper Sceptre of God",
           "neu": "No longer required to free the Scion from Upper Sceptre of God in Act 3. Scion playable by default for all accounts.",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -2791,271 +3229,316 @@
           "k": "Snipe Support granted Triggered Skills +2 arrows (3.27 bug)",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Area of Effect applied to Elemental Hit twice (Spectrum unaffected)",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Avoid Damage from Hits not capped at 75%",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Delve Heist Reward Chests still appearing in Contracts/Blueprints",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Dying Light card unobtainable from Maven's Invitation: The Feared",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "It That Was Tul/Esh could Hinder immune targets",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Ailith Skill Damage Atlas Passives not affecting some Skills",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Could chance Blighted Maps to Unique",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "All-Scarabs-same-Type Strongbox reduced Scarab drops",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Immortal Call 15% less phys/Endurance counted minimums",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Orb of Storms/Squalls Mana higher at lvl1 than other levels",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Cleave/Vaal Cleave +0.1m/nearby quality gave no benefit past 1% (now +0-0.1m)",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Runegraft of Treachery auras still applied some with Hand of Phrecia",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Devour Support consumed unrespawnable monsters",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Cadigan's Authority totem limit bypass via minions",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Hand of Phrecia Non-Curse Aura eff unscaleable by Volatile Vaal",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Prevent-block did not prevent blocking reflected damage (Saffell's Frame)",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Guardian's Harmony of Purpose could pick same Shrine twice",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Shield of Light damaging area ≠ visual AoE",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Unholy Might only granted Wither-on-hit for attacks",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Dash failed over valid terrain if final invalid",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Replica Lioneye's Paws Toxic Rain showed no stats on hover",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Minions broke AI when stealing Fleeing modifier",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Taunt sometimes not working",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Ruthless party Gold over-grant",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Domain of Timeless Conflict monsters stood (visual)",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Several Grandmasters not using Skills / not gaining aura/support bonuses",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Smite gave Buff Aura on hitting a pot",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Holy Sweep called Holy Hammers on chests",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Bestiary Boss portals not using Spirit Portal Effect",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Solaris Temple L1 oversized area generation",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Solaris Temple L2 extremely long dead end",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Several Passive stats unnecessarily described global",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Reminder text missing from Passive popups",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Alt on items hid advanced Enchantment info",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Frost Blades of Katabasis DoT missing PVP scaling",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Old hideouts had Monster Level 20 (now 60)",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Utmost Ubers Ruthless Keepers challenge reqs wrong",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Wither Skill visual bug",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Basilisk Portrait Frame wrong in 4K",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Hideout Music Player inaccessible on PC controller",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Steam Deck client crash",
           "old": "—",
           "neu": "Fixed.",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Searing Exarch Runes",
           "old": "no damage below level 83",
           "neu": "Fixed Runes of the Searing Exarch in Map Areas below level 83 not doing damage.",
-          "t": "fix"
+          "t": "fix",
+          "version": "2026-07-22"
         },
         {
           "k": "Temp Minions Area Transition",
           "old": "persist through area transitions",
           "neu": "Fixed temporary Minions persisting through area transitions between non-combat areas.",
-          "t": "fix"
+          "t": "fix",
+          "version": "2026-07-22"
         },
         {
           "k": "Reward Icons (Timeless Conflict)",
           "old": "visible above monsters",
           "neu": "Reward Icons no longer visible above monsters in Domain of Timeless Conflict (visual only). Rewards tracked by crystals at centre lighting up instead of icon list.",
-          "t": "fix"
+          "t": "fix",
+          "version": "2026-07-22"
         }
       ]
     },
@@ -3067,139 +3550,162 @@
           "k": "Vaal Caress",
           "old": "—",
           "neu": "+2 to Level of all Vaal Skill Gems; Onslaught for 20s on using a Vaal Skill",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Elevore",
           "old": "—",
           "neu": "25% chance to Suppress Spell Damage; 25% chance to Avoid Elemental Ailments; Recover 200 Life when you Suppress Spell Damage",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Kaom's Roots",
           "old": "—",
           "neu": "+100 to max Life; Cannot be Knocked Back; Action Speed can't be below Base; Cannot Evade enemy Attacks; Cannot be Stunned",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "The Apostate",
           "old": "—",
           "neu": "Removes all ES; Gain max Life instead of max ES from Armour; -12 max Life per Level",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Dawnbreaker",
           "old": "—",
           "neu": "25% of Cold Dmg taken as Fire; 25% Lightning as Fire; 25% Physical as Fire",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Xirgil's Crank",
           "old": "—",
           "neu": "+1 to Level of all Spell Gems; 30% chance ES Recharge starts on Block",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Arakaali's Fang",
           "old": "—",
           "neu": "Trigger Level 20 Raise Spiders on Kill",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Sands of Time",
           "old": "—",
           "neu": "Trigger Level 1 Suspend in Time on Casting a Spell",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Femurs of the Saints",
           "old": "—",
           "neu": "+1% Block per Summoned Skeleton; 2% Atk/Cast Speed per Raging Spirit; 0.6% Life regen/s per Zombie; 30% Mana Regen/s per Spectre",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Shimmeron",
           "old": "—",
           "neu": "+8% Crit Mult per Power Charge; +0.3% Crit Chance per Power Charge; +3% Block Spell Dmg per Power Charge",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "The Black Cane",
           "old": "—",
           "neu": "Each Phantasm grants Phantasmal Might",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Ngamahu's Flame",
           "old": "—",
           "neu": "Trigger Level 20 Molten Burst on Melee Hit; 20% Pen Fire Res",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Ahn's Might",
           "old": "—",
           "neu": "20% more Accuracy at max Frenzy; -1 max Frenzy; +100% Crit Mult at no Frenzy",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Fidelita's Spike",
           "old": "—",
           "neu": "Hits always Shock; no Physical Dmg; Herald of Thunder +100% buff eff & mana eff",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "The Shattered Divinity",
           "old": "—",
           "neu": "Grants Summon Greater Harbinger of Directions; +40 Str & Dex",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "The Sacred Chalice",
           "old": "—",
           "neu": "Gain Flask Charge on Crit; 20% phys as Cold (if Sapphire recent); 20% phys as Fire (if Ruby recent); 20% phys as Lightning (if Topaz recent)",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Al Dhih",
           "old": "—",
           "neu": "Enemies Taunted by Warcries explode (8% max Life as Chaos); Warcry CD 4s",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Screams of the Desiccated",
           "old": "—",
           "neu": "Impenetrable Shrine Buff w/ no Flasks (100% Armour/Evasion/ES)",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Kaom's Bindings",
           "old": "—",
           "neu": "Nearby Enemies convert 25% phys to Fire; +15% Strength",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Melding of the Flesh",
           "old": "—",
           "neu": "-5% all max Ele Res; Ele Res capped by highest max Ele Res",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Polaric Devastation",
           "old": "—",
           "neu": "40% increased Ailment Duration on Enemies; Cover in Ash 5s on Ignite; Cover in Frost 5s on Freeze",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Gloomfang",
           "old": "—",
           "neu": "Skills Chain +1; Chained hits gain 20% non-Chaos as extra Chaos",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Presence of Chalupa",
           "old": "—",
           "neu": "Cannot be Stunned; 20% max Life as ES",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -3211,73 +3717,85 @@
           "k": "Noble Blood (free)",
           "old": "—",
           "neu": "Hire a Mercenary permanently (free node)",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Helmet",
           "old": "—",
           "neu": "Mercenary can wear Unique Helmets",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Armour",
           "old": "—",
           "neu": "Mercenary can wear Unique Armours",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Gloves",
           "old": "—",
           "neu": "Mercenary can wear Unique Gloves",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Boots",
           "old": "—",
           "neu": "Mercenary can wear Unique Boots",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Belt",
           "old": "—",
           "neu": "Mercenary can wear Unique Belt",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Rings",
           "old": "—",
           "neu": "Mercenary can wear Unique Rings",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Legendary Arms",
           "old": "—",
           "neu": "Mercenary can wear Unique weapon/shield/quiver; Merc + minions deal 8% more dmg per Unique you have equipped",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Oath of Fealty",
           "old": "—",
           "neu": "-50% Link Skill cost; infinite Link duration; Link won't kill you if Merc dies",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Golden Glory",
           "old": "—",
           "neu": "Light Radius increases/reductions also apply to Link Skill buffs on Merc",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Loyal Bodyguard",
           "old": "—",
           "neu": "If Merc Life > yours: takes 20% dmg from hits before you; if vice versa: 40% of dmg taken as Life recoup",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         },
         {
           "k": "Bestowed Knighthood",
           "old": "—",
           "neu": "Merc can Taunt on hit; +50% Non-Curse Aura eff on Merc",
-          "t": "new"
+          "t": "new",
+          "version": "2026-07-16"
         }
       ]
     },
@@ -3289,61 +3807,71 @@
           "k": "Unstable Breach monster packs",
           "old": "—",
           "neu": "Average Monsters in Breach Monster packs reduced; packs spawned in Unstable Breaches reduced by 25%.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Unstable Breach cap",
           "old": "3 maximum open at once",
           "neu": "2 maximum open at once",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Swelling Ranks (Atlas Passive)",
           "old": "Breach Monsters in your Maps have 20% increased Pack Size",
           "neu": "10% increased Pack Size",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Evolving Hives (Atlas Passive)",
           "old": "Breaches in your Maps spawn 25% increased Rare and Magic Monsters",
           "neu": "15% increased Rare and Magic Monsters",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Breach Small Passives (Pack Size)",
           "old": "granted Breach Monsters in your Maps 5% increased Pack Size",
           "neu": "now grant Breaches in your Maps spawn 5% increased Rare Monsters",
-          "t": "chg"
+          "t": "chg",
+          "version": "2026-07-16"
         },
         {
           "k": "Breach Small Passives (Magic)",
           "old": "granted Breaches in your Maps spawn 8% increased Magic Monsters",
           "neu": "now have values of 5%",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Genesis Tree — Equipment bias",
           "old": "—",
           "neu": "Equipment Items birthed by the Genesis Tree inherently have slightly less Modifier Tier Rating and bias towards higher tier base types; lower inherent chance to birth additional Equipment items.",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Genesis Tree Passive Points",
           "old": "20 maximum",
           "neu": "16 maximum",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Genesis Tree Small Passives (Wombgifts)",
           "old": "25% chance for Wombgifts to Birth an additional Equipment Item",
           "neu": "now have values of 25% (previously 50%)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         },
         {
           "k": "Genesis Tree Notables (Wombgifts)",
           "old": "300% increased chance for Modifiers of a specific type",
           "neu": "now have values of 300% (previously 500%)",
-          "t": "nerf"
+          "t": "nerf",
+          "version": "2026-07-16"
         }
       ]
     }

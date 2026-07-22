@@ -97,6 +97,28 @@
   ::-webkit-scrollbar-track{background:transparent}
   ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--amber),var(--cyan));border-radius:6px;border:2px solid var(--bg)}
   ::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--cyan),var(--amber))}
+  /* version badges + history */
+  .ver-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.8px;padding:1px 5px;border:1px solid var(--violet);color:var(--violet);background:rgba(154,143,192,.08);margin-left:6px;vertical-align:middle}
+  .ver-badge.latest{border-color:var(--amber);color:var(--amber);background:rgba(232,161,58,.1)}
+  .ver-hist{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--violet);padding:14px 18px;margin-bottom:18px;font-size:12.5px}
+  .ver-hist summary{cursor:pointer;color:var(--violet);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:12px;list-style:none}
+  .ver-hist summary::-webkit-details-marker{display:none}
+  .ver-hist summary:hover{color:var(--ink)}
+  .ver-entries{margin-top:10px}
+  .ver-entry{padding:8px 0;border-bottom:1px solid var(--line)}
+  .ver-entry:last-child{border-bottom:none}
+  .ver-entry .ver-date{color:var(--amber);font-weight:700;font-size:12px;letter-spacing:.5px}
+  .ver-entry .ver-date .ver-latest{color:var(--green);font-size:10px;margin-left:6px}
+  .ver-entry .ver-count{color:var(--dim);font-size:11px;margin-left:8px}
+  .ver-entry .ver-rows{color:var(--dim);font-size:11.5px;margin-top:4px;line-height:1.5}
+  .ver-entry .ver-rows .vrk{color:var(--cyan)}
+  /* version filter buttons */
+  .vf{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:14px;font-size:11px}
+  .vf label{color:var(--dim);letter-spacing:1px;text-transform:uppercase;font-size:11px}
+  .vf .vfb{border:1px solid var(--line);color:var(--dim);padding:2px 8px;cursor:pointer;user-select:none;transition:opacity .12s,box-shadow .12s}
+  .vf .vfb:hover{box-shadow:0 0 0 1px var(--cyan)}
+  .vf .vfb.off{opacity:.32;filter:grayscale(.6)}
+  .vf .vfb.active{border-color:var(--amber);color:var(--amber);box-shadow:0 0 0 1px var(--amber)}
   /* searchable league combobox */
   .dd{position:relative;margin-bottom:10px}
   .dd input{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--ink);padding:8px 12px;font-size:13px;outline:none}
@@ -228,6 +250,8 @@ function resolveClass(pos, neg){
   return null;
 }
 
+const LATEST_VER = "2026-07-22";
+const VER_LABELS = {"2026-07-16":"07-16","2026-07-17":"07-17","2026-07-22":"07-22"};
 function rowHtml(r){
   const manual = r.t || "chg";
   const t = manual === "new" ? "new" : (resolveClass(r.pos, r.neg) || manual);
@@ -236,7 +260,11 @@ function rowHtml(r){
     : `<span class="old">${escapeHtml(r.old)}</span><span class="new ${CLSP[t]}">${escapeHtml(r.neu)}</span>`;
   const imgs = Array.isArray(r.img) ? r.img : r.img ? [r.img] : [];
   const img = imgs.length ? `<button class="imgbtn" data-imgs='${JSON.stringify(imgs).replace(/'/g,"&#39;").replace(/"/g,"&quot;")}' title="View image${imgs.length>1?'s':''}">${imgs.length>1?'IMAGES':'IMG'}</button>` : "";
-  return `<div class="row" data-t="${t}"><div class="k">${escapeHtml(r.k)}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
+  const ver = r.version || "";
+  const verLabel = VER_LABELS[ver] || ver;
+  const isLatest = ver && ver === LATEST_VER;
+  const verBadge = verLabel ? `<span class="ver-badge${isLatest?' latest':''}">${verLabel}</span>` : "";
+  return `<div class="row" data-t="${t}" data-ver="${ver}"><div class="k">${escapeHtml(r.k)}${verBadge}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
 }
 
 function metaHtml(m){
@@ -272,13 +300,47 @@ function tocHtml(sections, depth){
   }).join("");
 }
 
+function renderVersionHistory(data){
+  const allRows = [];
+  data.sections.forEach(function collect(s){
+    (s.rows||[]).forEach(r => allRows.push(r));
+    (s.sections||[]).forEach(collect);
+  });
+  const byVer = {};
+  allRows.forEach(r => {
+    const v = r.version || "2026-07-16";
+    if(!byVer[v]) byVer[v] = [];
+    byVer[v].push(r.k);
+  });
+  const dates = Object.keys(byVer).sort();
+  if(dates.length < 2) return "";
+  const entries = dates.map(d => {
+    const label = VER_LABELS[d] || d;
+    const isLatest = d === LATEST_VER;
+    const count = byVer[d].length;
+    const preview = byVer[d].slice(0, 6).map(k => `<span class="vrk">${escapeHtml(k)}</span>`).join(", ");
+    const more = count > 6 ? ` +${count-6} more` : "";
+    return `<div class="ver-entry"><span class="ver-date">${escapeHtml(label)}${isLatest?'<span class="ver-latest">LATEST</span>':''}</span><span class="ver-count">${count} change${count!==1?'s':''}</span><div class="ver-rows">${preview}${more}</div></div>`;
+  }).join("");
+  return `<details class="ver-hist" open><summary>Version History (${dates.length} versions)</summary><div class="ver-entries">${entries}</div></details>`;
+}
+function renderVersionFilters(){
+  const dates = ["2026-07-16","2026-07-17","2026-07-22"];
+  return `<div class="vf"><label>Version:</label>${dates.map(d => {
+    const label = VER_LABELS[d] || d;
+    const isLatest = d === LATEST_VER;
+    return `<span class="vfb" data-verf="${d}" title="Show rows from ${label}">${label}</span>`;
+  }).join("")}<span class="vfb" data-verf="all" title="Show all versions">ALL</span></div>`;
+}
 function renderLeague(data){
   const m = data.meta || {};
   const title = `Patch Differ — ${m.version||""} ${m.league||""}`.trim();
   document.title = title;
   document.querySelector("h1").textContent = title;
   $("meta").innerHTML = metaHtml(m);
-  $("app").innerHTML = data.sections.map(sectionHtml).join("");
+  const verHist = renderVersionHistory(data);
+  const verFilters = renderVersionFilters();
+  $("app").innerHTML = verHist + verFilters + data.sections.map(sectionHtml).join("");
   $("toc").innerHTML = tocHtml(data.sections, 0);
   $("mnav").innerHTML = data.sections.map(s => `<a href="#${escapeHtml(s.id)}">${escapeHtml(s.title.split(' ').slice(0,2).join(' '))}</a>`).join("");
   $("tocSearch").value = "";
@@ -290,6 +352,7 @@ let LEAGUES = [];
 const legendState = {buff:true, nerf:true, chg:true, new:true};
 
 async function fetchAndRender(path){
+  verFilter = "all";
   $("app").innerHTML = `<div class="loading">Loading ${escapeHtml(path)}…</div>`;
   try{
     const res = await fetch(path, {cache:"no-store"});
@@ -347,6 +410,21 @@ function applyLegendFilter(){
     sec.style.display = (legendActive && !hasVisible) ? "none" : "";
   });
   $("legend").querySelectorAll(".lg[data-filter]").forEach(s => s.classList.toggle("off", legendActive && !legendState[s.dataset.filter]));
+}
+let verFilter = "all";
+function applyVersionFilter(){
+  document.querySelectorAll("#app .row").forEach(row => {
+    const ver = row.getAttribute("data-ver") || "2026-07-16";
+    row.style.display = (verFilter === "all" || ver === verFilter) ? "" : "none";
+  });
+  document.querySelectorAll("#app section").forEach(sec => {
+    const hasVisible = [...sec.querySelectorAll(":scope .row")].some(r => r.style.display !== "none");
+    sec.style.display = hasVisible ? "" : "none";
+  });
+  document.querySelectorAll(".vf .vfb").forEach(b => {
+    b.classList.toggle("active", b.dataset.verf === verFilter);
+    b.classList.toggle("off", verFilter !== "all" && b.dataset.verf !== verFilter && b.dataset.verf !== "all");
+  });
 }
 
 // --- boot stages: each threads `leagues`, no comments needed (names document intent) ---
@@ -436,6 +514,13 @@ function wireImageLightbox(leagues){
   stage.addEventListener("pointerup", () => { drag = null; stage.classList.remove("grab"); });
   return leagues;
 }
+function wireVersionFilter(leagues){
+  document.querySelectorAll(".vf .vfb").forEach(b => b.addEventListener("click", () => {
+    verFilter = b.dataset.verf;
+    applyVersionFilter();
+  }));
+  return leagues;
+}
 function reportFatal(err){
   console.error("Patch Differ failed to start:", err);
   return [];
@@ -449,6 +534,7 @@ Chain.ok(MANIFEST)
   .then(wireLeaguePicker)
   .then(wireSectionSearch)
   .then(wireLegendFilter)
+  .then(wireVersionFilter)
   .then(wireImageLightbox)
   .catch(reportFatal)
   .run();
