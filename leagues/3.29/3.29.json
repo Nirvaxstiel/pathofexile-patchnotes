@@ -242,6 +242,18 @@
           "old": "—",
           "neu": "Hired Mercenaries now have an information sheet listing all their passive stats.",
           "t": "new"
+        },
+        {
+          "k": "Valdo Map Modifier + Mercenary",
+          "old": "",
+          "neu": "Valdo Map Modifier causing Players/Minions to deal 10% less Damage per equipped item now also applies to a Luminary's Mercenary and their Minions.",
+          "t": "chg"
+        },
+        {
+          "k": "Campaign Temp Mercs",
+          "old": "temporary Mercenaries",
+          "neu": "Campaign temporary Mercenaries can now aide you in combat for multiple areas (up to a maximum of 3).",
+          "t": "chg"
         }
       ]
     },
@@ -842,6 +854,42 @@
           "old": "—",
           "neu": "Totem mastery crit (recent totem) 40% (was 60%). Shaman's Dominion 50% crit (was 60%); small passives +16% crit mult (was 20%).",
           "t": "chg"
+        },
+        {
+          "k": "Bitter Frost Keystone",
+          "old": "",
+          "neu": "North of Witch start. Enemies Chilled by your Hits have Damage taken increased by Chill Effect, Enemies in your Chilling Areas have Damage taken increased by Chill Effect. Cannot deal non-Cold Damage.",
+          "t": "new"
+        },
+        {
+          "k": "Roiling Tempest Keystone",
+          "old": "",
+          "neu": "North of Witch start. 25% more Maximum Lightning Damage, 50% less Minimum Lightning Damage. Cannot deal non-Lightning Damage.",
+          "t": "new"
+        },
+        {
+          "k": "Voracious Flame Keystone",
+          "old": "",
+          "neu": "North of Witch start. You can inflict an additional Ignite on each Enemy, Base Ignite Duration is 1 second, 25% less Damage with Ignite. Cannot deal non-Fire Damage.",
+          "t": "new"
+        },
+        {
+          "k": "Unhallowed Rite Notable",
+          "old": "",
+          "neu": "Requires Vile Bastion or Forbidden Power. Gain Spirit Infusion every second while Channelling. Each stack: 30% faster ES Recharge start, 10% more Channelling Damage, 20% more Cost. Max 5 stacks.",
+          "t": "new"
+        },
+        {
+          "k": "Abyss Clusters (Atlas Tree)",
+          "old": "Abyss Clusters on Atlas Passive Tree",
+          "neu": "Reworked in lieu of Abyss combat changes.",
+          "t": "chg"
+        },
+        {
+          "k": "Genesis Tree + Wombgift",
+          "old": "",
+          "neu": "Genesis Tree can now use Wombgift items from Stash Tab with Breach Affinity set.",
+          "t": "new"
         }
       ]
     },
@@ -1225,6 +1273,186 @@
           "k": "Freezing Pulse",
           "old": "—",
           "neu": "1-5 proj (was 1); Crit 7.5% (was 6); 370% eff (was 330); 1659-2488 (was 1458-2188)",
+          "t": "buff"
+        },
+        {
+          "k": "Bane",
+          "old": "radius 2.1-2.4m; 50% inc Debuff Duration per Curse; 1075.5 base Chaos DoT @20",
+          "neu": "radius 2.4-2.7m (was 2.1-2.4); 100% inc Debuff Duration per Curse (was 50%); 1243.4 base Chaos DoT @20 (was 1075.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Bane of Condemnation",
+          "old": "radius 0.8m; 60% more Dmg per Curse; 1341.7 base Chaos DoT @20",
+          "neu": "radius 1.2m (was 0.8); 100% more Dmg per Curse (was 60%); 1685.3 base Chaos DoT @20 (was 1341.7).",
+          "t": "buff"
+        },
+        {
+          "k": "Blight",
+          "old": "421.5 base Chaos DoT @20",
+          "neu": "+0.2m base Radius; 469 base Chaos DoT @20 (was 421.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Blight of Atrophy",
+          "old": "cast time 0.25s; 421.5 base Chaos DoT @20",
+          "neu": "+0.2m base Radius; cast time 0.2s (was 0.25); 469 base Chaos DoT @20 (was 421.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Blight of Contagion",
+          "old": "837.6 base Chaos DoT @20",
+          "neu": "+0.2m base Radius; 950.5 base Chaos DoT @20 (was 837.6).",
+          "t": "buff"
+        },
+        {
+          "k": "Contagion",
+          "old": "radius 1.7m at all levels; 281.5 base Chaos DoT @20",
+          "neu": "radius 1.7-2.1m (was 1.7 at all); 336.5 base Chaos DoT @20 (was 281.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Contagion of Subsiding",
+          "old": "radius 1.7m at all levels; 1531.3 base Chaos DoT @20",
+          "neu": "radius 1.7-2.1m (was 1.7 at all); 2017.3 base Chaos DoT @20 (was 1531.3).",
+          "t": "buff"
+        },
+        {
+          "k": "Contagion of Transference",
+          "old": "radius 2m at all levels; 821.7 base Chaos DoT @20",
+          "neu": "radius 2-2.4m (was 2 at all); 1117.7 base Chaos DoT @20 (was 821.7).",
+          "t": "buff"
+        },
+        {
+          "k": "Corrupting Fever",
+          "old": "debuff duration 1s; 335.4 base Phys DoT @20",
+          "neu": "debuff duration 1.5s (was 1); 411.7 base Phys DoT @20 (was 335.4).",
+          "t": "buff"
+        },
+        {
+          "k": "Death Aura (Death's Oath)",
+          "old": "1250 base Chaos DoT @20",
+          "neu": "1600 base Chaos DoT @20 (was 1250).",
+          "t": "buff"
+        },
+        {
+          "k": "Energy Blade",
+          "old": "any non-Bow Weapon",
+          "neu": "Swords only (was any non-Bow).",
+          "t": "nerf"
+        },
+        {
+          "k": "Essence Drain",
+          "old": "2170.2 base Chaos DoT @20; 926-1389 Chaos @20",
+          "neu": "2729.1 base Chaos DoT @20 (was 2170.2); 786-1179 Chaos @20 (was 926-1389).",
+          "t": "buff"
+        },
+        {
+          "k": "Essence Drain of Desperation",
+          "old": "4726.1 base Chaos DoT @20; 926-1389 Chaos @20",
+          "neu": "5321.8 base Chaos DoT @20 (was 4726.1); 786-1179 Chaos @20 (was 926-1389).",
+          "t": "buff"
+        },
+        {
+          "k": "Exsanguinate",
+          "old": "1534.2 base Phys DoT @20",
+          "neu": "1905.5 base Phys DoT @20 (was 1534.2).",
+          "t": "buff"
+        },
+        {
+          "k": "Exsanguinate of Transmission",
+          "old": "1718.9 base Phys DoT @20",
+          "neu": "2134.9 base Phys DoT @20 (was 1718.9).",
+          "t": "buff"
+        },
+        {
+          "k": "Flame Wall",
+          "old": "679.9 base Fire DoT @20; secondary 2266.4; quality +0-1 max",
+          "neu": "778.7 base Fire DoT @20 (was 679.9); secondary 2595.7 (was 2266.4); quality +0-2 max Flame Walls (was +0-1).",
+          "t": "buff"
+        },
+        {
+          "k": "Reap",
+          "old": "2002.5 base Phys DoT @20",
+          "neu": "2422.5 base Phys DoT @20 (was 2002.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Scorching Ray",
+          "old": "cast time 0.25s; 780.7 base Fire DoT @20",
+          "neu": "cast time 0.22s (was 0.25); 914 base Fire DoT @20 (was 780.7).",
+          "t": "buff"
+        },
+        {
+          "k": "Scorching Ray of Immolation",
+          "old": "duration 3s; 2343.7 base Fire DoT @20",
+          "neu": "duration 4s (was 3); 2744 base Fire DoT @20 (was 2343.7).",
+          "t": "buff"
+        },
+        {
+          "k": "Searing Bond",
+          "old": "+1 max Totems; 3899.6 base Fire DoT @20",
+          "neu": "+2 max Totems (was 1); 4430.6 base Fire DoT @20 (was 3899.6).",
+          "t": "buff"
+        },
+        {
+          "k": "Searing Bond of Detonation",
+          "old": "radius 2-2.4m; 2513.6 base Fire DoT @20",
+          "neu": "radius 2.3-2.7m (was 2-2.4); 2977.7 base Fire DoT @20 (was 2513.6).",
+          "t": "buff"
+        },
+        {
+          "k": "Siphoning Trap of Pain",
+          "old": "radius 3m; beams 11-15; 2546.9 base Cold DoT @20",
+          "neu": "radius 3-3.5m (was 3); beams 13-18 (was 11-15); 3085.7 base Cold DoT @20 (was 2546.9).",
+          "t": "buff"
+        },
+        {
+          "k": "Soulrend",
+          "old": "cast time 0.8s; 3149.4 base Chaos DoT @20",
+          "neu": "cast time 0.7s (was 0.8); 3840.8 base Chaos DoT @20 (was 3149.4); -15% mana cost.",
+          "t": "buff"
+        },
+        {
+          "k": "Soulrend of the Spiral",
+          "old": "3149.4 base Chaos DoT @20",
+          "neu": "3840.8 base Chaos DoT @20 (was 3149.4).",
+          "t": "buff"
+        },
+        {
+          "k": "Storm Call of Trarthus",
+          "old": "radius 0-0.6m; 235% effectiveness; 1935.9 base Phys DoT @20; 1085-1627 Phys",
+          "neu": "radius +0.3-0.9m (was 0-0.6); 250% effectiveness (was 235%); 2316.8 base Phys DoT @20 (was 1935.9); 1150-1729 Phys (was 1085-1627).",
+          "t": "buff"
+        },
+        {
+          "k": "Storm Cascade (Rippling/Surging Thoughts)",
+          "old": "crit 5%; 100% effectiveness; 422-633 dmg; 5 bursts",
+          "neu": "crit 6% (was 5%); 170% effectiveness (was 100%); 758-1137 dmg (was 422-633); 6 bursts (was 5).",
+          "t": "buff"
+        },
+        {
+          "k": "Wintertide Brand",
+          "old": "debuff duration 1s; 298.5 base Cold DoT @20",
+          "neu": "debuff duration 2s (was 1); 389.8 base Cold DoT @20 (was 298.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Vaal Reap",
+          "old": "store 1; soul gain prevention 8s; Boiling Blood linger 2s; 3881.5 base Phys DoT @20",
+          "neu": "store 2 (was 1); soul gain prevention 6s (was 8); Boiling Blood linger 4s (was 2); 4950.3 base Phys DoT @20 (was 3881.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Frigid Bond",
+          "old": "linger 2s; 3566.4 base Cold DoT @20",
+          "neu": "linger 3s (was 2); 4335.8 base Cold DoT @20 (was 3566.4).",
+          "t": "buff"
+        },
+        {
+          "k": "Infernal Legion",
+          "old": "2096.6 base Fire DoT @20",
+          "neu": "+0.4m burning radius at all gem levels; 2486.6 base Fire DoT @20 (was 2096.6).",
           "t": "buff"
         }
       ]
@@ -1664,6 +1892,60 @@
           "old": "+0-0.1m Radius gave no benefit past 1% Quality",
           "neu": "Now both have +0-0.1 metres to Radius for their Quality stat.",
           "t": "chg"
+        },
+        {
+          "k": "Cold Snap (Update)",
+          "old": "crit 6%; cast time 0.85s; 2259.5 base Cold DoT @20",
+          "neu": "25% chance to Freeze; crit 7.5% (was 6%); cast time 0.8s (was 0.85); 2736.4 base Cold DoT @20 (was 2259.5).",
+          "t": "buff"
+        },
+        {
+          "k": "Creeping Frost",
+          "old": "crit 6%; 130% effectiveness; secondary radius 1.8m at all; 2225.7 base Cold DoT @20; 568-847 Cold",
+          "neu": "crit 7.5% (was 6%); 90% effectiveness (was 130%); secondary radius 1.8-2.2m (was 1.8 at all); 2530.5 base Cold DoT @20 (was 2225.7); 356-532 Cold (was 568-847).",
+          "t": "buff"
+        },
+        {
+          "k": "Creeping Frost of Floes",
+          "old": "crit 6%; 80% effectiveness; secondary radius 2.2m at all; 2669.1 base Cold DoT @20; 395-592 Cold",
+          "neu": "crit 7.5% (was 6%); 65% effectiveness (was 80%); secondary radius 2.2-2.6m (was 2.2 at all); 3035.2 base Cold DoT @20 (was 2669.1); 248-372 Cold (was 395-592).",
+          "t": "buff"
+        },
+        {
+          "k": "Flame Dash (Update)",
+          "old": "crit 6%; 140% effectiveness; 1738.6 base Fire DoT @20",
+          "neu": "crit 5% (was 6%); 170% effectiveness (was 140%); 1999.3 base Fire DoT @20 (was 1738.6).",
+          "t": "buff"
+        },
+        {
+          "k": "Icestorm (Whispering Ice)",
+          "old": "max 5; crit 6%",
+          "neu": "max 8 (was 5); crit 7.5% (was 6%).",
+          "t": "buff"
+        },
+        {
+          "k": "Lightning Warp",
+          "old": "cast time 0.7s; crit 5%",
+          "neu": "cast time 0.6s (was 0.7); +25% mana cost; crit 6% (was 5%).",
+          "t": "buff"
+        },
+        {
+          "k": "Vortex (Update)",
+          "old": "cast time 0.75s; crit 6%; no freeze; radius 2m; 2772.8 base Cold DoT @20",
+          "neu": "cast time 0.6s (was 0.75); crit 7.5% (was 6%); 25% Freeze; -20% mana cost; radius 2.3m (was 2); 3245.7 base Cold DoT @20 (was 2772.8).",
+          "t": "buff"
+        },
+        {
+          "k": "Vortex of Projection",
+          "old": "cast time 0.75s; crit 6%; radius 2m; 1386.4 base Cold DoT @20",
+          "neu": "cast time 0.6s (was 0.75); crit 7.5% (was 6%); radius 2.2m (was 2); 25% Freeze; -20% mana cost; 2112 base Cold DoT @20 (was 1386.4).",
+          "t": "buff"
+        },
+        {
+          "k": "Vaal Cold Snap (Update)",
+          "old": "store 1; souls 35; soul gain prevention 6s; cast time 0.85s; crit 6%; 2924.2 base Cold DoT @20",
+          "neu": "store 2 (was 1); souls 25 (was 35); soul gain prevention 5s (was 6); cast time 0.8s (was 0.85); crit 7.5% (was 6%); 3626.1 base Cold DoT @20 (was 2924.2).",
+          "t": "buff"
         }
       ]
     },
@@ -2096,6 +2378,30 @@
           "old": "—",
           "neu": "Reduced Mana Cost implicits no longer roll on Synthesis uniques",
           "t": "chg"
+        },
+        {
+          "k": "The Searing Touch",
+          "old": "50-60% inc Spell Damage; 10% Cast Speed",
+          "neu": "Now has Voracious Flame keystone. 20-40% inc Cast Speed (was 10%). No longer has Spell Damage.",
+          "t": "chg"
+        },
+        {
+          "k": "The Squire",
+          "old": "All Sockets are White",
+          "neu": "No longer has All Sockets are White (existing versions unaffected).",
+          "t": "nerf"
+        },
+        {
+          "k": "Foulborn The Squire",
+          "old": "+3-5% Chance to Block",
+          "neu": "Now replaces +3-5% Block with Ignore Attribute Requirements of Socketed Gems.",
+          "t": "chg"
+        },
+        {
+          "k": "Taryn's Shiver",
+          "old": "50-60% inc Spell Damage; +2 Level Cold Spell Gems; 40-50% inc Cold Damage; 8% Freeze Chance",
+          "neu": "Now has Bitter Frost keystone. +2-4 Level Cold Spell Gems (was +2). 80-140% inc Cold Damage (was 40-50%). 25-50% Freeze Chance (was 8%). No longer has Spell Damage. Divine Orb updates existing.",
+          "t": "chg"
         }
       ]
     },
@@ -2294,6 +2600,12 @@
           "old": "—",
           "neu": "Now awards an Exceptional Support Gem.",
           "t": "chg"
+        },
+        {
+          "k": "Imperfect Memories",
+          "old": "disabled",
+          "neu": "Re-enabled. Now awards a random Astrolabe.",
+          "t": "chg"
         }
       ]
     },
@@ -2324,6 +2636,18 @@
           "old": "—",
           "neu": "Same as base game but +5 max Fanatic Charges (was +3).",
           "t": "chg"
+        },
+        {
+          "k": "Gladiator Determined Survivor",
+          "old": "50% Chance to Block from Equipped Shield",
+          "neu": "Now grants 40% Chance to Block from Equipped Shield (was 50%).",
+          "t": "nerf"
+        },
+        {
+          "k": "Gladiator More than Skill",
+          "old": "",
+          "neu": "Now also grants -5% to maximum Chance to Block Attack and Spell Damage.",
+          "t": "nerf"
         }
       ]
     },
@@ -2438,6 +2762,24 @@
           "old": "—",
           "neu": "Improved highlight on Passive & Atlas trees.",
           "t": "chg"
+        },
+        {
+          "k": "Breach Stash Tab",
+          "old": "disabled",
+          "neu": "Breach Stash Tab enabled for Path of Exile.",
+          "t": "new"
+        },
+        {
+          "k": "Return to Hideout Keybind",
+          "old": "",
+          "neu": "Added optional keybind to return to your hideout.",
+          "t": "new"
+        },
+        {
+          "k": "Scion Unlocked by Default",
+          "old": "must free Scion from Upper Sceptre of God",
+          "neu": "No longer required to free the Scion from Upper Sceptre of God in Act 3. Scion playable by default for all accounts.",
+          "t": "new"
         }
       ]
     },
@@ -2696,6 +3038,24 @@
           "old": "—",
           "neu": "Fixed.",
           "t": "chg"
+        },
+        {
+          "k": "Searing Exarch Runes",
+          "old": "no damage below level 83",
+          "neu": "Fixed Runes of the Searing Exarch in Map Areas below level 83 not doing damage.",
+          "t": "fix"
+        },
+        {
+          "k": "Temp Minions Area Transition",
+          "old": "persist through area transitions",
+          "neu": "Fixed temporary Minions persisting through area transitions between non-combat areas.",
+          "t": "fix"
+        },
+        {
+          "k": "Reward Icons (Timeless Conflict)",
+          "old": "visible above monsters",
+          "neu": "Reward Icons no longer visible above monsters in Domain of Timeless Conflict (visual only). Rewards tracked by crystals at centre lighting up instead of icon list.",
+          "t": "fix"
         }
       ]
     },
