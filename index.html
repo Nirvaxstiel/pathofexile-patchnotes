@@ -56,6 +56,8 @@
   .diff{margin-top:6px;max-height:70vh;overflow-y:auto}
   .row{display:grid;grid-template-columns:minmax(190px,260px) 1fr 86px;gap:14px;align-items:start;padding:9px 6px;border-bottom:2px solid var(--line);font-size:13px}
   .row:hover{background:rgba(0,240,255,.04);box-shadow:2px 2px 0 0 var(--cyan);transform:translate(-1px,-1px);transition:all .08s step-start}
+  .row.flash{animation:rowflash 1.1s ease-out}
+  @keyframes rowflash{0%{background:rgba(252,238,10,.32);box-shadow:0 0 0 2px var(--amber),3px 3px 0 0 var(--amber)}40%{background:rgba(252,238,10,.16)}100%{background:transparent;box-shadow:none}}
   .k{color:var(--cyan);font-weight:600;font-size:12.5px;letter-spacing:.3px;padding-top:1px}
   .v{color:var(--ink);font-size:13px}
   .old{color:var(--rose);text-decoration:line-through;text-decoration-color:rgba(217,138,154,.6);margin-right:8px;opacity:.85}
@@ -252,7 +254,7 @@ function resolveClass(pos, neg){
 
 const LATEST_VER = "2026-07-22";
 const VER_LABELS = {"2026-07-16":"07-16","2026-07-17":"07-17","2026-07-22":"07-22"};
-function rowHtml(r){
+function rowHtml(r, rowId){
   const manual = r.t || "chg";
   const t = manual === "new" ? "new" : (resolveClass(r.pos, r.neg) || manual);
   const val = (t === "new" || r.old == null || r.old === "")
@@ -264,7 +266,7 @@ function rowHtml(r){
   const verLabel = VER_LABELS[ver] || ver;
   const isLatest = ver && ver === LATEST_VER;
   const verBadge = verLabel ? `<span class="ver-badge${isLatest?' latest':''}">${verLabel}</span>` : "";
-  return `<div class="row" data-t="${t}" data-ver="${ver}"><div class="k">${escapeHtml(r.k)}${verBadge}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
+  return `<div class="row" id="${rowId}" data-t="${t}" data-ver="${ver}"><div class="k">${escapeHtml(r.k)}${verBadge}</div><div class="v">${val}</div><div class="badge b-${t}">${BADGE[t]}</div>${img}</div>`;
 }
 
 function metaHtml(m){
@@ -285,7 +287,7 @@ function countRows(s){
 function sectionHtml(s){
   const num = s.n ? `<span class="n">${escapeHtml(s.n)}</span>` : "";
   const sub = s.sub ? `<small>${escapeHtml(s.sub)}</small>` : "";
-  const inner = (s.rows||[]).map(rowHtml).join("") + (s.sections||[]).map(sectionHtml).join("");
+  const inner = (s.rows||[]).map(r => rowHtml(r, "r-" + s.id + "-" + (r.k||'').toLowerCase().replace(/[^a-z0-9]+/g,"-"))).join("") + (s.sections||[]).map(sectionHtml).join("");
   return `<section id="${escapeHtml(s.id)}"><h2 class="sec">${num}${escapeHtml(s.title)}${sub}</h2><div class="card"><div class="diff">${inner}</div></div></section>`;
 }
 
@@ -293,7 +295,7 @@ function tocHtml(sections, depth){
   depth = depth || 0;
   const cls = depth === 0 ? "root-sum" : "";
   return sections.map(s => {
-    const rows = (s.rows||[]).map(r => `<a href="#${escapeHtml(s.id)}" data-row="${escapeHtml((r.k||'').toLowerCase())}">${escapeHtml(r.k)}</a>`).join("");
+    const rows = (s.rows||[]).map(r => `<a href="#r-${escapeHtml(s.id)}-${escapeHtml((r.k||'').toLowerCase().replace(/[^a-z0-9]+/g,'-'))}" data-row="${escapeHtml((r.k||'').toLowerCase())}">${escapeHtml(r.k)}</a>`).join("");
     const kids = (s.sections||[]).length ? tocHtml(s.sections, depth+1) : "";
     const count = (s.rows||[]).length + (s.sections||[]).reduce((a,c) => a + countRows(c), 0);
     return `<details open><summary class="${cls}">${escapeHtml(s.title)} <span class="ct">${count}</span></summary>${rows}${kids}</details>`;
@@ -521,6 +523,23 @@ function wireVersionFilter(leagues){
   }));
   return leagues;
 }
+function wireRowScroll(leagues){
+  document.addEventListener("click", e => {
+    const a = e.target.closest('#toc a[href^="#r-"]');
+    if(!a) return;
+    const id = a.getAttribute("href").slice(1);
+    const row = document.getElementById(id);
+    if(!row) return;
+    e.preventDefault();
+    const top = row.getBoundingClientRect().top + window.scrollY - 24;
+    window.scrollTo({top, behavior:"smooth"});
+    row.classList.remove("flash");
+    void row.offsetWidth; // restart animation
+    row.classList.add("flash");
+    setTimeout(() => row.classList.remove("flash"), 1200);
+  });
+  return leagues;
+}
 function reportFatal(err){
   console.error("Failed to start:", err);
   return [];
@@ -537,6 +556,7 @@ Chain.ok(MANIFEST)
   .then(wireSectionSearch)
   .then(wireLegendFilter)
   .then(wireVersionFilter)
+  .then(wireRowScroll)
   .then(wireImageLightbox)
   .catch(reportFatal)
   .run();
