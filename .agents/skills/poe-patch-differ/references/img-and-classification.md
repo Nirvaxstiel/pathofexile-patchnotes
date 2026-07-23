@@ -1,40 +1,35 @@
-# Images & Mixed-Signal Classification (poe-patch-differ)
+# Image sourcing + classification hierarchy
 
-## Image sourcing (the realistic path)
-- `web_extract` of a POE forum thread returns **text only** — all `<img>` / poecdn URLs are gone.
-- The live forum (`pathofexile.com/forum/view-thread/...`) and poewiki are both **Cloudflare-
-  blocked to `curl`** (5KB challenge / 4.6KB block). Headless re-fetch of art URLs fails.
-- Patch-note bodies embed art as inline `https://web.poecdn.com/public/news/<date>/<Name>.jpg`
-  (e.g. `LeftReliqaurianAsendancy.jpg`). These URLs only surface on the rendered live page.
-- **Rule:** the user pastes the real `web.poecdn.com` link → copy verbatim into the row's `img`.
-  Never invent, never wiki-hotlink. Fabricated URLs violate the objective/source-attributed standard.
-
-## Image UX (already in template)
-- Row with `img` → `IMG` button (`class="imgbtn"`) → lightbox `#lightbox`.
-- Controls: Zoom ± (buttons + wheel), pan (drag, pointer events), Flip H/V, Rotate L/R,
-  Reset, Close. State held in `tf = {s,x,y,fh,fv,r}`; `applyTf()` composes
-  `translate() rotate() scale(s*fh, s*fv)`.
-- Click outside / `[data-act=close]` closes.
+## Image sourcing (`img` field)
+- Patch-note bodies embed `web.poecdn.com/...` image URLs inline — ascendancy trees, uniques,
+  skill icons, keystones.
+- Copy those URLs VERBATIM into the row's `img`. Do NOT invent URLs and do NOT hotlink from wikis.
+- `web_extract` strips all images; the forum is Cloudflare-blocked to `curl`. The URL will NOT
+  appear in extracted notes — the user must paste the real `web.poecdn.com` link, or you transcribe
+  it from the live notes page. Fabricating an image URL breaks the objective/source-attributed
+  standard.
+- `img` may be a single string URL or an array of URLs (renders one `IMAGES` button → gallery
+  lightbox with ‹ › nav, counter, keyboard).
+- `img` is ROW-LEVEL ONLY. A section-level `img` key is silently ignored. Put `img` on the first
+  row of a section (or every row that warrants it).
 
 ## Classification hierarchy (`pos` / `neg`)
-Priority (high→low): `loot` (3) > `combat` (2) > `other` (1).
-- `loot`  — item quantity, rarity, currency, drop rate, vendor/store.
-- `combat` — damage dealt, life/ES, defenses, skill/stat cost, cooldown, monster dmg/life.
-- `other` — AI, UI, QoL, monster behaviour, misc.
+Players weight effects by impact, not by naive "any buff ⇒ BUFF". A single change can help AND
+hurt. Tags:
 
-Resolution (`resolveClass` in `templates/patch.template.html`):
-```
-p = max priority in pos   (0 if absent)
-n = max priority in neg   (0 if absent)
-if p && n:  p>n -> buff ; n>p -> nerf ; else -> chg
-elif n: nerf
-elif p: buff
-else:  null  (fall back to manual t)
-```
-Worked examples:
-- `neg:["loot"]` only -> **NERF** ("no longer party member" removes qty/rarity bonus).
-- `pos:["loot"], neg:["combat"]` -> **BUFF** (loot outranks combat).
-- `pos:["loot"], neg:["loot"]` -> **CHG** (tie -> ambiguous, mark change).
-- neither present -> use `t`.
+| tag | covers |
+|-----|--------|
+| `loot` | quantity / rarity / currency / drop rate / vendor |
+| `combat` | damage / life / defense / cost / cooldown / monster stats |
+| `other` | AI / UI / QoL / behaviour |
 
-Always tag mixed rows with `pos`/`neg`; reserve manual `t` for single-direction changes.
+Resolution priority: **`loot` (3) > `combat` (2) > `other` (1)`**:
+- both sides present → higher priority wins; tie → `chg`
+- only `neg` → `nerf`; only `pos` → `buff`
+- neither → fall back to manual `t`
+- `t:"new"` is locked
+
+Example: "No longer counts as party member" — combat penalty gone but item-quantity/rarity bonus
+also gone → `neg:["loot"]` → resolves **NERF** (loot loss outranks absent combat). The naive
+`old` text describes the change; the `neu` describes the resulting state. Keep `old` as the
+*previous state*, not a restatement of the change.

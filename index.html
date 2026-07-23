@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3.29.0 Curse of the Allflame</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0e14'/%3E%3Cpath d='M16 3 L29 16 L16 29 L3 16 Z' fill='none' stroke='%23e8a13a' stroke-width='2'/%3E%3Cpath d='M16 9 L23 16 L16 23 L9 16 Z' fill='%235fd0e0' opacity='0.75'/%3E%3C/svg%3E">
+<title>Patch Notes</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0f'/%3E%3Cpath d='M16 3 L29 16 L16 29 L3 16 Z' fill='none' stroke='%23fcee0a' stroke-width='2'/%3E%3Cpath d='M16 9 L23 16 L16 23 L9 16 Z' fill='%2300f0ff' opacity='0.75'/%3E%3C/svg%3E">
 <style>
   :root{
     --bg:#0a0a0f; --bg2:#111118; --ink:#e8eaed; --dim:#6b7280; --line:#1e293b;
@@ -145,7 +145,7 @@
 <div class="wrap">
 
   <header>
-    <h1>3.29.0 Curse of the Allflame</h1>
+    <h1>Patch Notes</h1>
     <div class="sub">Patch Notes — before → after</div>
     <div class="meta" id="meta"></div>
     <div class="legend" id="legend">
@@ -204,7 +204,7 @@
 </div>
 
 <script>
-const MANIFEST = [{"version": "3.29.0", "league": "Curse of the Allflame", "json": "leagues/3.29/3.29.json"}, {"version": "3.28.0", "league": "Mirage", "json": "leagues/3.28/3.28.json"}];
+let MANIFEST = [];
 const BADGE = {buff:"BUFF", nerf:"NERF", chg:"CHG", new:"NEW"};
 const CLSP  = {buff:"nb", nerf:"nr", chg:"nc", new:"nn"};
 const CAT_PRIORITY = {loot:3, combat:2, other:1};
@@ -527,6 +527,8 @@ function reportFatal(err){
 }
 
 // --- orchestrator: the whole boot is one readable chain ---
+(async function boot(){
+MANIFEST = await fetch('leagues/index.json').then(r=>r.json());
 Chain.ok(MANIFEST)
   .then(sortLeagues)
   .then(seedLeagueSelector)
@@ -538,6 +540,7 @@ Chain.ok(MANIFEST)
   .then(wireImageLightbox)
   .catch(reportFatal)
   .run();
+})();
 </script>
 </body>
 </html>
