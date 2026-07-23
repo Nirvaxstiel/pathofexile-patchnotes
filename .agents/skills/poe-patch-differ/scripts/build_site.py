@@ -87,7 +87,7 @@ def main():
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(leagues, f, ensure_ascii=False, indent=2)
 
-    title = f"Patch Differ — {leagues[0]['version']} {leagues[0]['league']}"
+    title = f"{leagues[0]['version']} {leagues[0]['league']}"
     html = render(here(TEMPLATE_REL), leagues, title)
 
     out_path = os.path.join(root, args.out)

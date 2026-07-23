@@ -223,8 +223,8 @@
         },
         {
           "k": "Party member?",
-          "old": "No longer counts as party member (removes +item quantity/+rarity bonus; -life/-damage penalty also gone)",
-          "neu": "No longer counts as party member — no +item quantity/rarity, but also no -life/-damage penalty. (Loot bonus lost)",
+          "old": "Counts as party member — +item quantity/+rarity bonus, but -life/-damage penalty",
+          "neu": "No longer counts as party member — no loot bonus, but also no -life/-damage penalty",
           "t": "nerf",
           "neg": [
             "loot"
@@ -289,8 +289,8 @@
         },
         {
           "k": "Campaign Temp Mercs",
-          "old": "temporary Mercenaries",
-          "neu": "Campaign temporary Mercenaries can now aide you in combat for multiple areas (up to a maximum of 3).",
+          "old": "Temporary Mercenaries available for single area only",
+          "neu": "Can now aide you in combat for multiple areas (up to a maximum of 3).",
           "t": "chg",
           "version": "2026-07-22"
         }
@@ -3057,7 +3057,7 @@
         {
           "k": "Gladiator Determined Survivor",
           "old": "50% Chance to Block from Equipped Shield",
-          "neu": "Now grants 40% Chance to Block from Equipped Shield (was 50%).",
+          "neu": "Now grants 40% Chance to Block from Equipped Shield.",
           "t": "nerf",
           "version": "2026-07-22"
         },
@@ -3214,8 +3214,8 @@
         },
         {
           "k": "Scion Unlocked by Default",
-          "old": "must free Scion from Upper Sceptre of God",
-          "neu": "No longer required to free the Scion from Upper Sceptre of God in Act 3. Scion playable by default for all accounts.",
+          "old": "Must free Scion from Upper Sceptre of God in Act 3 before creating one",
+          "neu": "Scion is now playable by default for all accounts.",
           "t": "new",
           "version": "2026-07-22"
         }
